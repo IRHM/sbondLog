@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://sbondo1234.github.io/</loc>
+    <lastmod>2019-04-15T15:05:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sbondo1234.github.io/dir1/b/</loc>
+    <lastmod>2019-04-14T23:49:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sbondo1234.github.io/dir1/</loc>
+    <lastmod>2019-04-14T23:49:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sbondo1234.github.io/dir1/a/</loc>
+    <lastmod>2019-04-14T23:49:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sbondo1234.github.io/websites/open-video.org/</loc>
+    <lastmod>2019-04-14T23:41:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sbondo1234.github.io/websites/</loc>
+    <lastmod>2019-04-14T23:41:12+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sbondo1234.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sbondo1234.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
