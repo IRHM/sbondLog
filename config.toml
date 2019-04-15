@@ -1,6 +1,0 @@
-baseURL = "https://sbondo1234.github.io/"
-languageCode = "en-us"
-title = "sbondLog"
-[taxonomies]
-  tag = "tags"
-  category = "categories"
