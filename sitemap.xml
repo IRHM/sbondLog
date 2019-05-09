@@ -3,43 +3,235 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sbondo1234.github.io/</loc>
-    <lastmod>2019-04-15T15:05:10+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sbondo1234.github.io/dir1/b/</loc>
-    <lastmod>2019-04-14T23:49:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sbondo1234.github.io/dir1/</loc>
-    <lastmod>2019-04-14T23:49:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sbondo1234.github.io/dir1/a/</loc>
-    <lastmod>2019-04-14T23:49:21+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sbondo1234.github.io/websites/open-video.org/</loc>
-    <lastmod>2019-04-14T23:41:12+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sbondo1234.github.io/websites/</loc>
-    <lastmod>2019-04-14T23:41:12+01:00</lastmod>
+    <loc>https://log.sbond.ml/categories/</loc>
+    <lastmod>2019-04-27T10:34:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sbondo1234.github.io/categories/</loc>
+    <loc>https://log.sbond.ml/log/</loc>
+    <lastmod>2019-04-27T10:34:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sbondo1234.github.io/tags/</loc>
+    <loc>https://log.sbond.ml/log/webdev/remove-indexing/</loc>
+    <lastmod>2019-04-27T10:34:17+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/webdev/</loc>
+    <lastmod>2019-04-27T10:34:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/</loc>
+    <lastmod>2019-04-27T10:34:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/webdev/password-protect-one-file-on-site/</loc>
+    <lastmod>2019-04-27T10:27:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/webdev/password-protect-directory-on-site/</loc>
+    <lastmod>2019-04-27T10:19:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/webdev/making-subdomains-which-redirect-to-directory-htaccess/</loc>
+    <lastmod>2019-04-27T10:15:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/webdev/making-.htaccess-and.htpassword/</loc>
+    <lastmod>2019-04-27T10:11:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/webdev/finding-directory-of-file-using-php/</loc>
+    <lastmod>2019-04-27T10:08:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/python/</loc>
+    <lastmod>2019-04-27T10:03:37+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/python/simple-calculator/</loc>
+    <lastmod>2019-04-27T10:03:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/javascript/</loc>
+    <lastmod>2019-04-27T09:58:24+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/javascript/on-click-refresh-javascript/</loc>
+    <lastmod>2019-04-27T09:58:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/interesting/</loc>
+    <lastmod>2019-04-27T09:55:52+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/interesting/rockyou.txt/</loc>
+    <lastmod>2019-04-27T09:55:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/hugo/host-hugo-site/</loc>
+    <lastmod>2019-04-27T09:48:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/hugo/</loc>
+    <lastmod>2019-04-27T09:48:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/configuration/</loc>
+    <lastmod>2019-04-27T09:43:26+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/configuration/not-seeing-shared-devices-anymore-win10/</loc>
+    <lastmod>2019-04-27T09:43:26+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/configuration/remove-empty-lines-notepad&#43;&#43;/</loc>
+    <lastmod>2019-04-27T09:41:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/configuration/in-build-screenshot-tool-windows/</loc>
+    <lastmod>2019-04-27T09:38:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/configuration/add-open-command-window-here-to-the-context-menu/</loc>
+    <lastmod>2019-04-27T09:30:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/css/</loc>
+    <lastmod>2019-04-27T09:27:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/css/scale-on-hover/</loc>
+    <lastmod>2019-04-27T09:27:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/css/hide-scrollbar/</loc>
+    <lastmod>2019-04-27T09:24:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/arma-3/</loc>
+    <lastmod>2018-11-10T09:01:44+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3/fun-commands/</loc>
+    <lastmod>2018-11-10T09:01:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/arma3-mission-editing/</loc>
+    <lastmod>2018-11-10T08:55:21+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/teleporting/</loc>
+    <lastmod>2018-11-10T08:55:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/simple-while-loops/</loc>
+    <lastmod>2018-11-06T08:53:32+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/show-dialog-whilst-letting-players-move/</loc>
+    <lastmod>2018-11-05T08:30:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/removing-or-adding-items/</loc>
+    <lastmod>2018-10-22T08:24:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/placing-trees-in-eden-editor/</loc>
+    <lastmod>2018-10-17T07:47:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/multi-line-text-in-dialogs/</loc>
+    <lastmod>2018-10-15T07:44:19+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/arma-dialog-creator/</loc>
+    <lastmod>2018-10-15T05:37:26+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/hints/</loc>
+    <lastmod>2018-10-14T07:29:31+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/execvm-loops/</loc>
+    <lastmod>2018-10-13T07:24:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/advanced-holstering/</loc>
+    <lastmod>2018-10-13T05:02:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/arma3-mission-editing/execvm/</loc>
+    <lastmod>2018-10-12T03:52:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/authors/</loc>
+    <lastmod>2018-08-12T01:09:42+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/authors/sbondo1234/</loc>
+    <lastmod>2018-08-12T01:09:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/series/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/tags/</loc>
     <priority>0</priority>
   </url>
   

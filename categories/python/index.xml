@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on sbondLog</title>
+    <link>https://log.sbond.ml/categories/python/</link>
+    <description>Recent content in Python on sbondLog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Apr 2019 10:03:37 +0100</lastBuildDate>
+    
+	<atom:link href="https://log.sbond.ml/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simple Calculator Python</title>
+      <link>https://log.sbond.ml/log/python/simple-calculator/</link>
+      <pubDate>Sat, 27 Apr 2019 10:03:37 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/python/simple-calculator/</guid>
+      <description>What? This simple calculator program will allow the user to enter two ( or more if you wish ) numbers and then choose a method to use (+, -, /, *). We will use if statements.
+How? Well, first we need to add 3 ( or more ) variables. The first two will be holding the user&amp;rsquo;s numbers and the third will be the method they want to use ( Both variables will be asking for the user&amp;rsquo;s input as well ).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ArmA3 Mission Editing on sbondLog</title>
+    <link>https://log.sbond.ml/categories/arma3-mission-editing/</link>
+    <description>Recent content in ArmA3 Mission Editing on sbondLog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Nov 2018 08:55:21 +0100</lastBuildDate>
+    
+	<atom:link href="https://log.sbond.ml/categories/arma3-mission-editing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Teleporting</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/teleporting/</link>
+      <pubDate>Sat, 10 Nov 2018 08:55:21 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/teleporting/</guid>
+      <description>Teleporting to markers To teleport players to markers we will be making use of both setPos &amp;amp; getMarkerPos.
+First, we will have to place a marker down in the spot we want the players to be teleported to. You can do this in the ArmA 3DEN Editor, by going to Markers (F6), Icons and then selecting the marker you want to place down.</description>
+    </item>
+    
+    <item>
+      <title>Simple While Loops</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/simple-while-loops/</link>
+      <pubDate>Tue, 06 Nov 2018 08:53:32 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/simple-while-loops/</guid>
+      <description>While Loops?? If you ever want to create a loop for whatever reason you can do it easily with while loops.
+How do I use them? If you wanted to create a hint every 15 seconds you could very easily execute this script once and have it do the rest of the work for you.</description>
+    </item>
+    
+    <item>
+      <title>Show Dialog &amp; Let Players Move</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/show-dialog-whilst-letting-players-move/</link>
+      <pubDate>Mon, 05 Nov 2018 08:30:50 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/show-dialog-whilst-letting-players-move/</guid>
+      <description>What are you talking about? There is a way to show dialogs differently so that the player can retain his control over moving his character. The player can move around, but there will still be a mouse pointer on the screen allowing them to select what they need to. This can be useful in many ways in many different situations you may have.</description>
+    </item>
+    
+    <item>
+      <title>Removing or Adding Items</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/removing-or-adding-items/</link>
+      <pubDate>Mon, 22 Oct 2018 08:24:44 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/removing-or-adding-items/</guid>
+      <description>Adding Items You can use the commands below to start adding Items to players. Of course, you can change &amp;lsquo;player&amp;rsquo; to whatever you want as long as you define it first.
+Inside of the Speech Marks, you will put classnames for the items you want to be added to the player.
+ player addHeadgear &#34;</description>
+    </item>
+    
+    <item>
+      <title>Placing Trees in Eden Editor</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/placing-trees-in-eden-editor/</link>
+      <pubDate>Wed, 17 Oct 2018 07:47:54 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/placing-trees-in-eden-editor/</guid>
+      <description>How would I do this? To add a tree you first have to place down a game logic wherever you please and copy the code below into it: _tree = createSimpleObject [&amp;ldquo;TREE NAME&amp;rdquo;, [X,Y,Z]];
+Once you have the code in there you are going to have to edit some things before your tree will be placed:</description>
+    </item>
+    
+    <item>
+      <title>Multi Line Text in Dialogs</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/multi-line-text-in-dialogs/</link>
+      <pubDate>Mon, 15 Oct 2018 07:44:19 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/multi-line-text-in-dialogs/</guid>
+      <description>What mate? If you are creating a dialog and need to have a long line of text and it doesn&amp;rsquo;t fit in your dialog frame, you are going to be happy to know that there is a style you can use to make your text go into multiple lines.
+How? In your dialog just add the following lines of code:</description>
+    </item>
+    
+    <item>
+      <title>ArmA Dialog Creator</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/arma-dialog-creator/</link>
+      <pubDate>Mon, 15 Oct 2018 05:37:26 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/arma-dialog-creator/</guid>
+      <description>What Is This? ArmA Dialog Creator is an amazing tool created by Kayler Renslow. It is the easy way of creating functional dialogs in ArmA 3. You can simply download it from his Github and install it. Once you have done that you are ready to start creating dialogs the easy way!
+How To Start Once you have opened the .</description>
+    </item>
+    
+    <item>
+      <title>Hints</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/hints/</link>
+      <pubDate>Sun, 14 Oct 2018 07:29:31 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/hints/</guid>
+      <description>What is this? Hints are something you can use very easily to alert players of something or tell them what they have to do next or what they have done. It basically gives the players or whoever you let see the hint a little box with text inside of it.
+They are very useful in a lot of cases and are super easy to use!</description>
+    </item>
+    
+    <item>
+      <title>execVM Loops</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/execvm-loops/</link>
+      <pubDate>Sat, 13 Oct 2018 07:24:40 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/execvm-loops/</guid>
+      <description>Why do it like this? You can use execVM to loop one script over an over again, but you can&amp;rsquo;t stop it once it has started. It is great when you have a script you want to run every x seconds for the whole mission. It is also really simple so it is more appealing over other ways of creating a loop because it requires almost no effort.</description>
+    </item>
+    
+    <item>
+      <title>Advanced Holstering</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/advanced-holstering/</link>
+      <pubDate>Sat, 13 Oct 2018 05:02:44 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/advanced-holstering/</guid>
+      <description>What Is This? Believe it or not there is a very easy way to allow your character to put their primary weapon on their back and or pistol in their holster. This will work great in scenes you want to have a great cinematic effect. This will work wherever you put it and is a great line of code to have.</description>
+    </item>
+    
+    <item>
+      <title>execVM</title>
+      <link>https://log.sbond.ml/log/arma3-mission-editing/execvm/</link>
+      <pubDate>Fri, 12 Oct 2018 03:52:05 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/arma3-mission-editing/execvm/</guid>
+      <description> What Is execVM? execVM is an essential command for ArmA 3 scripting. It allows you to call a script at any point.
+Example execVM is really easy to use and is used like such:
+execVM &#34;nameOfScript.filetype&#34;; </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+body {
+  -webkit-font-smoothings: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+pre {
+  overflow: auto;
+  display: block;
+  position: relative;
+  // word-break: break-all;
+  // word-wrap: break-word;
+  // white-space: pre-wrap;
+  // padding: 1rem 1rem 2rem;
+  font-size: 0.75em;
+  //background-color: #fafafa;
+  color: #fff;
+  background-color: #292929;
+  font-family: Source Code Pro, monocode, monospace;
+  border-radius: .40rem;
+  line-height: 1.4;
+  padding: 9.5px;
+  -webkit-font-smoothings: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+code {
+  background-color: #EEE;
+}

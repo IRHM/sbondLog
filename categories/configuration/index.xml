@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuration on sbondLog</title>
+    <link>https://log.sbond.ml/categories/configuration/</link>
+    <description>Recent content in Configuration on sbondLog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Apr 2019 09:43:26 +0100</lastBuildDate>
+    
+	<atom:link href="https://log.sbond.ml/categories/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Suddenly Not Seeing Shared Devices On Network Win10</title>
+      <link>https://log.sbond.ml/log/configuration/not-seeing-shared-devices-anymore-win10/</link>
+      <pubDate>Sat, 27 Apr 2019 09:43:26 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/configuration/not-seeing-shared-devices-anymore-win10/</guid>
+      <description>What? As you may know, Homegroup was removed from Windows 10 and the new Network tab replaced it. It is essentially the same thing, you can share files between different PCs across your network. I use this tool a lot when sharing files between PCs and it is very useful, whilst working.
+If you have suddenly had your network tab stop showing certain PCs on your network consider this fix</description>
+    </item>
+    
+    <item>
+      <title>Remove all Empty Lines Notepad&#43;&#43;</title>
+      <link>https://log.sbond.ml/log/configuration/remove-empty-lines-notepad&#43;&#43;/</link>
+      <pubDate>Sat, 27 Apr 2019 09:41:02 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/configuration/remove-empty-lines-notepad&#43;&#43;/</guid>
+      <description>What? If you have thousands or maybe just hundreds of empty lines in a text document you have, you may want to know how to remove all of the empty lines without having to manually do it.
+To be clear I have used this in Notepad++, I am not sure if it would work anywhere else.</description>
+    </item>
+    
+    <item>
+      <title>In-Build Windows Screenshot Tool</title>
+      <link>https://log.sbond.ml/log/configuration/in-build-screenshot-tool-windows/</link>
+      <pubDate>Sat, 27 Apr 2019 09:38:03 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/configuration/in-build-screenshot-tool-windows/</guid>
+      <description>What? Everyone knows about the old Snipping Tool that may have been used to screenshot certain things, to share or put in documents. There is now an easier to access tool which allows you to take screenshots quickly and then have them in your clipboard to paste somewhere.
+It is honestly kind of a shame they didn&amp;rsquo;t add more features to the new screenshotting tool.</description>
+    </item>
+    
+    <item>
+      <title>Add &#39;Open Command Window Here&#39; to Context Menu</title>
+      <link>https://log.sbond.ml/log/configuration/add-open-command-window-here-to-the-context-menu/</link>
+      <pubDate>Sat, 27 Apr 2019 09:30:25 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/log/configuration/add-open-command-window-here-to-the-context-menu/</guid>
+      <description>What? When you Shift + Right Click on a folder you get to see more options. Normally without any configuration, you only see the Open PowerShell Window Here. If you follow the steps below you will learn how to add the Open Command Window Here option to the context menu.
+How?  Open Run by searching it on the start menu or pressing ⊞ Win Key + R.</description>
+    </item>
+    
+  </channel>
+</rss>
