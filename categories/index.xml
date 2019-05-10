@@ -6,15 +6,24 @@
     <description>Recent content in Categories on sbondLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Apr 2019 10:34:17 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2019 23:14:03 +0100</lastBuildDate>
     
 	<atom:link href="https://log.sbond.ml/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Apache</title>
+      <link>https://log.sbond.ml/categories/apache/</link>
+      <pubDate>Fri, 10 May 2019 23:14:03 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/categories/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>WebDev</title>
       <link>https://log.sbond.ml/categories/webdev/</link>
-      <pubDate>Sat, 27 Apr 2019 10:34:17 +0100</pubDate>
+      <pubDate>Fri, 10 May 2019 23:14:03 +0100</pubDate>
       
       <guid>https://log.sbond.ml/categories/webdev/</guid>
       <description></description>
