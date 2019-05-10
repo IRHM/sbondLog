@@ -3,32 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://log.sbond.ml/categories/</loc>
-    <lastmod>2019-04-27T10:34:17+01:00</lastmod>
+    <loc>https://log.sbond.ml/categories/apache/</loc>
+    <lastmod>2019-05-10T23:14:03+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://log.sbond.ml/categories/</loc>
+    <lastmod>2019-05-10T23:14:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/log/webdev/make-subdomains-on-apache/</loc>
+    <lastmod>2019-05-10T23:14:03+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://log.sbond.ml/log/</loc>
-    <lastmod>2019-04-27T10:34:17+01:00</lastmod>
+    <lastmod>2019-05-10T23:14:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/webdev/</loc>
+    <lastmod>2019-05-10T23:14:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/</loc>
+    <lastmod>2019-05-10T23:14:03+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://log.sbond.ml/log/webdev/remove-indexing/</loc>
     <lastmod>2019-04-27T10:34:17+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://log.sbond.ml/categories/webdev/</loc>
-    <lastmod>2019-04-27T10:34:17+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://log.sbond.ml/</loc>
-    <lastmod>2019-04-27T10:34:17+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
