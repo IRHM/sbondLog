@@ -13,10 +13,10 @@
     
     <item>
       <title>How To Make Subdomains on Apache/Xampp</title>
-      <link>https://log.sbond.ml/log/webdev/make-subdomains-on-apache/</link>
+      <link>https://log.sbond.ml/l/webdev/make-subdomains-on-apache/</link>
       <pubDate>Fri, 10 May 2019 23:14:03 +0100</pubDate>
       
-      <guid>https://log.sbond.ml/log/webdev/make-subdomains-on-apache/</guid>
+      <guid>https://log.sbond.ml/l/webdev/make-subdomains-on-apache/</guid>
       <description>What Are You Talking About? When I say &amp;lsquo;subdomain&amp;rsquo; I am talking about the part that comes before the actual domain.
 So the subdomain in this URL log.sbond.ml is the part that says log.
 You can use subdomains to redirect to a different server which can show different content, but in this post, you will learn how to make a subdomain redirect to a directory in your site.</description>

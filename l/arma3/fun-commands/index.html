@@ -1,0 +1,419 @@
+<script src="/js/nav.js?v=1"></script>
+<center>
+<nav class="f6 fw6 ttu tracked bg-black-90 pv4-ns ph4-m ph5-l opnav"
+  style="top: -10px;">
+
+  <a class="link dim white dib mr3 nav-hide" href="/index.html" title="Home">
+    Home</a>
+  
+  <a class="link dim white dib mr3 nav-hide" href="/l/">
+    /Log</a>
+  
+  <a class="link dim white dib mr3 nav-hide" href="/categories/">
+    /Categories</a>
+  
+
+
+  <svg focusable="false" class="dim link white dib mr3 searchSVG" width="25px"
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"
+  style="" onclick="searchToggle(this)"
+  preserveAspectRatio="xMinYMin meet" >
+   <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1
+    0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49
+    19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01
+    14 9.5 11.99 14 9.5 14z"></path></svg>
+
+  <form action="/s/search.php" method="get">
+  <input type="text" name="q" placeholder="Search sbondLog..." id="searchTog"
+  autocomplete="off" class="search fw6 tracked bg-black-80 hidden">
+  </form>
+
+<div>
+  <i class="hamburger grow" onclick="hamburgerToggle(this)"></i>
+  <a href="/index.html" class="link dim logo logo-hidden"
+  >sbondLog</a>
+</div>
+
+<div id="hamburger-drop" class="fw6 tracked bg-black-80 hamburger-drop hidden">
+  <br />
+  <a class="link dim white" href="/l/">
+    /Log</a><br />
+  <br />
+  <a class="link dim white" href="/categories/">
+    /Categories</a><br />
+  
+  <br />
+</div>
+
+</nav>
+</center>
+<br />
+
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="Fun Commands" />
+<meta property="og:site_name" content="sbondLog" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://log.sbond.ml/l/arma3/fun-commands/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2018-11-10
+" /> <meta property="article:modified_time" content="2018-11-10
+" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@sbondoGaming" />
+<meta name="twitter:creator" content="@sbondoGaming" />
+<meta
+  name="twitter:title"
+  content="Fun Commands | sbondLog"
+/>
+<meta
+  name="twitter:description"
+  content="How to use First, you will need to be the Admin/Host of the mission you are playing. To execute the commands you will need to click ESC and then type the commands into the Debug Console. You can click Local to execute the code locally ( Just For You ), Server will execute the code to the server and Global will execute the code globally ( to everyone ).|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="https://log.sbond.ml/l/arma3/fun-commands/" />
+
+
+
+    <title>Fun Commands -- sbondLog</title>
+    <link rel="canonical" href="https://log.sbond.ml/l/arma3/fun-commands/" />
+
+
+    <link rel="stylesheet" href="https://log.sbond.ml/css/styles.css" />
+
+<link
+  rel="stylesheet"
+  href="/css/tachyons.min.css?v=6.2"
+/>
+
+<link rel="shortcut icon" href="https://sbond.ml/images/hive.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  </head>
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">Fun Commands</h1>
+
+    <h4 itemprop="name" id="title" style="font-size:13px;">
+      By
+      <a href="/a/sbondo1234"
+      class="b bb bw1 pb1 no-underline black">
+          sbondo1234
+      </a>
+      on 10 November, 2018
+    </h4>
+
+    <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+      
+
+<h3 id="how-to-use">How to use</h3>
+
+<p>First, you will need to be the Admin/Host of the mission you are playing. To execute the commands you will need to click ESC and then type the commands into the Debug Console. You can click Local to execute the code locally ( Just For You ), Server will execute the code to the server and Global will execute the code globally ( to everyone ).</p>
+
+<h3 id="command-list">Command List</h3>
+
+<h4 id="open-arsenal">Open Arsenal</h4>
+
+<pre>["Open",true ] spawn BIS_fnc_arsenal;</pre>
+
+<h4 id="kill-player">Kill Player</h4>
+
+<pre>player setDamage 1;</pre>
+
+<h4 id="turn-off-weapon-sway">Turn off Weapon Sway</h4>
+
+<pre>player setCustomAimCoef 0;</pre>
+
+<h4 id="rpg-bullets-to-come-out-of-normal-gun">RPG Bullets to come out of normal gun</h4>
+
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">player removeeventhandler[&#34;fired&#34;, FEH_missile];
+FEH_missile = player addeventhandler [&#34;fired&#34;, { _bullet = nearestObject [_this select 0,_this select 4];
+_bulletpos = getPosASL _bullet; _o = &#34;R_PG7_F&#34; createVehicle _bulletpos;
+_weapdir = player weaponDirection currentWeapon player; _dist = 11;
+_o setPosASL [ (_bulletpos select 0) + (_weapdir select 0)*_dist, (_bulletpos select 1) + (_weapdir select 1)*_dist, (_bulletpos select 2) + (_weapdir select 2)*_dist ]; _up = vectorUp _bullet; _o setVectorDirAndUp[_weapdir,_up]; _o setVelocity velocity _bullet; }];</code></pre></div>
+
+<h4 id="different-rpg-ammo-types-use-with-code-above">Different RPG Ammo Types ( use with code above )</h4>
+
+<pre>
+"R_PG7_F",
+"M_NLAW_AT_F",
+"R_PG32V_F",
+"R_TBG32V_F",
+"M_TITAN_AT",
+"M_TITAN_AP",
+"Bo_GBU12_LGB",
+"BombCluster_01_Ammo_F"</pre>
+
+<h4 id="esp-wallhacks">ESP (Wallhacks)</h4>
+
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">if (isnil (&#34;WookieESP&#34;)) then {WookieESP = 0;}; if (WookieESP==0) then
+{WookieESP=1;cutText [format[&#34;Esp On&#34;], &#34;PLAIN DOWN&#34;];hint &#34;Esp
+On&#34;;}else{WookieESP=0;cutText [format[&#34;Esp Off&#34;], &#34;PLAIN DOWN&#34;];hint &#34;Esp Off&#34;;};
+if (WookieESP==1) then { oneachframe { _nigs = nearestobjects
+[player,[&#34;CAManBase&#34;],1400]; { if((side _x != side player) <span class="err">&amp;&amp;</span> (getPlayerUID _x
+!= &#34;&#34;) <span class="err">&amp;&amp;</span> ((player distance _x) <span class="p">&lt;</span> <span class="nt">1400</span><span class="err">))</span> <span class="na">then</span> <span class="err">{</span> <span class="na">drawIcon3D</span> <span class="err">[&#34;&#34;,</span> <span class="err">[</span><span class="na">1</span><span class="err">,</span><span class="na">0</span><span class="err">,</span><span class="na">0</span><span class="err">,</span><span class="na">0</span><span class="err">.</span><span class="na">7</span><span class="err">],</span>
+<span class="na">GetPosATL</span> <span class="na">_x</span><span class="err">,</span> <span class="na">0</span><span class="err">.</span><span class="na">1</span><span class="err">,</span> <span class="na">0</span><span class="err">.</span><span class="na">1</span><span class="err">,</span> <span class="na">45</span><span class="err">,</span> <span class="err">(</span><span class="na">format</span> <span class="err">[&#34;%</span><span class="na">2</span> <span class="na">:</span> <span class="err">%</span><span class="na">1m</span><span class="err">&#34;,</span><span class="na">round</span><span class="err">(</span><span class="na">player</span> <span class="na">distance</span> <span class="na">_x</span><span class="err">),</span> <span class="na">name</span>
+<span class="na">_x</span><span class="err">]),</span> <span class="na">1</span><span class="err">,</span> <span class="na">0</span><span class="err">.</span><span class="na">03</span><span class="err">,</span> <span class="err">&#34;</span><span class="na">default</span><span class="err">&#34;]</span> <span class="err">}</span> <span class="na">else</span> <span class="err">{</span> <span class="na">if</span><span class="err">((</span><span class="na">getPlayerUID</span> <span class="na">_x</span> <span class="err">!=</span> <span class="err">&#34;&#34;)</span> <span class="err">&amp;&amp;</span> <span class="err">((</span><span class="na">player</span> <span class="na">distance</span> <span class="na">_x</span><span class="err">)</span> <span class="err">&lt;</span> <span class="na">1000</span><span class="err">))</span> <span class="na">then</span> <span class="err">{</span> <span class="na">drawIcon3D</span> <span class="err">[&#34;&#34;,</span> <span class="err">[</span><span class="na">0</span><span class="err">,</span><span class="na">1</span><span class="err">,</span><span class="na">0</span><span class="err">.</span><span class="na">5</span><span class="err">,</span><span class="na">0</span><span class="err">.</span><span class="na">4</span><span class="err">],</span> <span class="na">GetPosATL</span> <span class="na">_x</span><span class="err">,</span> <span class="na">0</span><span class="err">.</span><span class="na">1</span><span class="err">,</span> <span class="na">0</span><span class="err">.</span><span class="na">1</span><span class="err">,</span> <span class="na">45</span><span class="err">,</span>
+<span class="err">(</span><span class="na">format</span> <span class="err">[&#34;%</span><span class="na">2</span> <span class="na">:</span> <span class="err">%</span><span class="na">1m</span><span class="err">&#34;,</span><span class="na">round</span><span class="err">(</span><span class="na">player</span> <span class="na">distance</span> <span class="na">_x</span><span class="err">),</span> <span class="na">name</span> <span class="na">_x</span><span class="err">]),</span> <span class="na">1</span><span class="err">,</span> <span class="na">0</span><span class="err">.</span><span class="na">03</span><span class="err">,</span> <span class="err">&#34;</span><span class="na">default</span><span class="err">&#34;]</span> <span class="err">};</span> <span class="err">};</span> <span class="err">}</span> <span class="na">foreach</span> <span class="na">playableUnits</span><span class="err">;</span> <span class="na">_noobs </span><span class="o">=</span> <span class="s">nearestobjects</span> <span class="err">[</span><span class="na">player</span><span class="err">,[&#34;</span><span class="na">CAManBase</span><span class="err">&#34;],</span><span class="na">100</span><span class="err">];</span> <span class="err">{</span>
+<span class="na">if</span><span class="err">(((</span><span class="na">alive</span> <span class="na">_x</span><span class="err">))</span> <span class="err">&amp;&amp;</span> <span class="err">((</span><span class="na">player</span> <span class="na">distance</span> <span class="na">_x</span><span class="err">)</span> <span class="err">&lt;</span> <span class="na">100</span><span class="err">))</span> <span class="na">then</span> <span class="err">{</span> <span class="na">if</span><span class="err">((</span><span class="na">side</span> <span class="na">_x</span> <span class="err">!=</span> <span class="na">side</span> <span class="na">player</span><span class="err">)</span>
+<span class="err">&amp;</span> <span class="err">((</span><span class="na">player</span> <span class="na">distance</span> <span class="na">_x</span><span class="err">)</span> <span class="err">&lt;</span> <span class="na">100</span><span class="err">))</span> <span class="na">then</span> <span class="err">{</span> <span class="na">if</span><span class="err">(</span><span class="na">player</span> <span class="na">distance</span> <span class="na">_x</span> <span class="err">&lt;</span> <span class="na">10</span> <span class="err">&amp;&amp;</span> <span class="na">_x</span> <span class="na">iskindof</span> <span class="err">&#34;</span><span class="na">CAManBase</span><span class="err">&#34;</span> <span class="err">&amp;&amp;</span> <span class="na">side</span> <span class="na">_x</span> <span class="err">!=</span> <span class="na">civilian</span><span class="err">)</span> <span class="na">then</span> <span class="err">{</span> <span class="na">drawLine3D</span> <span class="err">[[</span><span class="na">getposatl</span> <span class="na">player</span> <span class="na">select</span> <span class="na">0</span><span class="err">,</span> <span class="na">getposatl</span> <span class="na">player</span> <span class="na">select</span> <span class="na">1</span><span class="err">,</span> <span class="na">getposatl</span> <span class="na">player</span> <span class="na">select</span> <span class="na">2</span><span class="err">],</span> <span class="na">_x</span><span class="err">,</span> <span class="err">[</span><span class="na">1</span><span class="err">,</span><span class="na">0</span><span class="err">,</span><span class="na">0</span><span class="err">,(</span><span class="na">abs</span><span class="err">((((</span><span class="na">player</span>
+<span class="na">distance</span> <span class="na">_x</span><span class="err">))</span> <span class="na">-</span> <span class="na">100</span><span class="err">)/</span><span class="na">100</span><span class="err">))]]</span> <span class="err">};</span> <span class="err">}</span> <span class="na">else</span> <span class="err">{</span> <span class="na">drawLine3D</span> <span class="err">[[</span><span class="na">getposatl</span> <span class="na">player</span> <span class="na">select</span> <span class="na">0</span><span class="err">,</span> <span class="na">getposatl</span> <span class="na">player</span> <span class="na">select</span> <span class="na">1</span><span class="err">,</span> <span class="na">getposatl</span> <span class="na">player</span> <span class="na">select</span> <span class="na">2</span><span class="err">],</span> <span class="na">_x</span><span class="err">,</span> <span class="err">[</span><span class="na">0</span><span class="err">,</span><span class="na">1</span><span class="err">,</span><span class="na">0</span><span class="err">,(</span><span class="na">abs</span><span class="err">((((</span><span class="na">player</span>
+<span class="na">distance</span> <span class="na">_x</span><span class="err">))</span> <span class="na">-</span> <span class="na">100</span><span class="err">)/</span><span class="na">100</span><span class="err">))]]</span> <span class="err">};</span> <span class="err">};</span> <span class="err">}</span> <span class="na">foreach</span> <span class="na">playableUnits</span><span class="err">;</span> <span class="err">};</span> <span class="err">}</span> <span class="na">else</span> <span class="err">{</span> <span class="na">oneachframe</span> <span class="err">{</span><span class="na">nil</span><span class="err">};</span> <span class="err">};</span></code></pre></div>
+
+<h4 id="aimbot-will-even-kill-teammates">Aimbot (will even kill teammates)</h4>
+
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">player addEventHandler [&#34;Fired&#34;, { _nearPlayers = player nearEntities [&#34;CAManBase&#34;, 1000];
+_nearestPlayer=objNull; _nearestPlayerDist=1000; { _dist=vehicle _x distance player; if (_x != player and _dist<span class="p">&lt;</span><span class="nt">_nearestPlayerDist</span> <span class="na">and</span> <span class="na">alive</span> <span class="na">_x</span><span class="err">)</span> <span class="na">then</span> <span class="err">{</span> <span class="na">_nearestPlayer</span><span class="o">=</span><span class="s">_x;</span> <span class="na">_nearestPlayerDist</span><span class="o">=</span><span class="s">_dist;</span> <span class="err">};</span> <span class="err">}</span> <span class="na">forEach</span> <span class="na">_nearPlayers</span><span class="err">;</span>
+<span class="na">_bullet </span><span class="o">=</span> <span class="s">_this</span> <span class="na">select</span> <span class="na">6</span><span class="err">;</span> <span class="na">_head </span><span class="o">=</span> <span class="s">eyePos</span> <span class="na">_nearestPlayer</span><span class="err">;</span> <span class="na">_bullet</span> <span class="na">setPosASL</span> <span class="na">_head</span><span class="err">;</span> <span class="err">}];</span></code></pre></div>
+
+<h4 id="disables-fatigue">Disables Fatigue</h4>
+
+<pre>player enableFatigue false;</pre>
+
+<h4 id="skips-time-by-5-hours">Skips Time by 5 hours</h4>
+
+<pre>skipTime 5;</pre>
+
+<h4 id="removes-all-weapons">Removes all weapons</h4>
+
+<pre>removeAllWeapons player;</pre>
+
+<h4 id="destroys-whatever-you-look-at">destroys whatever you look at</h4>
+
+<pre>cursortarget setdamage 1;</pre>
+
+<h4 id="make-a-hint">Make a hint</h4>
+
+<pre>hint "N. F. Mendana is boss";</pre>
+
+<h4 id="typing-text">Typing Text</h4>
+
+<pre>[ [ ["my nam jif", nil, 30] ], 0, safeZoneY + safeZoneH / 2 ] spawn BIS_fnc_typeText;</pre>
+
+<h4 id="fancy-typing-text">Fancy Typing Text</h4>
+
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">[ [ [&#34;sbondFinance,&#34;, &#34;<span class="p">&lt;</span><span class="nt">t</span> <span class="na">align </span><span class="o">=</span> <span class="s">&#39;center&#39;</span> <span class="na">shadow </span><span class="o">=</span> <span class="s">&#39;1&#39;</span> <span class="na">size </span><span class="o">=</span> <span class="s">&#39;0.7&#39;</span> <span class="na">font</span><span class="o">=</span><span class="s">&#39;PuristaBold&#39;</span><span class="p">&gt;</span>%1<span class="p">&lt;/</span><span class="nt">t</span><span class="p">&gt;</span>&#34;], [&#34;GIVE ME MONEY&#34;, &#34;<span class="p">&lt;</span><span class="nt">t</span> <span class="na">align </span><span class="o">=</span> <span class="s">&#39;center&#39;</span> <span class="na">shadow </span><span class="o">=</span> <span class="s">&#39;1&#39;</span> <span class="na">size </span><span class="o">=</span> <span class="s">&#39;0.7&#39;</span><span class="p">&gt;</span>%1<span class="p">&lt;/</span><span class="nt">t</span><span class="p">&gt;</span>
+&#34;], [&#34;pls im poor&#34;, &#34;<span class="p">&lt;</span><span class="nt">t</span> <span class="na">align </span><span class="o">=</span> <span class="s">&#39;center&#39;</span> <span class="na">shadow </span><span class="o">=</span> <span class="s">&#39;1&#39;</span> <span class="na">size </span><span class="o">=</span> <span class="s">&#39;1.0&#39;</span><span class="p">&gt;</span>%1<span class="p">&lt;/</span><span class="nt">t</span><span class="p">&gt;</span>&#34;, 15] ] ] spawn BIS_fnc_typeText;</code></pre></div>
+
+<h4 id="infinite-ammo">Infinite Ammo</h4>
+
+<pre>player removeeventhandler["fired", FEH_playerAmmo]; FEH_playerAmmo = player
+addeventhandler ["fired", {(_this select 0) setvehicleammo 1}];</pre>
+
+<h4 id="a-class-b-bb-bw-pb1-no-underline-black-dim-href-https-pastebin-com-98qf1ng7-target-blank-pet-which-follows-you-around-a"><a class="b bb bw pb1 no-underline black dim" href="https://pastebin.com/98Qf1ng7" target="_blank">Pet which follows you around</a></h4>
+
+<h4 id="start-shooting-vehicles-a-class-b-bb-bw-pb1-no-underline-black-dim-href-https-community-bistudio-com-wiki-arma-3-cfgvehicles-west-target-blank-find-vehicle-classnames-here-a">Start shooting vehicles <a class="b bb bw pb1 no-underline black dim" href="https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST" target="_blank">Find Vehicle Classnames Here</a></h4>
+
+<pre>player addEventHandler ["Fired", { _bullet = _this select 6;
+_unit = _this select 0; _newPos = _unit modelToWorld [0,8,1];
+_veh = createVehicle ["I_MRAP_03_F",_newPos,[],0,"CAN_COLLIDE"];
+_veh setDir getDir _unit; _veh setVelocity velocity _bullet;
+deleteVehicle _bullet; }];</pre>
+
+<h4 id="heals-players">Heals Players</h4>
+
+<pre>player setDamage 0;</pre>
+
+<h4 id="text-in-middle-of-screen">Text in middle of screen</h4>
+
+<pre>titleText ["Show this text", "PLAIN"];</pre>
+
+<h4 id="deletes-any-vehicle-you-look-at">Deletes any vehicle you look at</h4>
+
+<pre>deleteVehicle cursorTarget;</pre>
+
+<h4 id="repairs-any-vehicle-fully">repairs any vehicle fully</h4>
+
+<pre>_timeForRepair = 0; _vehicle = vehicle player;
+hint format ["Please wait %1 seconds for repair/flip",_timeForRepair];
+sleep _timeForRepair; if (_vehicle == player) then {_vehicle = cursorTarget;};
+_vehicle setfuel 1; _vehicle setdamage 0;
+_vehicle = nil; vehicle = this select 0; _vehicle setvectorup [0,0,1];</pre>
+
+<h4 id="sets-players-ammo-to-1-can-change">sets players ammo to 1 ( Can change )</h4>
+
+<pre>player setAmmo [currentWeapon player, 1];</pre>
+
+<h4 id="attaches-gbu">Attaches GBU</h4>
+
+<pre>_expl1 = "Bo_GBU12_LGB" createVehicle position player; _expl1 attachTo
+[player, [-0.1, 0.1, 0.15], "Pelvis"]; _expl1 setVectorDirAndUp [ [0.5, 0.5, 0],
+[-0.5, 0.5, 0] ]; _expl2 = "Bo_GBU12_LGB" createVehicle position player; _expl2
+attachTo [player, [0, 0.15, 0.15], "Pelvis"]; _expl2 setVectorDirAndUp [ [1, 0, 0],
+[0, 1, 0] ]; _expl3 = "Bo_GBU12_LGB" createVehicle position player; _expl3
+attachTo [player, [0.1, 0.1, 0.15], "Pelvis"]; _expl3 setVectorDirAndUp
+[ [0.5, -0.5, 0], [0.5, 0.5, 0] ];</pre>
+
+<h4 id="gives-you-loads-of-money-for-altis-life">Gives you loads of money ( For altis life )</h4>
+
+<pre>life_atmcash = life_atmcash + 999999;</pre>
+
+<h4 id="attaches-colour-smoke-to-player-s">Attaches colour smoke to player(s)</h4>
+
+<pre>
+_expl1 = "G_40mm_SmokeBlue" createVehicle position player; _expl1 attachTo [player,
+[-0.1, 0.1, 0.15], "Pelvis"]; _expl1 setVectorDirAndUp [ [0.5, 0.5, 0], [-0.5, 0.5,
+0] ]; _expl2 = "G_40mm_SmokeOrange" createVehicle position player; _expl2 attachTo
+[player, [0, 0.15, 0.15], "Pelvis"]; _expl2 setVectorDirAndUp [ [1, 0, 0], [0, 1,
+0] ]; _expl3 = "G_40mm_SmokePurple" createVehicle position player; _expl3 attachTo
+[player, [0.1, 0.1, 0.15], "Pelvis"]; _expl3 setVectorDirAndUp [ [0.5, -0.5, 0],
+[0.5, 0.5, 0] ];
+</pre>
+
+<h4 id="removes-fog">removes fog</h4>
+
+<pre>0 setFog 0; forceWeatherChange; 999999 setFog 0;</pre>
+
+<h4 id="removes-fuel-from-player-vehicle">Removes fuel from player vehicle</h4>
+
+<pre>vehicle player setfuel 0;</pre>
+
+<h4 id="adds-a-weapon-to-player-a-class-b-bb-bw-pb1-no-underline-black-dim-href-https-community-bistudio-com-wiki-arma-3-cfgweapons-weapons-target-blank-find-classnames-here-a">Adds a weapon to player <a class="b bb bw pb1 no-underline black dim" href="https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Weapons" target="_blank">( Find classnames here )</a></h4>
+
+<pre> </pre>
+
+<h4 id="gives-god-mode">Gives god mode</h4>
+
+<pre>player allowdamage false;</pre>
+
+<h4 id="teleports-people-700m-in-air">teleports people 700m in air</h4>
+
+<pre>_pos = getPosATL player; _pos set [2, 700]; player setPosATL _pos; player spawn bis_fnc_halo;</pre>
+
+<h4 id="attaches-chicken-to-players-head">Attaches chicken to players head</h4>
+
+<pre>_expl1 = "C o c k_random_F" createVehicle position player; _expl1 attachTo
+[player, [-0.1, 0.1, 0.15], "Head"]; _expl1 setVectorDirAndUp [ [0.5, 0.5, 0], [-0.5, 0.5, 0] ];</pre>
+
+<h4 id="airstrike">Airstrike</h4>
+
+<pre>player addAction["Airstrike", { meins = 1000; mein1 = { openMap[false, false]; [_pos] spawn { for '_l39' from 0 to meins do { _l87 = "M_AT"; _l88 = [_this select 0 select 0, _this select 0 select 1, (_this select 0 select 2) + 200]; _l89 = createVehicle[_l87, _l88, [], 0, "CAN_COLLIDE"]; _l89 setvelocity[random 1000.00 - 500, random 1000.00 - 500, 0]; [_l89, -90, 0] call BIS_fnc_setPitchBank; hint format["Missiles Launched \n by ThirtySix \n %1", _l39]; sleep(random 0.00001); }; }; }; titleText["Click on map to drop Airstrike", "PLAIN"]; titlefadeout 7; onMapSingleClick "_pos call mein1;"; openMap[true, false]; }, "", 50]; player addAction["Vehicle <t color='#0000FF'>EMP</t>", { [cursorTarget, "vehicle player setFuel 0;"] call ThirtySix; hint format["%1 \n Vehicle Stopped \n by ThirtySix", cursorTarget]; }, "", 50];</pre>
+
+<h4 id="gives-speed-upgrade-to-vehicles">Gives speed upgrade to vehicles</h4>
+
+<pre>hint "Speed upgrade loaded!"; waituntil {!isnull (finddisplay 46)}; (findDisplay 46) displayAddEventHandler ["KeyDown","_this select 1 call MY_KEYDOWN_FNC;false;"]; MY_KEYDOWN_FNC = { _vcl = vehicle player; if(_vcl == player)exitwith{}; _nos = _vcl getvariable "nitro"; _supgrade = _vcl getvariable "supgrade"; if(isEngineOn _vcl) then { switch (_this) do { case 17: { if(isEngineOn _vcl and !isnil "_supgrade") then { _vcl SetVelocity [(velocity _vcl select 0) * 1.011, (velocity _vcl select 1) *1.011, (velocity _vcl select 2) * 0.99]; } else { _vcl setvariable ["supgrade", 1, true]; }; }; case 42: { if(isEngineOn _vcl and !isnil "_nos") then { _vcl setVelocity [(velocity _vcl select 0) * 1.01, (velocity _vcl select 1) * 1.01, (velocity _vcl select 2) * 0.99]; } else { _vcl setvariable ["nitro", 1, true]; }; }; }; }; };</pre>
+
+<h4 id="destroys-player-vehicle">Destroys player vehicle</h4>
+
+<pre>vehicle player setdamage 1</pre>
+
+<h4 id="select-where-to-teleport-on-map">Select where to teleport on map</h4>
+
+<pre>openMap true; onMapSingleClick { onMapSingleClick {}; {_x setPos _pos;} forEach units group player; hint ; openMap false; };</pre>
+
+<h4 id="go-speedy-you-can-change-the-value-at-the-end">Go Speedy! - You can change the value at the end</h4>
+
+<pre>player setAnimSpeedCoef 100;</pre>
+
+    </article>
+  </section>
+
+<br />
+
+  <h3 style="font-size:13px;color:white;" class="">
+
+    <img src="https://ul.sbond.ml/i/icons/tag-black-line.png"
+    alt="Categories" width="20px" class="grow fl" /> &nbsp;
+
+    
+    
+    
+
+      <a href="/categories/arma-3"
+      class="dim bb bw1 pb1 no-underline black">ArmA 3</a>
+
+    
+    
+    
+    
+    
+
+  </h3><br />
+  <div id="disqus_thread"></div>
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://sbond-ml.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+  <br /><br /><br />
+
+<footer style="background-image:url(https://log.sbond.ml/img/ash-footer.gif);" class="tc-l bg-center cover sans-serif">
+  <center>
+    <div class="w-100 ph3 pv5 bg-black-50">
+
+      <a class="footerSvgAnim grow link white-60 bg-transparent hover-blue inline-flex items-center ma2 tc br2 pa2" href="https://twitter.com/sbondoGaming" target="_blank" title="Twitter">
+        <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+          <path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812
+           0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918
+           2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032
+           1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero"/></svg>
+        <span class="f6 ml3 pr2"><h5 class="navDisappear" style="font-size:15px">Follow</h5></span>
+      </a>
+
+      <a class="footerSvgAnim grow link white-60 bg-transparent hover-dark-red inline-flex items-center ma2 tc br2 pa2" href="https://youtube.com/sbondoGaming" target="_blank" title="youtube" style="margin:center;">
+        <svg class="dib w2 h2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+          <path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16
+           6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0
+           9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24h-.002z"/></svg>
+        <span class="f6 ml3 pr2"><h5 class="navDisappear" style="font-size:15px">Subscribe</h5></span>
+      </a>
+
+      <a class="footerSvgAnim grow link white-60 bg-transparent hover-dark-blue inline-flex items-center ma2 tc br2 pa2" href="https://steamcommunity.com/profiles/76561198172055451/" target="_blank" title="Steam">
+        <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.5 24.5" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+          <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031
+            4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979
+            24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076
+            3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454
+            1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266
+            2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
+        <span class="f6 ml3 pr2"><h5 class="navDisappear" style="font-size:15px">VAC free</h5></span>
+      </a>
+
+    </div>
+  </center>
+</footer>
+
+  </body>
+</html>

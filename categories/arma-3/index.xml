@@ -13,10 +13,10 @@
     
     <item>
       <title>Fun Commands</title>
-      <link>https://log.sbond.ml/log/arma3/fun-commands/</link>
+      <link>https://log.sbond.ml/l/arma3/fun-commands/</link>
       <pubDate>Sat, 10 Nov 2018 09:01:44 +0100</pubDate>
       
-      <guid>https://log.sbond.ml/log/arma3/fun-commands/</guid>
+      <guid>https://log.sbond.ml/l/arma3/fun-commands/</guid>
       <description>How to use First, you will need to be the Admin/Host of the mission you are playing. To execute the commands you will need to click ESC and then type the commands into the Debug Console. You can click Local to execute the code locally ( Just For You ), Server will execute the code to the server and Global will execute the code globally ( to everyone ).</description>
     </item>
     

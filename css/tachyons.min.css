@@ -1,4 +1,26 @@
-html{line-height:1.15;-webkit-text-size-adjust:100%}
+html{line-height:1.15;-webkit-text-size-adjust:100%;}
+
+.pagination {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.pagination a {
+  color: black;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .25s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
 .opnav{
   position: fixed;
@@ -14,7 +36,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}
 
 @media only screen and (max-width: 480px){
   .opnav{
-    height: 60px;
+    height: 64px;
   }
 }
 
@@ -40,6 +62,14 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}
     border-top: 0.2em solid #fff;
 }
 
+.logo{
+  position: absolute;
+  background: white;
+  color: black;
+  top: 30px;
+  right: 47%;
+}
+
 .logo-hidden{
   display: none;
 }
@@ -60,6 +90,12 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}
   }
 }
 
+@media screen and (max-width: 600px){
+  .navDisappear{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 200px){
   .logo-hidden{
     display: none;
@@ -71,15 +107,13 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}
   margin: auto;
   position: relative;
   float:right;
-  border-right: 1px solid white;
-  border-left: 1px solid white;
   padding-left: 10px;
   padding-right: 10px;
   top: -7px;
   cursor: pointer;
 }
 
-input[type=text]{
+.homeSearch{
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -90,16 +124,18 @@ input[type=text]{
   background: none;
   outline: none;
   border: none;
-  height: 2.545455em;
-  font-family: arial,sans-serif;
-  font-size: small;
+  height: 1.6em;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-indent: 5px;
+  box-shadow: 2px 0px black;
 }
 
-input[type=text]:hover{
+.homeSearch:hover{
   box-shadow: 2px 2px black;
 }
 
-input[type=search]{
+.search{
   width: 100%;
   height: 3em;
   outline: none;
@@ -112,10 +148,8 @@ input[type=search]{
   font-weight:600;
   padding-left:2rem;
   padding-right:2rem;
-}
-
-.search{
-  border: none;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
   background: none;
   top: 0;
   left: 0;
@@ -127,7 +161,7 @@ input[type=search]{
 
 @keyframes searchAnim{
   from{ transform: translatey(-100px) }
-	to{ transform: translatey(0px) }
+	to{ transform: translatey(64px) }
 }
 
 .hamburger-drop{
@@ -146,26 +180,7 @@ input[type=search]{
 
 @keyframes hamburger-drop{
   from{ transform: translatey(-100px) }
-	to{ transform: translatey(64px) }
-}
-
-.hamburger-drop-search{
-  border: none;
-  background: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  padding-right: 50px;
-  animation-name: hamburger-drop-search;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes hamburger-drop-search{
-  from{ transform: translatey(-100px) }
-	to{ transform: translatey(14px) }
+	to{ transform: translatey(106px) }
 }
 
 .hidden{
@@ -200,6 +215,31 @@ html{
 }
 
 body{margin:0;}
+
+.cat{
+  background-color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  display: inline-block;
+  padding: .4em .5em;
+  margin: 2px 2px 2px 0;
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  transition: top ease 0.25s;
+  position: relative;
+  top: -1.5px;
+}
+
+.cat:hover{
+  box-shadow: 2px 2px black;
+  top: -2px;
+  right: 2px;
+  border-color: white;
+}
 
 h1{
   font-size:2em;

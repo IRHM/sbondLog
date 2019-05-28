@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-<link href="/css/tachyons.min.css" rel="stylesheet" type="text/css">
+<link href="https://log.sbond.ml/css/tachyons.min.css" rel="stylesheet" type="text/css">
 </head>
 <body class="sans-serif mv5-ns">
 	<center>
