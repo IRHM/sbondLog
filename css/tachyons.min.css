@@ -74,6 +74,42 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;}
   display: none;
 }
 
+.catList{
+  list-style: none;
+  list-style-position: inside;
+  border-left: 2px solid;
+  padding-left: 1em;
+  padding-bottom: 0.3em;
+}
+
+.catList:hover{
+  animation-name: catList;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes catList{
+  from{ transform: translateX(0) }
+  to{ transform: translateX(10px) }
+  0%   {
+    top: 0px;
+    left: 0px;
+    background: ;
+    width:100px;
+    white-space: nowrap;
+    text-overflow: hidden;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    background: #09de64;
+    width:100%;
+    border-radius:5px;
+    white-space: nowrap;
+    text-overflow: hidden;
+  }
+}
+
 @media screen and (max-width: 1000px){
   .opnav>.nav-hide{
     display: none;
@@ -87,6 +123,31 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;}
   }
   .logo-hidden{
     display: block;
+  }
+  .catList:hover{
+    animation-name: catList;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes catList{
+    from{ transform: translateX(0) }
+    to{ transform: translateX(10px) }
+    0%   {
+      top: 0px;
+      left: 0px;
+      background: ;
+      width:100px;
+      white-space: nowrap;
+      text-overflow: hidden;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      background: #09de64;
+      width:100%;
+      border-radius:5px;
+    }
   }
 }
 
