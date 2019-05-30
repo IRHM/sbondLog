@@ -2,13 +2,16 @@
 <html xmlns="https://www.w3.ord/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script src="https://log.sbond.ml/js/nav.js"></script>
+	<script src="https://log.sbond.ml/js/nav.js?v=3"></script>
 	<link
 	  rel="stylesheet"
-	  href="http://log.sbond.ml/css/tachyons.min.css?v=6.1"
+	  href="http://log.sbond.ml/css/tachyons.min.css?v=7.3"
 	/>
-	<link rel="stylesheet" href="http://log.sbond.ml/css/styles.css" />
+	<link rel="stylesheet" href="http://log.sbond.ml/css/styles.css?v=6.1" />
 	<title>Search</title>
+	<style>
+
+	</style>
 </head>
 <body class="w-90 w-60-ns center center-ns mv2 mv5-ns sans-serif">
 
@@ -49,36 +52,70 @@
 		autocomplete="off" value='<?php echo $_GET['q'] ?>' class="homeSearch center"/>
 	</form>
 	<br>
-	
+
 	<?php
-	
+
 		// turn off error reporting
 		error_reporting(0);
-		
+
 		$q = $_GET['q'];
 		$terms = explode(" ", $q);
 		$query = "SELECT * FROM search WHERE ";
-		
+
 		foreach ($terms as $each){
 			$i++;
-			
+
 			if ($i == 1)
 				$query .= "keywords LIKE '%$each%' ";
 			else
 				$query .= "OR keywords LIKE '%$each%' ";
 		}
-		
-		// connect 
+
+		// connect
 		$con = mysqli_connect("localhost", "search", "QPJo9I2lqXtVqY0o");
 		mysqli_select_db($con, "search");
-		
+
 		$query = mysqli_query($con, $query);
 		$numrows = mysqli_num_rows($query);
-		
+
 		if ($numrows > 0){
-			
-			echo "<center>" . $numrows . " Result(s) found for \"<b>$q</b>\"</center>";
-			
+
+			echo "<center>" . $numrows . " Result(s) found for \"<b>$q</b>\"
+			<t onclick='statsToggle(this)' style='float:right;cursor:pointer;'
+			class='noselect'>&swarr;stats</t></center>"; ?>
+
+		<div id="stat" class="hidden">
+			<?php
+				$con = mysqli_connect("localhost", "search", "QPJo9I2lqXtVqY0o");
+				mysqli_select_db($con, "search");
+
+				$numr="SELECT title FROM search ORDER BY id";
+			?>
+
+				<div class="stat2">
+					<?php
+					if ($result=mysqli_query($con,$numr))
+					  {
+					  $rowcount=mysqli_num_rows($result);
+					  printf("%d\n",$rowcount);
+					  // Free mem for result
+					  mysqli_free_result($result);
+					  }
+					 ?>
+					 <h2>Posts</h2>
+				</div>
+
+				<!-- Get Last Input In DB  -->
+				<div class="stat2">
+					<?php
+						$getlast = mysqli_query($con, "SELECT * FROM search ORDER BY id DESC LIMIT 1");
+						$printlast = mysqli_fetch_row($getlast);
+						echo "<a class='bb no-underline black' href=" . $printlast[6] . ">$printlast[2]</a> <h2>Latest</h2>";
+						mysqli_close($con)
+					?>
+				</div>
+		</div>
+<?php
 			while ($row = mysqli_fetch_assoc($query)){
 				$id = $row['id'];
 				$title = $row['title'];
@@ -87,29 +124,29 @@
 				$description = $row['description'];
 				$keywords = $row['keywords'];
 				$link = $row['link'];
-				
+
 				$cat_split = explode(" ", $categories);
 				$info = $description;
 				$info = preg_replace('/[^A-Za-z0-9\-]/', ' ', $info);
-				
-				echo "<hr><li class='list pl0 lh-copy' id='list'><a href='$link' 
+
+				echo "<hr><li class='list pl0 lh-copy' id='list'><a href='$link'
 				class='f3 b dib black no-underline'>$title</a><br>
 				<span class='f6 gray dib-ns'>" . date("d F, Y", strtotime($row['date']))
 				. "</span>&nbsp
 				<span style='font-size:11px;' class='cat no-underline white'>
 				<b>$cat_split[0]</b></span>
 				<span class='f6 db dib-ns'>$info</span>";
-				
+
 			}
-			
+
 		}
 		else{
 			echo "<center>No results found for \"<b>$q</b>\"</center>";
 		}
-		
+
 		// disconnect
 		mysqli_close($con)
-	
+
 	?>
-	
+
 </body>

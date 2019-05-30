@@ -74,6 +74,16 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;}
   display: none;
 }
 
+.saturate { filter: saturate(3); }
+.grayscale { filter: grayscale(100%); }
+.contrast { filter: contrast(160%); }
+.brightness { filter: brightness(0.25); }
+.blur { filter: blur(3px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+.rss.opacity { filter: opacity(50%); }
+
 .catList{
   list-style: none;
   list-style-position: inside;
@@ -84,29 +94,39 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;}
 
 .catList:hover{
   animation-name: catList;
-  animation-duration: 0.5s;
+  animation-duration: 0.8s;
   animation-fill-mode: forwards;
+  animation-delay: 0.1s;
 }
 
 @keyframes catList{
-  from{ transform: translateX(0) }
-  to{ transform: translateX(10px) }
-  0%   {
+  from{ transform: translateX(0); }
+  to{ transform: translateX(10px); }
+  0%{
     top: 0px;
     left: 0px;
-    background: ;
     width:100px;
+    background: url(https://media.giphy.com/media/MrhuYm6Ei6Wje/giphy.gif);
+    background-size: 500px;
     white-space: nowrap;
     text-overflow: hidden;
+    background-position: top;
   }
-  100% {
+  50%{
+    background-position: top;
+  }
+  100%{
+    transition-timing-function: ease-in;
     top: 0px;
     left: 0px;
-    background: #09de64;
+    background: url(https://media.giphy.com/media/MrhuYm6Ei6Wje/giphy.gif);
+    background-size: 100px;
+    background-position: center -15px;
     width:100%;
     border-radius:5px;
     white-space: nowrap;
     text-overflow: hidden;
+    filter: saturate(3);
   }
 }
 
@@ -300,6 +320,46 @@ body{margin:0;}
   top: -2px;
   right: 2px;
   border-color: white;
+}
+
+.stat{
+  float: left;
+  padding-right: 50px;
+  padding-top: 30px;
+  font-family: poppinslight, sans-serif;
+  text-decoration: none;
+}
+
+.stat2{
+  float: left;
+  padding-right: 50px;
+  padding-top: 30px;
+  font-family: poppinslight, sans-serif;
+  text-decoration: none;
+  animation-name: stats;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stats{
+  from{ transform: translateX(0) }
+  to{ transform: translateX(10px) }
+  0%   {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 h1{

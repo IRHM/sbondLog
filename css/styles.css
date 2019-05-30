@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@font-face {
+    font-family: 'poppinslight';
+    src: url('https://log.sbond.ml/fonts/poppins/poppins-light-webfont.woff2') format('woff2'),
+         url('https://log.sbond.ml/fonts/poppins/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('https://log.sbond.ml/fonts/poppins/poppins-medium-webfont.woff2') format('woff2'),
+         url('https://log.sbond.ml/fonts/poppins/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
   -webkit-font-smoothings: antialiased;
   -moz-osx-font-smoothing: grayscale;
