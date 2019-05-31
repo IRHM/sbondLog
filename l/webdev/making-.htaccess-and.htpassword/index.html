@@ -3,16 +3,30 @@
 <nav class="f6 fw6 ttu tracked bg-black-90 pv4-ns ph4-m ph5-l opnav"
   style="top: -10px;">
 
-  <a class="link dim white dib mr3 nav-hide" href="/index.html" title="Home">
-    Home</a>
-  
-  <a class="link dim white dib mr3 nav-hide" href="/l/">
-    /Log</a>
-  
-  <a class="link dim white dib mr3 nav-hide" href="/categories/">
-    /Categories</a>
-  
+  <a class="link dim blue dib mr3 nav-hide" href="/index.html" title="Home"
+    >Home</a>
+    
+    <a class="link dim white dib mr3 nav-hide" href="/l/">
+      /Log</a>
+    
+    <a class="link dim white dib mr3 nav-hide" href="/categories/">
+      /Categories</a>
+    
+  <a class="link dim white dib mr3 nav-hide nav-proj"
+  onclick="projToggle(this)">/Projects</a>
 
+  <div id="projTog" class="search fw6 tracked bg-black-80 hidden">
+    
+      <a class="link dim white dib mr3 nav-hide nav-proj-t" href="/r">
+        /Repos</a>
+    
+      <a class="link dim white dib mr3 nav-hide nav-proj-t" href="/g">
+        /Game</a>
+    
+      <a class="link dim white dib mr3 nav-hide nav-proj-t" href="/list">
+        /List</a>
+    
+  </div>
 
   <svg focusable="false" class="dim link white dib mr3 searchSVG" width="25px"
   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"
@@ -42,7 +56,20 @@
   <a class="link dim white" href="/categories/">
     /Categories</a><br />
   
-  <br />
+  
+    <a class="link dim white dib mr3 nav-hide nav-proj-t"
+      style="margin-left: 25px;" href="/r">
+      /Repos</a>
+  
+    <a class="link dim white dib mr3 nav-hide nav-proj-t"
+      style="margin-left: 25px;" href="/g">
+      /Game</a>
+  
+    <a class="link dim white dib mr3 nav-hide nav-proj-t"
+      style="margin-left: 25px;" href="/list">
+      /List</a>
+  
+  <br /><br />
 </div>
 
 </nav>
@@ -112,7 +139,7 @@ Way 1 In the first way, you can simply create a text document, open it up with a
 
 <link
   rel="stylesheet"
-  href="/css/tachyons.min.css?v=6.2"
+  href="/css/tachyons.min.css?v=6.9"
 />
 
 <link rel="shortcut icon" href="https://sbond.ml/images/hive.ico" type="image/x-icon" />

@@ -4,7 +4,6 @@
          url('https://log.sbond.ml/fonts/poppins/poppins-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'poppinsmedium';
@@ -12,8 +11,22 @@
          url('https://log.sbond.ml/fonts/poppins/poppins-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+@font-face {
+    font-family: 'corleone';
+    src: url('https://log.sbond.ml/fonts/corleone/corleone-webfont.woff2') format('woff2'),
+         url('https://log.sbond.ml/fonts/corleone/corleone-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'corleonedue';
+    src: url('https://log.sbond.ml/fonts/corleone/corleonedue-webfont.woff2') format('woff2'),
+         url('https://log.sbond.ml/fonts/corleone/corleonedue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   -webkit-font-smoothings: antialiased;
   -moz-osx-font-smoothing: grayscale;

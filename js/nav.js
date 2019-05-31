@@ -9,6 +9,6 @@ function hamburgerToggle(e) {
   document.getElementById("searchTog").classList.toggle('hidden');
 }
 
-function statsToggle(e) {
-  document.getElementById("stat").classList.toggle('hidden');
+function projToggle(e) {
+  document.getElementById("projTog").classList.toggle('hidden');
 }

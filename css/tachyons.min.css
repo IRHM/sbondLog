@@ -1,5 +1,18 @@
 html{line-height:1.15;-webkit-text-size-adjust:100%;}
 
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,.85);;
+  outline: 1px solid slategrey;
+}
+
 .pagination {
   display: -ms-flexbox;
   display: flex;
@@ -21,6 +34,15 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;}
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.nav-proj{
+  cursor: pointer;
+}
+
+.nav-proj-t{
+  padding-top: 13px;
+  padding-right: 20px;
+}
 
 .opnav{
   position: fixed;
@@ -106,7 +128,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;}
     top: 0px;
     left: 0px;
     width:100px;
-    background: url(https://media.giphy.com/media/MrhuYm6Ei6Wje/giphy.gif);
+    background: url(https://ul.sbond.ml/i/gif/artgo.webp);
     background-size: 500px;
     white-space: nowrap;
     text-overflow: hidden;
@@ -114,19 +136,21 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;}
   }
   50%{
     background-position: top;
+    background: url(https://ul.sbond.ml/i/gif/artgo.webp);
+    background-size: 100px;
+    background-position: center -15px;
   }
   100%{
     transition-timing-function: ease-in;
     top: 0px;
     left: 0px;
-    background: url(https://media.giphy.com/media/MrhuYm6Ei6Wje/giphy.gif);
+    background: url(https://ul.sbond.ml/i/gif/color.gif);
     background-size: 100px;
     background-position: center -15px;
     width:100%;
     border-radius:5px;
     white-space: nowrap;
     text-overflow: hidden;
-    filter: saturate(3);
   }
 }
 
