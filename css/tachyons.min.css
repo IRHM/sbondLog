@@ -149,7 +149,6 @@ body::-webkit-scrollbar-thumb {
     background-position: center -15px;
     width:100%;
     border-radius:5px;
-    white-space: nowrap;
     text-overflow: hidden;
   }
 }
