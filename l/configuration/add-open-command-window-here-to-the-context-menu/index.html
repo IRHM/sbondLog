@@ -114,6 +114,7 @@
   href="/css/tachyons.min.css?v=6.9"
 />
 
+<script src="https://log.sbond.ml/js/fontawesome.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="shortcut icon" href="https://sbond.ml/images/hive.ico" type="image/x-icon" />
@@ -148,10 +149,10 @@
 
 <p>When you Shift + Right Click on a folder you get to see more options. Normally without any configuration, you only see the Open PowerShell Window Here. If you follow the steps below you will learn how to add the Open Command Window Here option to the context menu.</p>
 
-<h3 id="how">How?</h3>
+<h3 id="adding-to-context-menu">Adding To Context Menu:</h3>
 
 <ol>
-<li>Open Run by searching it on the start menu or pressing <strong>⊞ Win Key + R.</strong></li>
+<li>Open Run by searching it on the start menu or pressing <strong><div class="fa fa-windows"></div> Win Key + R.</strong></li>
 <li>Type <strong>&lsquo;regedit&rsquo;</strong> in the run menu and hit enter.</li>
 <li>Using the view on the left side, locate the following directory: HKEY_CLASSES_ROOT\Directory\shell\cmd</li>
 <li>Right-click the <strong>cmd</strong> folder and click Permissions.</li>
@@ -165,6 +166,14 @@
 <li>Under <strong>&ldquo;Permissions for Administrators&rdquo;</strong> select Allow for the Full Control option.</li>
 <li>Click Apply, then Ok.</li>
 <li>Inside the <strong>cmd</strong> folder, right-click the <strong>&lsquo;HideBasedOnVelocityId&rsquo;</strong> DWORD and rename it to <strong>&lsquo;ShowBasedOnVelocityId&rsquo;</strong>.</li>
+</ol>
+
+<h3 id="opening-cmd-from-dir-tree">Opening CMD From Dir Tree:</h3>
+
+<ol>
+<li>Click on the Navigation Bar and replace all of the text with <strong>cmd</strong>.
+<center><img src="https://ul.sbond.ml/i/log/win/WEBreadcrumb.png" title="Nav Bar" /></center></li>
+<li>Click enter.</li>
 </ol>
 
     </article>
