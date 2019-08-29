@@ -68,23 +68,23 @@
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 
-<meta name="description" content="Scale on Hover CSS" />
+<meta name="description" content="@Keyframes" />
 
 <meta name="keywords" content="">
 
 
 <meta property="og:type" content="article" />
-<meta property="og:description" content="Scale on Hover CSS" />
-<meta property="og:title" content="Scale on Hover CSS" />
+<meta property="og:description" content="@Keyframes" />
+<meta property="og:title" content="Keyframe Animations" />
 <meta property="og:site_name" content="sbondLog" />
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="https://log.sbond.ml/l/css/scale-on-hover/" />
+<meta property="og:url" content="https://log.sbond.ml/l/css/keyframe-animations/" />
 <meta property="og:locale" content="en-us" />
-<meta property="article:published_time" content="2019-04-27
-" /> <meta property="article:modified_time" content="2019-04-27
+<meta property="article:published_time" content="2019-08-27
+" /> <meta property="article:modified_time" content="2019-08-27
 " />
 
 
@@ -95,19 +95,19 @@
 <meta name="twitter:creator" content="@sbondoGaming" />
 <meta
   name="twitter:title"
-  content="Scale on Hover CSS | sbondLog"
+  content="Keyframe Animations | sbondLog"
 />
 <meta
   name="twitter:description"
-  content="Scale on Hover CSS|"
+  content="@Keyframes|"
 />
 <meta name="twitter:image:src" content="" />
-<meta name="twitter:domain" content="https://log.sbond.ml/l/css/scale-on-hover/" />
+<meta name="twitter:domain" content="https://log.sbond.ml/l/css/keyframe-animations/" />
 
 
 
-    <title>Scale on Hover CSS -- sbondLog</title>
-    <link rel="canonical" href="https://log.sbond.ml/l/css/scale-on-hover/" />
+    <title>Keyframe Animations -- sbondLog</title>
+    <link rel="canonical" href="https://log.sbond.ml/l/css/keyframe-animations/" />
 
 
     <link rel="stylesheet" href="https://log.sbond.ml//css/styles.css?v=5.2" />
@@ -127,7 +127,7 @@
   
 
   <section id="main" class="mt5">
-    <h1 itemprop="name" id="title">Scale on Hover CSS</h1>
+    <h1 itemprop="name" id="title">Keyframe Animations</h1>
 
     <h4 itemprop="name" id="title" style="font-size:13px;">
       By
@@ -135,29 +135,278 @@
       class="b bb bw1 pb1 no-underline black">
           sbondo1234
       </a>
-      on 27 April, 2019
+      on 27 August, 2019
     </h4>
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       
 
-<h3 id="what-do-i-mean">What do I mean?</h3>
-
-<p>What I mean by &lsquo;Scale On Hover&rsquo; is that when you hover over an element on your page it will scale up. I like to use this when you have something that is clickable and you want to add some &lsquo;smoothness&rsquo; to it. It makes the whole page flow nicer if you use it correctly and you don&rsquo;t go over the top with it.</p>
-
-<h3 id="how">How?</h3>
-
-<p>This is with CSS so go to your styles sheet and do the following:</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">img{
-  transition: all .2s ease-in-out;
+<style>
+.fakeHeader{
+  padding-top: 50px;
+  visibility: collapse;
 }
 
-img:hover{
-  transform: scale(1.1);
-}</code></pre></div>
+.linkHeading{
+    display: inline-block;
+    margin-top: 0;
+}
 
-<p>I use the <strong>img</strong> tag because I want every image on my page to scale up when it is hovered on. If you only want certain things to scale when hovered on you can use their class instead.</p>
+.link:hover{
+  fill: blue;
+}
+</style>
+
+<span id="intro" class="fakeHeader">1</span><br>
+<a href="#intro" class="no-underline black link">
+  <h2 id="" class="linkHeading">Intro</h2>
+  <svg class="linkHeadingSVG" height="22px"
+    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+    </path>
+  </svg>
+</a>
+
+
+<p>Keyframes in CSS are very diverse, you can use them for many things&hellip; just get creative!</p>
+
+<style>
+.fakeHeader{
+  padding-top: 50px;
+  visibility: collapse;
+}
+
+.linkHeading{
+    display: inline-block;
+    margin-top: 0;
+}
+
+.link:hover{
+  fill: blue;
+}
+</style>
+
+<span id="the-basics" class="fakeHeader">1</span><br>
+<a href="#the-basics" class="no-underline black link">
+  <h2 id="" class="linkHeading">The Basics</h2>
+  <svg class="linkHeadingSVG" height="22px"
+    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+    </path>
+  </svg>
+</a>
+
+
+<p>This is going to be the truly barebones version of what you can do with
+keyframes, but this is just an example which you should build on, on your own.</p>
+
+<p>First you can &lsquo;include&rsquo; the animations name in the class of your choosing as such:</p>
+
+<pre>
+.randomClass{
+  animation-name: exampleAnim;
+  animation-duration: 5s;
+}
+</pre>
+
+<p><strong>Note:</strong> Some browsers may need you to use <strong>-webkit-</strong> before <strong>animation</strong>,
+ like: <strong>-webkit-animation-name: sumAnim</strong></p>
+
+<p>Secondly, we will be setting up the actual <strong>keyframe</strong> part:</p>
+
+<pre>
+@keyframes exampleAnim{
+  from  {color: red;}
+  to  {color: blue;}
+}
+</pre>
+
+<p>The best part is, you can use any CSS property inside of keyframes,
+so you can in theory, animate everything.</p>
+
+<style>
+.fakeHeader{
+  padding-top: 50px;
+  visibility: collapse;
+}
+
+.linkHeading{
+    display: inline-block;
+    margin-top: 0;
+}
+
+.link:hover{
+  fill: blue;
+}
+</style>
+
+<span id="animate-in-increments" class="fakeHeader">1</span><br>
+<a href="#animate-in-increments" class="no-underline black link">
+  <h2 id="" class="linkHeading">Animate In Increments</h2>
+  <svg class="linkHeadingSVG" height="22px"
+    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+    </path>
+  </svg>
+</a>
+
+
+<p>You can combine this method with the one shown above, if you really wanted to.
+<pre>
+@keyframes exampleAnim{
+  0%    {color: red;}
+  25%   {color: red;}
+  50%   {color: red;}
+  75%   {color: red;}
+  100%  {color: red;}
+}
+</pre></p>
+
+<style>
+.fakeHeader{
+  padding-top: 50px;
+  visibility: collapse;
+}
+
+.linkHeading{
+    display: inline-block;
+    margin-top: 0;
+}
+
+.link:hover{
+  fill: blue;
+}
+</style>
+
+<span id="misc-" class="fakeHeader">1</span><br>
+<a href="#misc-" class="no-underline black link">
+  <h2 id="" class="linkHeading">Misc.</h2>
+  <svg class="linkHeadingSVG" height="22px"
+    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+    </path>
+  </svg>
+</a>
+
+
+<h3 id="efficiency">Efficiency</h3>
+
+<p>Sometimes it may be easier for you if you just call animations like this:</p>
+
+<pre>
+animation: repeatit 2s linear 0s infinite alternate;
+</pre>
+
+<p>This is the much easier to write, but arguably harder to read version of
+typing out each property one by one.</p>
+
+<h3 id="animation-properties">Animation Properties:</h3>
+
+<p>You can search up the following, if you want to expand your knowledge.</p>
+
+<pre>
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+</pre>
+
+<style>
+.fakeHeader{
+  padding-top: 50px;
+  visibility: collapse;
+}
+
+.linkHeading{
+    display: inline-block;
+    margin-top: 0;
+}
+
+.link:hover{
+  fill: blue;
+}
+</style>
+
+<span id="real-example" class="fakeHeader">1</span><br>
+<a href="#real-example" class="no-underline black link">
+  <h2 id="" class="linkHeading">Real Example</h2>
+  <svg class="linkHeadingSVG" height="22px"
+    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+    </path>
+  </svg>
+</a>
+
+
+<style>
+.helloDiv{
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 6px;
+  animation: helloDivAnim 15s forwards infinite;
+}
+
+@keyframes helloDivAnim{
+  0%    {left: 0; background-color: red;}
+  50%   {left: 95%; background-color: lightblue;}
+  100%  {left: 0; background-color: red;}
+}
+</style>
+
+<div class="helloDiv">hello</div>
+
+<h3 id="code">Code:</h3>
+
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;div class=&#34;helloDiv&#34;&gt;hello&lt;/div&gt;
+
+&lt;style&gt;
+  .helloDiv{
+    font-size: 18px;
+    text-align: center;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 6px;
+
+    position: relative; // &lt;-- important
+    animation: helloDivAnim 15s infinite;
+  }
+
+  @keyframes helloDivAnim{
+    0%    {left: 0; background-color: red;}
+    50%   {left: 100%; background-color: lightblue;}
+    100%  {left: 0; background-color: red;}
+  }
+&lt;/style&gt;</code></pre></div>
+
+<p><strong>Note:</strong> If you don&rsquo;t set a property for your animation, then it will just
+be set to it&rsquo;s default. So if you need to make a change, make sure you have
+done so.</p>
 
     </article>
   </section>

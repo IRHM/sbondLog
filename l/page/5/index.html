@@ -1,11 +1,67 @@
+<script src="/js/nav.js?v=1"></script>
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="https://ul.sbond.ml/i/hive.ico" />
+</head>
+<center>
+<nav class="f6 fw6 ttu tracked bg-black-90 pv4-ns ph4-m ph5-l opnav"
+  style="top: -10px;">
+
+  <a class="link dim blue dib mr3 nav-hide" href="/index.html" title="Home"
+    >Home</a>
+    
+    <a class="link dim white dib mr3 nav-hide" href="/l/">
+      /Log</a>
+    
+    <a class="link dim white dib mr3 nav-hide" href="/categories/">
+      /Categories</a>
+    
+
+  <svg focusable="false" class="dim link white dib mr3 searchSVG" width="25px"
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"
+  style="" onclick="searchToggle(this)"
+  preserveAspectRatio="xMinYMin meet" >
+   <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1
+    0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49
+    19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01
+    14 9.5 11.99 14 9.5 14z"></path></svg>
+
+  <form action="/s/search.php" method="get">
+  <input type="text" name="q" placeholder="Search sbondLog..." id="searchTog"
+  autocomplete="off" class="search fw6 tracked bg-black-80 hidden">
+  </form>
+
+<div>
+  <i class="hamburger grow" onclick="hamburgerToggle(this)"></i>
+  <a href="/index.html" class="link dim logo logo-hidden"
+  >sbondLog</a>
+</div>
+
+<div id="hamburger-drop" class="fw6 tracked bg-black-80 hamburger-drop hidden">
+  <br />
+  <a class="link dim white" href="/l/">
+    /Log</a><br />
+  <br />
+  <a class="link dim white" href="/categories/">
+    /Categories</a><br />
+  
+  
+  <br /><br />
+</div>
+
+</nav>
+</center>
+<br />
+
 <!DOCTYPE html>
-<html class="" lang="en-us"
-  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
 
   <head>
-	<meta name="generator" content="Hugo 0.56.3" />
-    <title>sbondLog</title>
     <meta charset="utf-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="description" content="" />
 <meta name="HandheldFriendly" content="True" />
@@ -18,13 +74,13 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content="" />
-<meta property="og:title" content="sbondLog" />
+<meta property="og:title" content="Ls" />
 <meta property="og:site_name" content="sbondLog" />
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="https://log.sbond.ml/" />
+<meta property="og:url" content="https://log.sbond.ml/l/" />
 <meta property="og:locale" content="en-us" />
 <meta property="article:published_time" content="2019-08-27
 " /> <meta property="article:modified_time" content="2019-08-27
@@ -38,15 +94,27 @@
 <meta name="twitter:creator" content="@sbondoGaming" />
 <meta
   name="twitter:title"
-  content="sbondLog | sbondLog"
+  content="Ls | sbondLog"
 />
 <meta
   name="twitter:description"
   content="|"
 />
 <meta name="twitter:image:src" content="" />
-<meta name="twitter:domain" content="https://log.sbond.ml/" />
+<meta name="twitter:domain" content="https://log.sbond.ml/l/" />
 
+
+
+    <title>Ls -- sbondLog</title>
+    <link rel="canonical" href="https://log.sbond.ml/l/" />
+
+
+    <link
+      href="/l/index.xml"
+      rel="alternate"
+      type="application/rss+xml"
+      title="Ls"
+    />
 
     <link rel="stylesheet" href="https://log.sbond.ml//css/styles.css?v=5.2" />
 
@@ -56,41 +124,157 @@
 
   </head>
 
-  <body
-    lang="en-us"
-    class="w-90 w-60-ns center center-ns mv2 mv5-ns"
-  >
+<body
+  lang="en-us"
+  class="sans-serif w-80 w-60-ns center center-ns mv2 mv5-ns">
+<section id="main" class="mt5">
 
-  <a class="link black b f1 f-headline-ns tc db mb3 mb4-ns"
-  href="https://log.sbond.ml/" title="Home" style="margin-bottom:0;">
-  sbondLog</a>
+    <div>
+      <ul id="list" class="pl0"> <hr />
+        
+        
+        <li class="list pl0 lh-copy">
+          <a class="f3 b dib black no-underline" href="https://log.sbond.ml/l/arma3-mission-editing/execvm/">
+            execVM</a>
+            <br />
+          <span class="f6 gray dib-ns">
+            12 October, 2018
+          </span>
+          <span style="font-size:13px;color:white;" class="">
+            &nbsp;
+            
+            	
+            			<a href="https://log.sbond.ml/categories/arma3-mission-editing"
+                  rel="tag" class="cat no-underline white">ArmA3 Mission Editing</a>
+            	
+            
+          </span>
+          <br />
+          <span class="f6 db dib-ns">
+             What Is execVM? execVM is an essential command for ArmA 3 scripting. It allows you to call a script at any point.
+Example execVM is really easy to use and is used like such:
+execVM &amp;#34;nameOfScript.filetype&amp;#34;; 
+          </span>
+        </li>
+        <hr />
+        
+        
+      </ul>
+    </div>
+  </section>
 
-  <div class="tc pb3">
-    <section id="main">
-      <div>
-        <ul class="list pl0 sans-serif">
-          
-            <a class="b pa1 black link dim gray f6 f5-ns dib mr3"
-            href="l/" style="font-size:1rem">Log</a>
-          
-            <a class="b pa1 black link dim gray f6 f5-ns dib mr3"
-            href="categories/" style="font-size:1rem">Categories</a>
-          
-          
-        </ul>
-      </div>
-    </section>
+  
+
+
+
+
+
+
+  <div class="pagination">
+
+    
+
+      <a href="/l/" class="sans-serif center center-ns">
+        &laquo;&laquo;
+      </a>
+    
+
+    
+      <a href="/l/page/4/" class="sans-serif center center-ns">
+        &laquo;
+      </a>
+    
+
+    
+
+      
+
+      
+
+        
+
+      
+
+      
+          <a href="/l/" class="sans-serif center center-ns">
+            1
+          </a>
+      
+
+    
+
+      
+
+      
+
+        
+
+      
+
+      
+          <a href="/l/page/2/" class="sans-serif center center-ns">
+            2
+          </a>
+      
+
+    
+
+      
+
+      
+
+        
+
+      
+
+      
+          <a href="/l/page/3/" class="sans-serif center center-ns">
+            3
+          </a>
+      
+
+    
+
+      
+
+      
+
+        
+
+      
+
+      
+          <a href="/l/page/4/" class="sans-serif center center-ns">
+            4
+          </a>
+      
+
+    
+
+      
+
+      
+
+        
+
+      
+
+      
+          <a href="/l/page/5/" class="sans-serif center center-ns">
+            5
+          </a>
+      
+
+    
+
+    
+
+    
+
   </div>
 
-  <center>
-    <div>
-      <form action="/s/search.php" method="get">
-      <input type="text" name="q" placeholder="Search sbondLog..."
-      autocomplete="off" class="homeSearch">
-      </form>
-    </div>
-  </center>
-    <br /><br /><br />
+
+  <br /><br /><br />
 
 <footer style="background-image:url(https://ul.sbond.ml/i/ash-footer.gif);" class="tc-l bg-center cover sans-serif">
   <center>
@@ -128,5 +312,4 @@
   </center>
 </footer>
 
-  </body>
-</html>
+</body>

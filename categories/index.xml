@@ -6,10 +6,28 @@
     <description>Recent content in Categories on sbondLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jul 2019 01:09:49 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 11:54:23 +0100</lastBuildDate>
     
 	<atom:link href="https://log.sbond.ml/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS</title>
+      <link>https://log.sbond.ml/categories/css/</link>
+      <pubDate>Tue, 27 Aug 2019 11:54:23 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/categories/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebDev</title>
+      <link>https://log.sbond.ml/categories/webdev/</link>
+      <pubDate>Tue, 27 Aug 2019 11:54:23 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/categories/webdev/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CSharp</title>
@@ -26,15 +44,6 @@
       <pubDate>Thu, 18 Jul 2019 00:52:52 +0100</pubDate>
       
       <guid>https://log.sbond.ml/categories/apache/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WebDev</title>
-      <link>https://log.sbond.ml/categories/webdev/</link>
-      <pubDate>Thu, 18 Jul 2019 00:52:52 +0100</pubDate>
-      
-      <guid>https://log.sbond.ml/categories/webdev/</guid>
       <description></description>
     </item>
     
@@ -89,15 +98,6 @@
       <pubDate>Sat, 27 Apr 2019 09:43:26 +0100</pubDate>
       
       <guid>https://log.sbond.ml/categories/configuration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CSS</title>
-      <link>https://log.sbond.ml/categories/css/</link>
-      <pubDate>Sat, 27 Apr 2019 09:27:05 +0100</pubDate>
-      
-      <guid>https://log.sbond.ml/categories/css/</guid>
       <description></description>
     </item>
     
