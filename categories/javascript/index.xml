@@ -17,7 +17,7 @@
       <pubDate>Sat, 27 Apr 2019 09:58:24 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/javascript/on-click-refresh-javascript/</guid>
-      <description>What? If you have been looking to refresh the page with Javascript, you are lucky. I have three different methods of achieving this, with the last two being pretty similar. I am going to make an image on my page (You can use anything such as text or a button) and then add the onclick function to it, so when it is clicked it refreshes the page.</description>
+      <description>What?If you have been looking to refresh the page with Javascript, you are lucky. I have three different methods of achieving this, with the last two being pretty similar. I am going to make an image on my page (You can use anything such as text or a button) and then add the onclick function to it, so when it is clicked it refreshes the page.</description>
     </item>
     
   </channel>

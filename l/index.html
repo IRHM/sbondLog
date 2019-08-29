@@ -154,9 +154,8 @@
           </span>
           <br />
           <span class="f6 db dib-ns">
-            .fakeHeader{padding-top: 50px;visibility: collapse;}.linkHeading{display: inline-block;margin-top: 0;}.link:hover{fill: blue;}1
-IntroKeyframes in CSS are very diverse, you can use them for many things&amp;amp;hellip; just get creative!
-.fakeHeader{padding-top: 50px;visibility: collapse;}.linkHeading{display: inline-block;margin-top: 0;}.link:hover{fill: blue;}1
+            IntroKeyframes in CSS are very diverse, you can use them for many things&hellip; just get creative!
+The BasicsThis is going to be the truly barebones version of what you can do with keyframes, but this is just an example which you should build on, on your own.
           </span>
         </li>
         <hr />
@@ -181,8 +180,8 @@ IntroKeyframes in CSS are very diverse, you can use them for many things&am
           </span>
           <br />
           <span class="f6 db dib-ns">
-            Step 1 - Create Settings Right-click on your project and head down to Properties and then on the left-click on the settings button.
-Enter the Name, type, scope &amp;amp;amp; value of each setting you want to add.
+            Step 1 - Create SettingsRight-click on your project and head down to Properties and then on the left-click on the settings button.
+Enter the Name, type, scope &amp; value of each setting you want to add.
 Note: The Application Scope is not editable during runtime and will always stay the default value you set right now.
           </span>
         </li>
@@ -211,10 +210,10 @@ Note: The Application Scope is not editable during runtime and will always stay 
           </span>
           <br />
           <span class="f6 db dib-ns">
-            Step 1 - Create Subdomain If you don&amp;amp;rsquo;t have a subdomain on your apache server, you can follow this tutorial first and then come back.
-Step 2 - Change Document Root In &amp;amp;lsquo;httpd-vhosts.conf&amp;amp;rsquo; change the &amp;amp;lsquo;Document Root&amp;amp;rsquo; for the correct subdomain.
+            Step 1 - Create SubdomainIf you don&rsquo;t have a subdomain on your apache server, you can follow this tutorial first and then come back.
+Change Document RootIn &lsquo;httpd-vhosts.conf&rsquo; change the &lsquo;Document Root&rsquo; for the correct subdomain.
 Mine, after editing, looks like this:
-&amp;amp;lt;VirtualHost *:80&amp;amp;gt; ServerName cd.sbond.ml DocumentRoot &amp;amp;#34;C:\Path\To\Custom\Dir&amp;amp;#34; &amp;amp;lt;Directory /&amp;amp;gt; Options FollowSymLinks AllowOverride All &amp;amp;lt;/Directory&amp;amp;gt; &amp;amp;lt;/VirtualHost&amp;amp;gt;&amp;amp;lt;/pre&amp;amp;gt; Step 3 - Allow access to dir &amp;amp;amp; make alias Go to your &amp;amp;lsquo;httpd.
+&lt;VirtualHost *:80&gt; ServerName cd.
           </span>
         </li>
         <hr />
@@ -239,9 +238,9 @@ Mine, after editing, looks like this:
           </span>
           <br />
           <span class="f6 db dib-ns">
-            Step 1 - Add The Control In the toolbox search for &amp;amp;ldquo;ToolTip&amp;amp;rdquo; and plop it onto your form. It isn&amp;amp;rsquo;t something you put directly on your form, but instead it will just sit at the bottom in a little box.
-You can click on it and edit it&amp;amp;rsquo;s properties.
-Step 2 - Add Info Click on the control you want to display info about, and find &amp;amp;ldquo;ToolTip on &amp;amp;lt; ToolTip Name &amp;amp;gt;&amp;amp;ldquo;.
+            Step 1 - Add The ControlIn the toolbox search for &ldquo;ToolTip&rdquo; and plop it onto your form. It isn&rsquo;t something you put directly on your form, but instead it will just sit at the bottom in a little box.
+You can click on it and edit it&rsquo;s properties.
+Step 2 - Add InfoClick on the control you want to display info about, and find &ldquo;ToolTip on &lt; ToolTip Name &gt;&ldquo;.
           </span>
         </li>
         <hr />
@@ -266,7 +265,7 @@ Step 2 - Add Info Click on the control you want to display info about, and find 
           </span>
           <br />
           <span class="f6 db dib-ns">
-            Step 1 - The Importing  using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport(&amp;#34;Gdi32.dll&amp;#34;, EntryPoint = &amp;#34;CreateRoundRectRgn&amp;#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - Rounding I would put this in the initialisation of your form.
+            Step 1 - The Importing using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - RoundingI would put this in the initialisation of your form.
           </span>
         </li>
         <hr />
@@ -291,7 +290,7 @@ Step 2 - Add Info Click on the control you want to display info about, and find 
           </span>
           <br />
           <span class="f6 db dib-ns">
-            The Code SELECT * FROM info WHERE Name LIKE &amp;amp;lsquo;Keyword&amp;amp;rsquo;; This way, you would get a &amp;amp;lsquo;sort of search&amp;amp;rsquo;, because you would have to type the name of the item 100% correctly, otherwise no results would show up. I guess this is sort of a &amp;amp;lsquo;strict&amp;amp;rsquo; search, if something is slightly wrong, nothing would be returned.
+            The CodeSELECT * FROM info WHERE Name LIKE &lsquo;Keyword&rsquo;; This way, you would get a &lsquo;sort of search&rsquo;, because you would have to type the name of the item 100% correctly, otherwise no results would show up. I guess this is sort of a &lsquo;strict&rsquo; search, if something is slightly wrong, nothing would be returned.
           </span>
         </li>
         <hr />
@@ -316,9 +315,9 @@ Step 2 - Add Info Click on the control you want to display info about, and find 
           </span>
           <br />
           <span class="f6 db dib-ns">
-            Step 1 - Adding Event Go into the events of either the whole form or on a control/panel and add the MouseDown event. 
-Step 2 - Variables &amp;amp;amp; Importing Namespace Import the namespace: using System.Runtime.InteropServices;
-Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2; [DllImportAttribute(&amp;amp;ldquo;user32.dll&amp;amp;rdquo;)] public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam); [DllImportAttribute(&amp;amp;ldquo;user32.
+            Step 1 - Adding EventGo into the events of either the whole form or on a control/panel and add the MouseDown event. 
+Step 2 - Variables &amp; Importing NamespaceImport the namespace: using System.Runtime.InteropServices;
+Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2; [DllImportAttribute(&ldquo;user32.
           </span>
         </li>
         <hr />
@@ -343,8 +342,8 @@ Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int
           </span>
           <br />
           <span class="f6 db dib-ns">
-            Step 1 - Find Characters Find and open Character Map in windows. In windows 10 you can just search &amp;amp;lsquo;character&amp;amp;rsquo; in the start menu and you should find it.
-Change the font to &amp;amp;lsquo;Marlett&amp;amp;rsquo; and you should see all the charcters that are commonly used in applications.
+            Step 1- Find CharactersFind and open Character Map in windows. In windows 10 you can just search &lsquo;character&rsquo; in the start menu and you should find it.
+Change the font to &lsquo;Marlett&rsquo; and you should see all the charcters that are commonly used in applications.
 
 From here you can just double click on the characters you want to use and then click the Copy button next to the textbox.
           </span>
@@ -371,9 +370,8 @@ From here you can just double click on the characters you want to use and then c
           </span>
           <br />
           <span class="f6 db dib-ns">
-            Step 1 - Creating it Of course the first step if to Create your combo box and assign it an appropriate Name.
-Step 2 - Adding items I put all of the things I wanted into a string array for easy accessibility and readability. My code is set out like this:
- Categories = new string[9]; Categories[0] = &amp;#34;
+            Step 1 - Creating ItOf course the first step if to Create your combo box and assign it an appropriate Name.
+Step 2 - Adding ItemsI put all of the things I wanted into a string array for easy accessibility and readability. My code is set out like this:
           </span>
         </li>
         <hr />
@@ -381,8 +379,8 @@ Step 2 - Adding items I put all of the things I wanted into a string array for e
         
         
         <li class="list pl0 lh-copy">
-          <a class="f3 b dib black no-underline" href="https://log.sbond.ml/l/csharp/make-a-timer/">
-            Make a Timer C#</a>
+          <a class="f3 b dib black no-underline" href="https://log.sbond.ml/l/csharp/make-a-stopwatch/">
+            Make a Stopwatch C#</a>
             <br />
           <span class="f6 gray dib-ns">
             8 June, 2019
@@ -398,11 +396,10 @@ Step 2 - Adding items I put all of the things I wanted into a string array for e
           </span>
           <br />
           <span class="f6 db dib-ns">
-            Step 1 Import System.Diagnostics:  using System.Diagnostics; 
-Step 2 Initialise the timer &amp;amp;amp; start it:  Stopwatch timer = new Stopwatch(); timer.Start(); 
-Step 3 Stop the timer:  timer.Stop(); 
-Step 4 Display stopwatch results:  Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() &#43; &amp;amp;ldquo;s&amp;amp;rdquo;);  You can use a multiple amount of different timings such as:
- Milliseconds Minutes Hours Days  You can put &amp;amp;lsquo;Total&amp;amp;rsquo; before the unit of timing to give the exact amount of time taken:
+            Step 1Import System.Diagnostics:  using System.Diagnostics; 
+Step 2Initialise the timer &amp; start it:  Stopwatch timer = new Stopwatch(); timer.Start(); 
+Step 3Stop the timer:  timer.Stop(); 
+Step 4Display stopwatch results:  Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() + &ldquo;s&rdquo;);  You can use a multiple amount of different timings such as:
           </span>
         </li>
         <hr />

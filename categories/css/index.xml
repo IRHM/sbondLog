@@ -17,9 +17,8 @@
       <pubDate>Tue, 27 Aug 2019 11:54:23 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/css/keyframe-animations/</guid>
-      <description>.fakeHeader{padding-top: 50px;visibility: collapse;}.linkHeading{display: inline-block;margin-top: 0;}.link:hover{fill: blue;}1
-IntroKeyframes in CSS are very diverse, you can use them for many things&amp;hellip; just get creative!
-.fakeHeader{padding-top: 50px;visibility: collapse;}.linkHeading{display: inline-block;margin-top: 0;}.link:hover{fill: blue;}1</description>
+      <description>IntroKeyframes in CSS are very diverse, you can use them for many things&amp;hellip; just get creative!
+The BasicsThis is going to be the truly barebones version of what you can do with keyframes, but this is just an example which you should build on, on your own.</description>
     </item>
     
     <item>
@@ -28,7 +27,7 @@ IntroKeyframes in CSS are very diverse, you can use them for many things&am
       <pubDate>Sat, 27 Apr 2019 09:27:05 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/css/scale-on-hover/</guid>
-      <description>What do I mean? What I mean by &amp;lsquo;Scale On Hover&amp;rsquo; is that when you hover over an element on your page it will scale up. I like to use this when you have something that is clickable and you want to add some &amp;lsquo;smoothness&amp;rsquo; to it. It makes the whole page flow nicer if you use it correctly and you don&amp;rsquo;t go over the top with it.</description>
+      <description>What Do You Mean?What I mean by &amp;lsquo;Scale On Hover&amp;rsquo; is that when you hover over an element on your page it will scale up. I like to use this when you have something that is clickable and you want to add some &amp;lsquo;smoothness&amp;rsquo; to it. It makes the whole page flow nicer if you use it correctly and you don&amp;rsquo;t go over the top with it.</description>
     </item>
     
     <item>
@@ -37,7 +36,7 @@ IntroKeyframes in CSS are very diverse, you can use them for many things&am
       <pubDate>Sat, 27 Apr 2019 09:24:05 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/css/hide-scrollbar/</guid>
-      <description>What? If you have some elements on your page that are causing a scrollbar to appear, but you would prefer them not to you can use some easy code in CSS to stop it from happening.
+      <description>What?If you have some elements on your page that are causing a scrollbar to appear, but you would prefer them not to you can use some easy code in CSS to stop it from happening.
 You can use this trick on the specific tag or you can disable the scrollbar fully by putting it in the body tag.</description>
     </item>
     

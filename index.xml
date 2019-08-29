@@ -17,9 +17,8 @@
       <pubDate>Tue, 27 Aug 2019 11:54:23 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/css/keyframe-animations/</guid>
-      <description>.fakeHeader{padding-top: 50px;visibility: collapse;}.linkHeading{display: inline-block;margin-top: 0;}.link:hover{fill: blue;}1
-IntroKeyframes in CSS are very diverse, you can use them for many things&amp;hellip; just get creative!
-.fakeHeader{padding-top: 50px;visibility: collapse;}.linkHeading{display: inline-block;margin-top: 0;}.link:hover{fill: blue;}1</description>
+      <description>IntroKeyframes in CSS are very diverse, you can use them for many things&amp;hellip; just get creative!
+The BasicsThis is going to be the truly barebones version of what you can do with keyframes, but this is just an example which you should build on, on your own.</description>
     </item>
     
     <item>
@@ -28,7 +27,7 @@ IntroKeyframes in CSS are very diverse, you can use them for many things&am
       <pubDate>Thu, 18 Jul 2019 01:09:49 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/make-user-settings/</guid>
-      <description>Step 1 - Create Settings Right-click on your project and head down to Properties and then on the left-click on the settings button.
+      <description>Step 1 - Create SettingsRight-click on your project and head down to Properties and then on the left-click on the settings button.
 Enter the Name, type, scope &amp;amp; value of each setting you want to add.
 Note: The Application Scope is not editable during runtime and will always stay the default value you set right now.</description>
     </item>
@@ -39,10 +38,10 @@ Note: The Application Scope is not editable during runtime and will always stay 
       <pubDate>Thu, 18 Jul 2019 00:52:52 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/change-subdomains-documentroot/</guid>
-      <description>Step 1 - Create Subdomain If you don&amp;rsquo;t have a subdomain on your apache server, you can follow this tutorial first and then come back.
-Step 2 - Change Document Root In &amp;lsquo;httpd-vhosts.conf&amp;rsquo; change the &amp;lsquo;Document Root&amp;rsquo; for the correct subdomain.
+      <description>Step 1 - Create SubdomainIf you don&amp;rsquo;t have a subdomain on your apache server, you can follow this tutorial first and then come back.
+Change Document RootIn &amp;lsquo;httpd-vhosts.conf&amp;rsquo; change the &amp;lsquo;Document Root&amp;rsquo; for the correct subdomain.
 Mine, after editing, looks like this:
-&amp;lt;VirtualHost *:80&amp;gt; ServerName cd.sbond.ml DocumentRoot &amp;#34;C:\Path\To\Custom\Dir&amp;#34; &amp;lt;Directory /&amp;gt; Options FollowSymLinks AllowOverride All &amp;lt;/Directory&amp;gt; &amp;lt;/VirtualHost&amp;gt;&amp;lt;/pre&amp;gt; Step 3 - Allow access to dir &amp;amp; make alias Go to your &amp;lsquo;httpd.</description>
+&amp;lt;VirtualHost *:80&amp;gt; ServerName cd.</description>
     </item>
     
     <item>
@@ -51,9 +50,9 @@ Mine, after editing, looks like this:
       <pubDate>Sat, 29 Jun 2019 12:26:11 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/using-tooltip/</guid>
-      <description>Step 1 - Add The Control In the toolbox search for &amp;ldquo;ToolTip&amp;rdquo; and plop it onto your form. It isn&amp;rsquo;t something you put directly on your form, but instead it will just sit at the bottom in a little box.
+      <description>Step 1 - Add The ControlIn the toolbox search for &amp;ldquo;ToolTip&amp;rdquo; and plop it onto your form. It isn&amp;rsquo;t something you put directly on your form, but instead it will just sit at the bottom in a little box.
 You can click on it and edit it&amp;rsquo;s properties.
-Step 2 - Add Info Click on the control you want to display info about, and find &amp;ldquo;ToolTip on &amp;lt; ToolTip Name &amp;gt;&amp;ldquo;.</description>
+Step 2 - Add InfoClick on the control you want to display info about, and find &amp;ldquo;ToolTip on &amp;lt; ToolTip Name &amp;gt;&amp;ldquo;.</description>
     </item>
     
     <item>
@@ -62,7 +61,7 @@ Step 2 - Add Info Click on the control you want to display info about, and find 
       <pubDate>Sat, 29 Jun 2019 10:44:11 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/rounded-form/</guid>
-      <description>Step 1 - The Importing  using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - Rounding I would put this in the initialisation of your form.</description>
+      <description>Step 1 - The Importing using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - RoundingI would put this in the initialisation of your form.</description>
     </item>
     
     <item>
@@ -71,7 +70,7 @@ Step 2 - Add Info Click on the control you want to display info about, and find 
       <pubDate>Sat, 29 Jun 2019 08:51:06 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/mysql/search-table/</guid>
-      <description>The Code SELECT * FROM info WHERE Name LIKE &amp;lsquo;Keyword&amp;rsquo;; This way, you would get a &amp;lsquo;sort of search&amp;rsquo;, because you would have to type the name of the item 100% correctly, otherwise no results would show up. I guess this is sort of a &amp;lsquo;strict&amp;rsquo; search, if something is slightly wrong, nothing would be returned.</description>
+      <description>The CodeSELECT * FROM info WHERE Name LIKE &amp;lsquo;Keyword&amp;rsquo;; This way, you would get a &amp;lsquo;sort of search&amp;rsquo;, because you would have to type the name of the item 100% correctly, otherwise no results would show up. I guess this is sort of a &amp;lsquo;strict&amp;rsquo; search, if something is slightly wrong, nothing would be returned.</description>
     </item>
     
     <item>
@@ -80,9 +79,9 @@ Step 2 - Add Info Click on the control you want to display info about, and find 
       <pubDate>Thu, 27 Jun 2019 02:17:12 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/draggable-borderless-form/</guid>
-      <description>Step 1 - Adding Event Go into the events of either the whole form or on a control/panel and add the MouseDown event. 
-Step 2 - Variables &amp;amp; Importing Namespace Import the namespace: using System.Runtime.InteropServices;
-Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2; [DllImportAttribute(&amp;ldquo;user32.dll&amp;rdquo;)] public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam); [DllImportAttribute(&amp;ldquo;user32.</description>
+      <description>Step 1 - Adding EventGo into the events of either the whole form or on a control/panel and add the MouseDown event. 
+Step 2 - Variables &amp;amp; Importing NamespaceImport the namespace: using System.Runtime.InteropServices;
+Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2; [DllImportAttribute(&amp;ldquo;user32.</description>
     </item>
     
     <item>
@@ -91,7 +90,7 @@ Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int
       <pubDate>Thu, 27 Jun 2019 00:58:27 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/using-windows-characters-on-custom-border/</guid>
-      <description>Step 1 - Find Characters Find and open Character Map in windows. In windows 10 you can just search &amp;lsquo;character&amp;rsquo; in the start menu and you should find it.
+      <description>Step 1- Find CharactersFind and open Character Map in windows. In windows 10 you can just search &amp;lsquo;character&amp;rsquo; in the start menu and you should find it.
 Change the font to &amp;lsquo;Marlett&amp;rsquo; and you should see all the charcters that are commonly used in applications.
 
 From here you can just double click on the characters you want to use and then click the Copy button next to the textbox.</description>
@@ -103,22 +102,20 @@ From here you can just double click on the characters you want to use and then c
       <pubDate>Fri, 21 Jun 2019 02:10:34 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/populating-comboboxes/</guid>
-      <description>Step 1 - Creating it Of course the first step if to Create your combo box and assign it an appropriate Name.
-Step 2 - Adding items I put all of the things I wanted into a string array for easy accessibility and readability. My code is set out like this:
- Categories = new string[9]; Categories[0] = &#34;</description>
+      <description>Step 1 - Creating ItOf course the first step if to Create your combo box and assign it an appropriate Name.
+Step 2 - Adding ItemsI put all of the things I wanted into a string array for easy accessibility and readability. My code is set out like this:</description>
     </item>
     
     <item>
-      <title>Make a Timer C#</title>
-      <link>https://log.sbond.ml/l/csharp/make-a-timer/</link>
+      <title>Make a Stopwatch C#</title>
+      <link>https://log.sbond.ml/l/csharp/make-a-stopwatch/</link>
       <pubDate>Sat, 08 Jun 2019 10:02:18 +0100</pubDate>
       
-      <guid>https://log.sbond.ml/l/csharp/make-a-timer/</guid>
-      <description>Step 1 Import System.Diagnostics:  using System.Diagnostics; 
-Step 2 Initialise the timer &amp;amp; start it:  Stopwatch timer = new Stopwatch(); timer.Start(); 
-Step 3 Stop the timer:  timer.Stop(); 
-Step 4 Display stopwatch results:  Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() + &amp;ldquo;s&amp;rdquo;);  You can use a multiple amount of different timings such as:
- Milliseconds Minutes Hours Days  You can put &amp;lsquo;Total&amp;rsquo; before the unit of timing to give the exact amount of time taken:</description>
+      <guid>https://log.sbond.ml/l/csharp/make-a-stopwatch/</guid>
+      <description>Step 1Import System.Diagnostics:  using System.Diagnostics; 
+Step 2Initialise the timer &amp;amp; start it:  Stopwatch timer = new Stopwatch(); timer.Start(); 
+Step 3Stop the timer:  timer.Stop(); 
+Step 4Display stopwatch results:  Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() + &amp;ldquo;s&amp;rdquo;);  You can use a multiple amount of different timings such as:</description>
     </item>
     
     <item>
@@ -127,8 +124,8 @@ Step 4 Display stopwatch results:  Console.WriteLine(overallTimer.Elapsed.Second
       <pubDate>Sat, 08 Jun 2019 09:34:38 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/write-to-text-file/</guid>
-      <description>How? There are two methods for this. The first method will keep adding on the new data to the bottom of the text file, whilst the second method will overwrite all previous things in the text file whenever new data is written.
-Method 1 (Don&amp;rsquo;t Overwrite Any Data)  TextWriter saveData = new StreamWriter(@&#34;C:\Path\To\TextFile.txt&#34;, true); saveData.</description>
+      <description>HowThere are two methods for this. The first method will keep adding on the new data to the bottom of the text file, whilst the second method will overwrite all previous things in the text file whenever new data is written.
+Method 1 (Don&amp;#39;t overwrite Any Data) TextWriter saveData = new StreamWriter(@&#34;</description>
     </item>
     
     <item>
@@ -137,8 +134,8 @@ Method 1 (Don&amp;rsquo;t Overwrite Any Data)  TextWriter saveData = new StreamW
       <pubDate>Wed, 15 May 2019 01:57:36 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/updating-css-on-browser/</guid>
-      <description>What? If you are having problems getting your browser to update CSS on your web page then this post will definitely help you. There are mainly two different methods I will be showing you.
-Method 1: Clearing Cache &amp;amp; Hard Reload If you press F12, you now be able to right click on the refresh button and click the last option which is Empty Cache &amp;amp; Hard Reload.</description>
+      <description>What?If you are having problems getting your browser to update CSS on your web page then this post will definitely help you. There are mainly two different methods I will be showing you.
+Method 1 - Clearing CacheIf you press F12, you now be able to right click on the refresh button and click the last option which is Empty Cache &amp;amp; Hard Reload.</description>
     </item>
     
     <item>
@@ -147,7 +144,7 @@ Method 1: Clearing Cache &amp;amp; Hard Reload If you press F12, you now be able
       <pubDate>Fri, 10 May 2019 23:14:03 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/make-subdomains-on-apache/</guid>
-      <description>What Are You Talking About? When I say &amp;lsquo;subdomain&amp;rsquo; I am talking about the part that comes before the actual domain.
+      <description>What?When I say &amp;lsquo;subdomain&amp;rsquo; I am talking about the part that comes before the actual domain.
 So the subdomain in this URL log.sbond.ml is the part that says log.
 You can use subdomains to redirect to a different server which can show different content, but in this post, you will learn how to make a subdomain redirect to a directory in your site.</description>
     </item>
@@ -158,7 +155,7 @@ You can use subdomains to redirect to a different server which can show differen
       <pubDate>Sat, 27 Apr 2019 10:34:17 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/remove-indexing/</guid>
-      <description>What? If you go to your site and put a folder in the address bar instead of a file you will be greeted with folder indexing, which allows people to look at whatever is in that folder/directory. When allowed anyone can type in a &amp;lsquo;normal&amp;rsquo; folder into the address bar on your site and then be greeted with an easy way of seeing every folder and every file on your site.</description>
+      <description>What?If you go to your site and put a folder in the address bar instead of a file you will be greeted with folder indexing, which allows people to look at whatever is in that folder/directory. When allowed anyone can type in a &amp;lsquo;normal&amp;rsquo; folder into the address bar on your site and then be greeted with an easy way of seeing every folder and every file on your site.</description>
     </item>
     
     <item>
@@ -167,8 +164,8 @@ You can use subdomains to redirect to a different server which can show differen
       <pubDate>Sat, 27 Apr 2019 10:27:51 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/password-protect-one-file-on-site/</guid>
-      <description>What? Instead of protecting the whole directory on your site there is a way to protect individual files in that directory.
-How? Before you start: Finish this tutorial here and then come back to complete this one
+      <description>What?Instead of protecting the whole directory on your site there is a way to protect individual files in that directory.
+How?Before you start: Finish this tutorial here and then come back to complete this one
 Ok, once you have finished the other tutorial you can simply add the following code around the code you already have inside of your .</description>
     </item>
     
@@ -178,7 +175,7 @@ Ok, once you have finished the other tutorial you can simply add the following c
       <pubDate>Sat, 27 Apr 2019 10:19:57 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/password-protect-directory-on-site/</guid>
-      <description>What Will You Be Using? To properly protect your directories/files on your public web server you will want to use back-end password protection. Front-end protecting with using things like JavaScript will not be very protecting of your files because, someone who goes on your page could simply click F12 and change your code, so they can type in a password they want it to be.</description>
+      <description>What Will You Be Using?To properly protect your directories/files on your public web server you will want to use back-end password protection. Front-end protecting with using things like JavaScript will not be very protecting of your files because, someone who goes on your page could simply click F12 and change your code, so they can type in a password they want it to be.</description>
     </item>
     
     <item>
@@ -187,9 +184,9 @@ Ok, once you have finished the other tutorial you can simply add the following c
       <pubDate>Sat, 27 Apr 2019 10:15:10 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/making-subdomains-which-redirect-to-directory-htaccess/</guid>
-      <description>What? A subdomain looks something like this: wiki.sbond.ml
+      <description>What?A subdomain looks something like this: wiki.sbond.ml
 You will recognise one because it will have text before the actual domain, something like the www. you see before most sites. Luckily we have the .htaccess file because this all becomes a lot easier once you get into it.
-How? 1.Make sure you have made your .</description>
+How?1.</description>
     </item>
     
     <item>
@@ -198,9 +195,8 @@ How? 1.Make sure you have made your .</description>
       <pubDate>Sat, 27 Apr 2019 10:11:57 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/making-.htaccess-and.htpassword/</guid>
-      <description>How? One thing to note is that .htaccess files do not have a file type. So always make sure when you are making this file that there should never be a file extension beside it.
-There are multiple ways of making this file and I&amp;rsquo;m going to be showing you two of them.
-Way 1 In the first way, you can simply create a text document, open it up with any text editor then go to file &amp;gt;&amp;gt; Save as.</description>
+      <description>How?One thing to note is that .htaccess files do not have a file type. So always make sure when you are making this file that there should never be a file extension beside it.
+There are multiple ways of making this file and I&amp;rsquo;m going to be showing you two of them.</description>
     </item>
     
     <item>
@@ -209,7 +205,7 @@ Way 1 In the first way, you can simply create a text document, open it up with a
       <pubDate>Sat, 27 Apr 2019 10:08:21 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/finding-directory-of-file-using-php/</guid>
-      <description>What? If you are using a hosting provider that doesn&amp;rsquo;t tell you exactly where the directory of your files are you are going to have to use other methods of finding this out. One of the methods which I think is the simplest is using a small PHP script which will tell you exactly where you file is.</description>
+      <description>What?If you are using a hosting provider that doesn&amp;rsquo;t tell you exactly where the directory of your files are you are going to have to use other methods of finding this out. One of the methods which I think is the simplest is using a small PHP script which will tell you exactly where you file is.</description>
     </item>
     
     <item>
@@ -218,7 +214,7 @@ Way 1 In the first way, you can simply create a text document, open it up with a
       <pubDate>Sat, 27 Apr 2019 10:03:37 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/python/simple-calculator/</guid>
-      <description>What? This simple calculator program will allow the user to enter two ( or more if you wish ) numbers and then choose a method to use (+, -, /, *). We will use if statements.
+      <description>What?This simple calculator program will allow the user to enter two ( or more if you wish ) numbers and then choose a method to use (+, -, /, *). We will use if statements.
 How? Well, first we need to add 3 ( or more ) variables. The first two will be holding the user&amp;rsquo;s numbers and the third will be the method they want to use ( Both variables will be asking for the user&amp;rsquo;s input as well ).</description>
     </item>
     
@@ -228,7 +224,7 @@ How? Well, first we need to add 3 ( or more ) variables. The first two will be h
       <pubDate>Sat, 27 Apr 2019 09:58:24 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/javascript/on-click-refresh-javascript/</guid>
-      <description>What? If you have been looking to refresh the page with Javascript, you are lucky. I have three different methods of achieving this, with the last two being pretty similar. I am going to make an image on my page (You can use anything such as text or a button) and then add the onclick function to it, so when it is clicked it refreshes the page.</description>
+      <description>What?If you have been looking to refresh the page with Javascript, you are lucky. I have three different methods of achieving this, with the last two being pretty similar. I am going to make an image on my page (You can use anything such as text or a button) and then add the onclick function to it, so when it is clicked it refreshes the page.</description>
     </item>
     
     <item>
@@ -237,7 +233,7 @@ How? Well, first we need to add 3 ( or more ) variables. The first two will be h
       <pubDate>Sat, 27 Apr 2019 09:55:52 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/interesting/rockyou.txt/</guid>
-      <description> What&amp;rsquo;s this? Rockyou.txt is a text document filled with over 14 million cracked passwords. It is filled with easily crackable passwords.
+      <description> What&amp;#39;s This?Rockyou.txt is a text document filled with over 14 million cracked passwords. It is filled with easily crackable passwords.
 Repo </description>
     </item>
     
@@ -247,9 +243,9 @@ Repo </description>
       <pubDate>Sat, 27 Apr 2019 09:48:05 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/hugo/host-hugo-site/</guid>
-      <description>What? Hugo is a static site generator which can be used to make fast, accessible and overall fast web pages.
+      <description>What?Hugo is a static site generator which can be used to make fast, accessible and overall fast web pages.
 This page will show you how to get your Hugo site up and running either on a web server of yours or on Github pages.
-How? First Steps 1. Fully delete the public folder inside of your Hugo site.</description>
+How?First Steps</description>
     </item>
     
     <item>
@@ -258,8 +254,7 @@ How? First Steps 1. Fully delete the public folder inside of your Hugo site.</de
       <pubDate>Sat, 27 Apr 2019 09:43:26 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/configuration/not-seeing-shared-devices-anymore-win10/</guid>
-      <description>What? As you may know, Homegroup was removed from Windows 10 and the new Network tab replaced it. It is essentially the same thing, you can share files between different PCs across your network. I use this tool a lot when sharing files between PCs and it is very useful, whilst working.
-If you have suddenly had your network tab stop showing certain PCs on your network consider this fix</description>
+      <description>What?As you may know, Homegroup was removed from Windows 10 and the new Network tab replaced it. It is essentially the same thing, you can share files between different PCs across your network. I use this tool a lot when sharing files between PCs and it is very useful, whilst working.</description>
     </item>
     
     <item>
@@ -268,7 +263,7 @@ If you have suddenly had your network tab stop showing certain PCs on your netwo
       <pubDate>Sat, 27 Apr 2019 09:41:02 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/configuration/remove-empty-lines-notepad&#43;&#43;/</guid>
-      <description>What? If you have thousands or maybe just hundreds of empty lines in a text document you have, you may want to know how to remove all of the empty lines without having to manually do it.
+      <description>What?If you have thousands or maybe just hundreds of empty lines in a text document you have, you may want to know how to remove all of the empty lines without having to manually do it.
 To be clear I have used this in Notepad++, I am not sure if it would work anywhere else.</description>
     </item>
     
@@ -278,7 +273,7 @@ To be clear I have used this in Notepad++, I am not sure if it would work anywhe
       <pubDate>Sat, 27 Apr 2019 09:38:03 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/configuration/in-built-screenshot-tool-windows/</guid>
-      <description>What? Everyone knows about the old Snipping Tool that may have been used to screenshot certain things, to share or put in documents. There is now an easier to access tool which allows you to take screenshots quickly and then have them in your clipboard to paste somewhere.
+      <description>What?Everyone knows about the old Snipping Tool that may have been used to screenshot certain things, to share or put in documents. There is now an easier to access tool which allows you to take screenshots quickly and then have them in your clipboard to paste somewhere.
 It is honestly kind of a shame they didn&amp;rsquo;t add more features to the new screenshotting tool.</description>
     </item>
     
@@ -288,8 +283,8 @@ It is honestly kind of a shame they didn&amp;rsquo;t add more features to the ne
       <pubDate>Sat, 27 Apr 2019 09:30:25 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/configuration/add-open-command-window-here-to-the-context-menu/</guid>
-      <description>What? When you Shift + Right Click on a folder you get to see more options. Normally without any configuration, you only see the Open PowerShell Window Here. If you follow the steps below you will learn how to add the Open Command Window Here option to the context menu.
-Adding To Context Menu:  Open Run by searching it on the start menu or pressing  Win Key + R.</description>
+      <description>What?When you Shift + Right Click on a folder you get to see more options. Normally without any configuration, you only see the Open PowerShell Window Here. If you follow the steps below you will learn how to add the Open Command Window Here option to the context menu.
+Adding To Context Menu Open Run by searching it on the start menu or pressing  Win Key + R.</description>
     </item>
     
     <item>
@@ -298,7 +293,7 @@ Adding To Context Menu:  Open Run by searching it on the start menu or pressing 
       <pubDate>Sat, 27 Apr 2019 09:27:05 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/css/scale-on-hover/</guid>
-      <description>What do I mean? What I mean by &amp;lsquo;Scale On Hover&amp;rsquo; is that when you hover over an element on your page it will scale up. I like to use this when you have something that is clickable and you want to add some &amp;lsquo;smoothness&amp;rsquo; to it. It makes the whole page flow nicer if you use it correctly and you don&amp;rsquo;t go over the top with it.</description>
+      <description>What Do You Mean?What I mean by &amp;lsquo;Scale On Hover&amp;rsquo; is that when you hover over an element on your page it will scale up. I like to use this when you have something that is clickable and you want to add some &amp;lsquo;smoothness&amp;rsquo; to it. It makes the whole page flow nicer if you use it correctly and you don&amp;rsquo;t go over the top with it.</description>
     </item>
     
     <item>
@@ -307,7 +302,7 @@ Adding To Context Menu:  Open Run by searching it on the start menu or pressing 
       <pubDate>Sat, 27 Apr 2019 09:24:05 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/css/hide-scrollbar/</guid>
-      <description>What? If you have some elements on your page that are causing a scrollbar to appear, but you would prefer them not to you can use some easy code in CSS to stop it from happening.
+      <description>What?If you have some elements on your page that are causing a scrollbar to appear, but you would prefer them not to you can use some easy code in CSS to stop it from happening.
 You can use this trick on the specific tag or you can disable the scrollbar fully by putting it in the body tag.</description>
     </item>
     
@@ -317,7 +312,7 @@ You can use this trick on the specific tag or you can disable the scrollbar full
       <pubDate>Sat, 10 Nov 2018 09:01:44 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3/fun-commands/</guid>
-      <description>How to use First, you will need to be the Admin/Host of the mission you are playing. To execute the commands you will need to click ESC and then type the commands into the Debug Console. You can click Local to execute the code locally ( Just For You ), Server will execute the code to the server and Global will execute the code globally ( to everyone ).</description>
+      <description>How To UseFirst, you will need to be the Admin/Host of the mission you are playing. To execute the commands you will need to click ESC and then type the commands into the Debug Console. You can click Local to execute the code locally ( Just For You ), Server will execute the code to the server and Global will execute the code globally ( to everyone ).</description>
     </item>
     
     <item>
@@ -326,7 +321,7 @@ You can use this trick on the specific tag or you can disable the scrollbar full
       <pubDate>Sat, 10 Nov 2018 08:55:21 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/teleporting/</guid>
-      <description>Teleporting to markers To teleport players to markers we will be making use of both setPos &amp;amp; getMarkerPos.
+      <description>Teleporting To MarkersTo teleport players to markers we will be making use of both setPos &amp;amp; getMarkerPos.
 First, we will have to place a marker down in the spot we want the players to be teleported to. You can do this in the ArmA 3DEN Editor, by going to Markers (F6), Icons and then selecting the marker you want to place down.</description>
     </item>
     
@@ -336,8 +331,8 @@ First, we will have to place a marker down in the spot we want the players to be
       <pubDate>Tue, 06 Nov 2018 08:53:32 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/simple-while-loops/</guid>
-      <description>While Loops?? If you ever want to create a loop for whatever reason you can do it easily with while loops.
-How do I use them? If you wanted to create a hint every 15 seconds you could very easily execute this script once and have it do the rest of the work for you.</description>
+      <description>While Loops?If you ever want to create a loop for whatever reason you can do it easily with while loops.
+How Do I Use Them?If you wanted to create a hint every 15 seconds you could very easily execute this script once and have it do the rest of the work for you.</description>
     </item>
     
     <item>
@@ -346,7 +341,7 @@ How do I use them? If you wanted to create a hint every 15 seconds you could ver
       <pubDate>Mon, 05 Nov 2018 08:30:50 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/show-dialog-whilst-letting-players-move/</guid>
-      <description>What are you talking about? There is a way to show dialogs differently so that the player can retain his control over moving his character. The player can move around, but there will still be a mouse pointer on the screen allowing them to select what they need to. This can be useful in many ways in many different situations you may have.</description>
+      <description>What?There is a way to show dialogs differently so that the player can retain his control over moving his character. The player can move around, but there will still be a mouse pointer on the screen allowing them to select what they need to. This can be useful in many ways in many different situations you may have.</description>
     </item>
     
     <item>
@@ -355,9 +350,8 @@ How do I use them? If you wanted to create a hint every 15 seconds you could ver
       <pubDate>Mon, 22 Oct 2018 08:24:44 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/removing-or-adding-items/</guid>
-      <description>Adding Items You can use the commands below to start adding Items to players. Of course, you can change &amp;lsquo;player&amp;rsquo; to whatever you want as long as you define it first.
-Inside of the Speech Marks, you will put classnames for the items you want to be added to the player.
- player addHeadgear &#34;</description>
+      <description>Adding ItemsYou can use the commands below to start adding Items to players. Of course, you can change &amp;lsquo;player&amp;rsquo; to whatever you want as long as you define it first.
+Inside of the Speech Marks, you will put classnames for the items you want to be added to the player.</description>
     </item>
     
     <item>
@@ -366,7 +360,7 @@ Inside of the Speech Marks, you will put classnames for the items you want to be
       <pubDate>Wed, 17 Oct 2018 07:47:54 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/placing-trees-in-eden-editor/</guid>
-      <description>How would I do this? To add a tree you first have to place down a game logic wherever you please and copy the code below into it: _tree = createSimpleObject [&amp;ldquo;TREE NAME&amp;rdquo;, [X,Y,Z]];
+      <description>How Would I Do This?To add a tree you first have to place down a game logic wherever you please and copy the code below into it: _tree = createSimpleObject [&amp;ldquo;TREE NAME&amp;rdquo;, [X,Y,Z]];
 Once you have the code in there you are going to have to edit some things before your tree will be placed:</description>
     </item>
     
@@ -376,8 +370,8 @@ Once you have the code in there you are going to have to edit some things before
       <pubDate>Mon, 15 Oct 2018 07:44:19 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/multi-line-text-in-dialogs/</guid>
-      <description>What mate? If you are creating a dialog and need to have a long line of text and it doesn&amp;rsquo;t fit in your dialog frame, you are going to be happy to know that there is a style you can use to make your text go into multiple lines.
-How? In your dialog just add the following lines of code:</description>
+      <description>What?If you are creating a dialog and need to have a long line of text and it doesn&amp;rsquo;t fit in your dialog frame, you are going to be happy to know that there is a style you can use to make your text go into multiple lines.
+How?In your dialog just add the following lines of code:</description>
     </item>
     
     <item>
@@ -386,8 +380,7 @@ How? In your dialog just add the following lines of code:</description>
       <pubDate>Mon, 15 Oct 2018 05:37:26 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/arma-dialog-creator/</guid>
-      <description>What Is This? ArmA Dialog Creator is an amazing tool created by Kayler Renslow. It is the easy way of creating functional dialogs in ArmA 3. You can simply download it from his Github and install it. Once you have done that you are ready to start creating dialogs the easy way!
-How To Start Once you have opened the .</description>
+      <description>What Is This?ArmA Dialog Creator is an amazing tool created by Kayler Renslow. It is the easy way of creating functional dialogs in ArmA 3. You can simply download it from his Github and install it. Once you have done that you are ready to start creating dialogs the easy way!</description>
     </item>
     
     <item>
@@ -396,7 +389,7 @@ How To Start Once you have opened the .</description>
       <pubDate>Sun, 14 Oct 2018 07:29:31 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/hints/</guid>
-      <description>What is this? Hints are something you can use very easily to alert players of something or tell them what they have to do next or what they have done. It basically gives the players or whoever you let see the hint a little box with text inside of it.
+      <description>What Is This?Hints are something you can use very easily to alert players of something or tell them what they have to do next or what they have done. It basically gives the players or whoever you let see the hint a little box with text inside of it.
 They are very useful in a lot of cases and are super easy to use!</description>
     </item>
     
@@ -406,7 +399,7 @@ They are very useful in a lot of cases and are super easy to use!</description>
       <pubDate>Sat, 13 Oct 2018 07:24:40 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/execvm-loops/</guid>
-      <description>Why do it like this? You can use execVM to loop one script over an over again, but you can&amp;rsquo;t stop it once it has started. It is great when you have a script you want to run every x seconds for the whole mission. It is also really simple so it is more appealing over other ways of creating a loop because it requires almost no effort.</description>
+      <description>Why Do It Like This?You can use execVM to loop one script over an over again, but you can&amp;rsquo;t stop it once it has started. It is great when you have a script you want to run every x seconds for the whole mission. It is also really simple so it is more appealing over other ways of creating a loop because it requires almost no effort.</description>
     </item>
     
     <item>
@@ -415,7 +408,7 @@ They are very useful in a lot of cases and are super easy to use!</description>
       <pubDate>Sat, 13 Oct 2018 05:02:44 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/advanced-holstering/</guid>
-      <description>What Is This? Believe it or not there is a very easy way to allow your character to put their primary weapon on their back and or pistol in their holster. This will work great in scenes you want to have a great cinematic effect. This will work wherever you put it and is a great line of code to have.</description>
+      <description>What Is This?Believe it or not there is a very easy way to allow your character to put their primary weapon on their back and or pistol in their holster. This will work great in scenes you want to have a great cinematic effect. This will work wherever you put it and is a great line of code to have.</description>
     </item>
     
     <item>
@@ -424,8 +417,8 @@ They are very useful in a lot of cases and are super easy to use!</description>
       <pubDate>Fri, 12 Oct 2018 03:52:05 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/execvm/</guid>
-      <description> What Is execVM? execVM is an essential command for ArmA 3 scripting. It allows you to call a script at any point.
-Example execVM is really easy to use and is used like such:
+      <description>What Is execVM?execVM is an essential command for ArmA 3 scripting. It allows you to call a script at any point.
+ExampleexecVM is really easy to use and is used like such:
 execVM &#34;nameOfScript.filetype&#34;; </description>
     </item>
     

@@ -96,7 +96,7 @@
   </url>
   
   <url>
-    <loc>https://log.sbond.ml/l/csharp/make-a-timer/</loc>
+    <loc>https://log.sbond.ml/l/csharp/make-a-stopwatch/</loc>
     <lastmod>2019-06-08T10:02:18+01:00</lastmod>
   </url>
   
@@ -143,6 +143,12 @@
   <url>
     <loc>https://log.sbond.ml/l/webdev/finding-directory-of-file-using-php/</loc>
     <lastmod>2019-04-27T10:08:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/php/</loc>
+    <lastmod>2019-04-27T10:08:21+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

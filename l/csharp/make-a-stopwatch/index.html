@@ -74,16 +74,16 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content="" />
-<meta property="og:title" content="How To Make Subdomains on Apache/Xampp" />
+<meta property="og:title" content="Make a Stopwatch C#" />
 <meta property="og:site_name" content="sbondLog" />
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="https://log.sbond.ml/l/webdev/make-subdomains-on-apache/" />
+<meta property="og:url" content="https://log.sbond.ml/l/csharp/make-a-stopwatch/" />
 <meta property="og:locale" content="en-us" />
-<meta property="article:published_time" content="2019-05-10
-" /> <meta property="article:modified_time" content="2019-05-10
+<meta property="article:published_time" content="2019-06-08
+" /> <meta property="article:modified_time" content="2019-06-08
 " />
 
 
@@ -94,21 +94,22 @@
 <meta name="twitter:creator" content="@sbondoGaming" />
 <meta
   name="twitter:title"
-  content="How To Make Subdomains on Apache/Xampp | sbondLog"
+  content="Make a Stopwatch C# | sbondLog"
 />
 <meta
   name="twitter:description"
-  content="What?When I say &lsquo;subdomain&rsquo; I am talking about the part that comes before the actual domain.
-So the subdomain in this URL log.sbond.ml is the part that says log.
-You can use subdomains to redirect to a different server which can show different content, but in this post, you will learn how to make a subdomain redirect to a directory in your site.|"
+  content="Step 1Import System.Diagnostics:  using System.Diagnostics; 
+Step 2Initialise the timer &amp; start it:  Stopwatch timer = new Stopwatch(); timer.Start(); 
+Step 3Stop the timer:  timer.Stop(); 
+Step 4Display stopwatch results:  Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() &#43; &ldquo;s&rdquo;);  You can use a multiple amount of different timings such as:|"
 />
 <meta name="twitter:image:src" content="" />
-<meta name="twitter:domain" content="https://log.sbond.ml/l/webdev/make-subdomains-on-apache/" />
+<meta name="twitter:domain" content="https://log.sbond.ml/l/csharp/make-a-stopwatch/" />
 
 
 
-    <title>How To Make Subdomains on Apache/Xampp -- sbondLog</title>
-    <link rel="canonical" href="https://log.sbond.ml/l/webdev/make-subdomains-on-apache/" />
+    <title>Make a Stopwatch C# -- sbondLog</title>
+    <link rel="canonical" href="https://log.sbond.ml/l/csharp/make-a-stopwatch/" />
 
 
     <link rel="stylesheet" href="https://log.sbond.ml//css/styles.css?v=5.2" />
@@ -128,7 +129,7 @@ You can use subdomains to redirect to a different server which can show differen
   
 
   <section id="main" class="mt5">
-    <h1 itemprop="name" id="title">How To Make Subdomains on Apache/Xampp</h1>
+    <h1 itemprop="name" id="title">Make a Stopwatch C#</h1>
 
     <h4 itemprop="name" id="title" style="font-size:13px;">
       By
@@ -136,12 +137,12 @@ You can use subdomains to redirect to a different server which can show differen
       class="b bb bw1 pb1 no-underline black">
           sbondo1234
       </a>
-      on 10 May, 2019
+      on 8 June, 2019
     </h4>
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
-      <a href="#what-"  id="what-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="linkHeading">What?</h2>
+      <a href="#step-1"  id="step-1" class="no-underline black link" style="padding-top: 80px;">
+  <h2 id="" class="linkHeading">Step 1</h2>
   <svg class="linkHeadingSVG" height="22px"
     viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"></path>
@@ -154,48 +155,13 @@ You can use subdomains to redirect to a different server which can show differen
 </a>
 
 
-<p>When I say &lsquo;subdomain&rsquo; I am talking about the part that comes before the actual domain.</p>
+<p>Import <strong><em>System.Diagnostics:</em></strong>
+<pre>
+using System.Diagnostics;
+</pre></p>
 
-<p>So the subdomain in this URL <strong><em>log.sbond.ml</em></strong> is the part that says <strong><em>log</em></strong>.</p>
-
-<p>You can use subdomains to redirect to a different server which can show different content, but in this post, you will learn how to make a subdomain redirect to a directory in your site. This method will also make the subdomain stay in the address bar.</p>
-
-<p><a href="#what-do-i-do-"  id="what-do-i-do-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="linkHeading">What Do I Do?</h2>
-  <svg class="linkHeadingSVG" height="22px"
-    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"></path>
-    <path
-      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
-      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
-       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
-    </path>
-  </svg>
-</a>
-
-<br>
-<a href="#dns-records"  id="dns-records" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="linkHeading">DNS Records</h2>
-  <svg class="linkHeadingSVG" height="22px"
-    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"></path>
-    <path
-      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
-      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
-       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
-    </path>
-  </svg>
-</a>
-</p>
-
-<p>Before we modify any files in your Apache Web Server, we are going to go to your <strong><em>DNS Records</em></strong> page.</p>
-
-<p>You will want to make a new <strong><em>CNAME</em></strong> record.</p>
-
-<p>Name it what you want your subdomain to be named &amp; change the value to your domain (without subdomain in it). If you have the option keep <strong><em>TTL</em></strong> set to <strong><em>Automatic</em></strong></p>
-
-<a href="#hosts-file"  id="hosts-file" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="linkHeading">Hosts File</h2>
+<a href="#step-2"  id="step-2" class="no-underline black link" style="padding-top: 80px;">
+  <h2 id="" class="linkHeading">Step 2</h2>
   <svg class="linkHeadingSVG" height="22px"
     viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"></path>
@@ -208,22 +174,14 @@ You can use subdomains to redirect to a different server which can show differen
 </a>
 
 
-<p>Find your <strong><em>hosts file.</em></strong> This should be located here:</p>
+<p>Initialise the timer &amp; start it:
+<pre>
+Stopwatch timer = new Stopwatch();
+timer.Start();
+</pre></p>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">C:\Windows\System32\drivers\etc</code></pre></div>
-
-<p>Open the <strong><em>hosts</em></strong> file and at the bottom <strong><em>locate</em></strong> this:</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">127.0.0.1 localhost</code></pre></div>
-
-<p>Copy that line and paste it below. Now change <strong><em>locahost</em></strong> to:</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">127.0.0.1 subdomainName.domain.com</code></pre></div>
-
-<p>With that done, you can save the file and exit it. <strong><em>(If you are unable to save the file, copy it to your desktop, edit it again and save it there. Now move it back and replace the old file with the new one.)</em></strong></p>
-
-<a href="#httpd-vhosts-conf"  id="httpd-vhosts-conf" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="linkHeading">httpd-vhosts.conf</h2>
+<a href="#step-3"  id="step-3" class="no-underline black link" style="padding-top: 80px;">
+  <h2 id="" class="linkHeading">Step 3</h2>
   <svg class="linkHeadingSVG" height="22px"
     viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"></path>
@@ -236,50 +194,13 @@ You can use subdomains to redirect to a different server which can show differen
 </a>
 
 
-<p>Go to where you installed Apache/XAMPP &amp; find the httpd-vhosts.conf.
-<strong><em>It will be in conf\extra and will look like this on XAMPP:</em></strong>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">C:\xampp\apache\conf\extra</code></pre></div></p>
+<p>Stop the timer:
+<pre>
+timer.Stop();
+</pre></p>
 
-<p>Open it up and Copy the code below and paste it at the bottom of the config file.</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;VirtualHost *:80&gt;
-    ServerAdmin webmaster@domain.com
-    DocumentRoot &#34;C:/xampp7/htdocs/&#34;
-    ServerName domain.com
-    ErrorLog &#34;logs/domain.com-error.log&#34;
-    CustomLog &#34;logs/domain.com-access.log&#34; common
-&lt;/VirtualHost&gt;</code></pre></div>
-
-<p>With the code above pasted at the bottom of the config, you can start editing it.</p>
-
-<p>First, change all <strong><em>domain.com</em></strong> lines of text to your actual domain name.</p>
-
-<p>Second, change the <strong><em>DocumentRoot</em></strong> to the root of your websites directory (<strong><em>NOT THE DIRECTORY FOR YOUR SUBDOMAIN TO POINT TO</em></strong>).</p>
-
-<p>With all of that done, copy and paste your final code below each other.</p>
-
-<p>With the ***second block of code, *** add the subdomain in front of the domain name &amp; change the DocumentRoot to the folder you want the subdomain to point to.</p>
-
-<p>Your config file should look something like this when you are done:</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;VirtualHost *:80&gt;
-    ServerAdmin webmaster@sbond.ml
-    DocumentRoot &#34;C:/xampp7/htdocs/&#34;
-    ServerName sbond.ml
-    ErrorLog &#34;logs/sbond.ml-error.log&#34;
-    CustomLog &#34;logs/sbond.ml-access.log&#34; common
-&lt;/VirtualHost&gt;
-
-&lt;VirtualHost *:80&gt;
-    ServerAdmin webmaster@log.sbond.ml
-    DocumentRoot &#34;C:/xampp7/htdocs/log&#34;
-    ServerName log.sbond.ml
-    ErrorLog &#34;logs/log.sbond.ml-error.log&#34;
-    CustomLog &#34;logs/log.sbond.ml-access.log&#34; common
-&lt;/VirtualHost&gt;</code></pre></div>
-
-<a href="#done-"  id="done-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="linkHeading">Done!</h2>
+<a href="#step-4"  id="step-4" class="no-underline black link" style="padding-top: 80px;">
+  <h2 id="" class="linkHeading">Step 4</h2>
   <svg class="linkHeadingSVG" height="22px"
     viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"></path>
@@ -292,7 +213,25 @@ You can use subdomains to redirect to a different server which can show differen
 </a>
 
 
-<p>With everything above completed correctly, you are ready to go.</p>
+<p>Display stopwatch results:
+<pre>
+Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() + &ldquo;s&rdquo;);
+</pre>
+You can use a multiple amount of different timings such as:</p>
+
+<ul>
+<li>Milliseconds</li>
+<li>Minutes</li>
+<li>Hours</li>
+<li>Days</li>
+</ul>
+
+<p>You can put &lsquo;Total&rsquo; before the unit of timing to give the exact amount of time
+taken:</p>
+
+<pre>
+Console.WriteLine(overallTimer.Elapsed.TotalSeconds.ToString() + "s");
+</pre>
 
     </article>
   </section>
@@ -308,13 +247,8 @@ You can use subdomains to redirect to a different server which can show differen
     
     
 
-      <a href="/categories/webdev"
-      class="dim bb bw1 pb1 no-underline black">WebDev</a>
-
-    
-
-      <a href="/categories/apache"
-      class="dim bb bw1 pb1 no-underline black">Apache</a>
+      <a href="/categories/csharp"
+      class="dim bb bw1 pb1 no-underline black">CSharp</a>
 
     
     

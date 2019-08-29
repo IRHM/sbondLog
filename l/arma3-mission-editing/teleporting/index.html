@@ -98,7 +98,7 @@
 />
 <meta
   name="twitter:description"
-  content="Teleporting to markers To teleport players to markers we will be making use of both setPos &amp; getMarkerPos.
+  content="Teleporting To MarkersTo teleport players to markers we will be making use of both setPos &amp; getMarkerPos.
 First, we will have to place a marker down in the spot we want the players to be teleported to. You can do this in the ArmA 3DEN Editor, by going to Markers (F6), Icons and then selecting the marker you want to place down.|"
 />
 <meta name="twitter:image:src" content="" />
@@ -139,9 +139,19 @@ First, we will have to place a marker down in the spot we want the players to be
     </h4>
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
-      
+      <a href="#teleporting-to-markers"  id="teleporting-to-markers" class="no-underline black link" style="padding-top: 80px;">
+  <h2 id="" class="linkHeading">Teleporting To Markers</h2>
+  <svg class="linkHeadingSVG" height="22px"
+    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+    </path>
+  </svg>
+</a>
 
-<h3 id="teleporting-to-markers">Teleporting to markers</h3>
 
 <p>To teleport players to markers we will be making use of both setPos &amp; getMarkerPos.</p>
 
@@ -159,14 +169,29 @@ First, we will have to place a marker down in the spot we want the players to be
 
 <pre>player_1 setPos (getMarkerPos "Marker_Name");</pre>
 
-<h3 id="teleporting-to-coordinates">Teleporting to coordinates</h3>
+<a href="#teleporting-to-coordinates"  id="teleporting-to-coordinates" class="no-underline black link" style="padding-top: 80px;">
+  <h2 id="" class="linkHeading">Teleporting To Coordinates</h2>
+  <svg class="linkHeadingSVG" height="22px"
+    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+    </path>
+  </svg>
+</a>
+
 
 <p>To teleport a player or anything to a specific coordinate we will have to find the coordinates we want to teleport them to.</p>
 
 <p>To find coordinates in 3DEN Editor we can simply right-click wherever we want, go to Log and click on &lsquo;Log Position to Clipboard&rsquo;. This will give us the position of our click in 3DEN Editor. You can also do this more precisely, by placing a marker down and logging the position of that to the clipboard. Both work!</p>
 
 <p><center>
-<img src="https://log.sbond.ml/img/arma3/logpos.png" alt="Logging Position">
+  <div class="Image">
+    <img src="https://ul.sbond.ml/i/log/arma3/Logpositiontoclipboard.png"
+    alt="Logging Position">
+  </div>
 </center></p>
 
 <p>The code we use is altered a little since now we aren&rsquo;t teleporting to a marker we don&rsquo;t need gerMarkerPos. We will only be using setPos.</p>
