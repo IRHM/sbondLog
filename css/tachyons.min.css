@@ -16,11 +16,6 @@ body::-webkit-scrollbar-thumb{
   outline: 1px solid slategrey;
 }
 
-.linkHeading{
-    display: inline-block;
-    margin: 0;
-}
-
 .link:hover{
   fill: blue;
 }

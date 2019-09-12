@@ -6,10 +6,20 @@
     <description>Recent content in MySQL on sbondLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Jun 2019 08:51:06 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2019 23:12:03 +0100</lastBuildDate>
     
 	<atom:link href="https://log.sbond.ml/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reoccurring Events in MySQL</title>
+      <link>https://log.sbond.ml/l/mysql/reoccurring-events-in-mysql/</link>
+      <pubDate>Thu, 12 Sep 2019 23:12:03 +0100</pubDate>
+      
+      <guid>https://log.sbond.ml/l/mysql/reoccurring-events-in-mysql/</guid>
+      <description>What are Events in MySQL?Events in MySQL are something that can happen every x amount of time. If you have something that you want to reoccur ever now and then, you should consider using events.
+Example CREATE EVENT IF NOT EXISTS `remove_login_attempts` # Create &amp; Name Event ON SCHEDULE EVERY 1 MINUTE # When to redo task ON COMPLETION PRESERVE ENABLE DO DELETE FROM login_attempts WHERE time What Is The Code Doing Create event and name it.</description>
+    </item>
     
     <item>
       <title>Search a Table in MySQL</title>

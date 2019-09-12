@@ -3,13 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://log.sbond.ml/categories/css/</loc>
-    <lastmod>2019-08-27T11:54:23+01:00</lastmod>
+    <loc>https://log.sbond.ml/categories/</loc>
+    <lastmod>2019-09-12T23:12:03+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://log.sbond.ml/categories/</loc>
+    <loc>https://log.sbond.ml/l/</loc>
+    <lastmod>2019-09-12T23:12:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/mysql/</loc>
+    <lastmod>2019-09-12T23:12:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/l/mysql/reoccurring-events-in-mysql/</loc>
+    <lastmod>2019-09-12T23:12:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/</loc>
+    <lastmod>2019-09-12T23:12:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://log.sbond.ml/categories/css/</loc>
     <lastmod>2019-08-27T11:54:23+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -20,19 +43,7 @@
   </url>
   
   <url>
-    <loc>https://log.sbond.ml/l/</loc>
-    <lastmod>2019-08-27T11:54:23+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://log.sbond.ml/categories/webdev/</loc>
-    <lastmod>2019-08-27T11:54:23+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://log.sbond.ml/</loc>
     <lastmod>2019-08-27T11:54:23+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -67,12 +78,6 @@
   <url>
     <loc>https://log.sbond.ml/l/csharp/rounded-form/</loc>
     <lastmod>2019-06-29T10:44:11+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://log.sbond.ml/categories/mysql/</loc>
-    <lastmod>2019-06-29T08:51:06+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
