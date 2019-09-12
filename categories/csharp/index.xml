@@ -17,7 +17,7 @@
       <pubDate>Thu, 18 Jul 2019 01:09:49 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/make-user-settings/</guid>
-      <description>Step 1 - Create SettingsRight-click on your project and head down to Properties and then on the left-click on the settings button.
+      <description>Step 1 - Create SettingsRight-click on your project and head down to Properties and then on the left-click on the settings button.
 Enter the Name, type, scope &amp;amp; value of each setting you want to add.
 Note: The Application Scope is not editable during runtime and will always stay the default value you set right now.</description>
     </item>
@@ -28,9 +28,9 @@ Note: The Application Scope is not editable during runtime and will always stay 
       <pubDate>Sat, 29 Jun 2019 12:26:11 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/using-tooltip/</guid>
-      <description>Step 1 - Add The ControlIn the toolbox search for &amp;ldquo;ToolTip&amp;rdquo; and plop it onto your form. It isn&amp;rsquo;t something you put directly on your form, but instead it will just sit at the bottom in a little box.
+      <description>Step 1 - Add The ControlIn the toolbox search for &amp;ldquo;ToolTip&amp;rdquo; and plop it onto your form. It isn&amp;rsquo;t something you put directly on your form, but instead it will just sit at the bottom in a little box.
 You can click on it and edit it&amp;rsquo;s properties.
-Step 2 - Add InfoClick on the control you want to display info about, and find &amp;ldquo;ToolTip on &amp;lt; ToolTip Name &amp;gt;&amp;ldquo;.</description>
+Step 2 - Add InfoClick on the control you want to display info about, and find &amp;ldquo;ToolTip on &amp;lt; ToolTip Name &amp;gt;&amp;ldquo;.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ Step 2 - Add InfoClick on the control you want to display info about, and f
       <pubDate>Sat, 29 Jun 2019 10:44:11 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/rounded-form/</guid>
-      <description>Step 1 - The Importing using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - RoundingI would put this in the initialisation of your form.</description>
+      <description>Step 1 - The Importing using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - RoundingI would put this in the initialisation of your form.</description>
     </item>
     
     <item>
@@ -48,8 +48,8 @@ Step 2 - Add InfoClick on the control you want to display info about, and f
       <pubDate>Thu, 27 Jun 2019 02:17:12 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/draggable-borderless-form/</guid>
-      <description>Step 1 - Adding EventGo into the events of either the whole form or on a control/panel and add the MouseDown event. 
-Step 2 - Variables &amp;amp; Importing NamespaceImport the namespace: using System.Runtime.InteropServices;
+      <description>Step 1 - Adding EventGo into the events of either the whole form or on a control/panel and add the MouseDown event. 
+Step 2 - Variables &amp;amp; Importing NamespaceImport the namespace: using System.Runtime.InteropServices;
 Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2; [DllImportAttribute(&amp;ldquo;user32.</description>
     </item>
     
@@ -59,7 +59,7 @@ Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int
       <pubDate>Thu, 27 Jun 2019 00:58:27 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/using-windows-characters-on-custom-border/</guid>
-      <description>Step 1- Find CharactersFind and open Character Map in windows. In windows 10 you can just search &amp;lsquo;character&amp;rsquo; in the start menu and you should find it.
+      <description>Step 1- Find CharactersFind and open Character Map in windows. In windows 10 you can just search &amp;lsquo;character&amp;rsquo; in the start menu and you should find it.
 Change the font to &amp;lsquo;Marlett&amp;rsquo; and you should see all the charcters that are commonly used in applications.
 
 From here you can just double click on the characters you want to use and then click the Copy button next to the textbox.</description>
@@ -71,8 +71,8 @@ From here you can just double click on the characters you want to use and then c
       <pubDate>Fri, 21 Jun 2019 02:10:34 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/populating-comboboxes/</guid>
-      <description>Step 1 - Creating ItOf course the first step if to Create your combo box and assign it an appropriate Name.
-Step 2 - Adding ItemsI put all of the things I wanted into a string array for easy accessibility and readability. My code is set out like this:</description>
+      <description>Step 1 - Creating ItOf course the first step if to Create your combo box and assign it an appropriate Name.
+Step 2 - Adding ItemsI put all of the things I wanted into a string array for easy accessibility and readability. My code is set out like this:</description>
     </item>
     
     <item>
@@ -81,10 +81,10 @@ Step 2 - Adding ItemsI put all of the things I wanted into a string array f
       <pubDate>Sat, 08 Jun 2019 10:02:18 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/make-a-stopwatch/</guid>
-      <description>Step 1Import System.Diagnostics:  using System.Diagnostics; 
-Step 2Initialise the timer &amp;amp; start it:  Stopwatch timer = new Stopwatch(); timer.Start(); 
-Step 3Stop the timer:  timer.Stop(); 
-Step 4Display stopwatch results:  Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() + &amp;ldquo;s&amp;rdquo;);  You can use a multiple amount of different timings such as:</description>
+      <description>Step 1Import System.Diagnostics:  using System.Diagnostics; 
+Step 2Initialise the timer &amp;amp; start it:  Stopwatch timer = new Stopwatch(); timer.Start(); 
+Step 3Stop the timer:  timer.Stop(); 
+Step 4Display stopwatch results:  Console.</description>
     </item>
     
     <item>
@@ -93,8 +93,8 @@ Step 4Display stopwatch results:  Console.WriteLine(overallTimer.Elapsed.Se
       <pubDate>Sat, 08 Jun 2019 09:34:38 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/csharp/write-to-text-file/</guid>
-      <description>HowThere are two methods for this. The first method will keep adding on the new data to the bottom of the text file, whilst the second method will overwrite all previous things in the text file whenever new data is written.
-Method 1 (Don&amp;#39;t overwrite Any Data) TextWriter saveData = new StreamWriter(@&#34;</description>
+      <description>HowThere are two methods for this. The first method will keep adding on the new data to the bottom of the text file, whilst the second method will overwrite all previous things in the text file whenever new data is written.
+Method 1 (Don&amp;#39;t overwrite Any Data) TextWriter saveData = new StreamWriter(@&#34;</description>
     </item>
     
   </channel>

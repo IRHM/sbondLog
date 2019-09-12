@@ -98,7 +98,7 @@
 />
 <meta
   name="twitter:description"
-  content="Step 1 - The Importing using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - RoundingI would put this in the initialisation of your form.|"
+  content="Step 1 - The Importing using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - RoundingI would put this in the initialisation of your form.|"
 />
 <meta name="twitter:image:src" content="" />
 <meta name="twitter:domain" content="https://log.sbond.ml/l/csharp/rounded-form/" />
@@ -140,15 +140,16 @@
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#step-1-the-importing"  id="step-1-the-importing" class="no-underline black link" style="padding-top: 80px;">
   <h2 id="" class="">Step 1 - The Importing
-  <svg class="linkHeadingSVG" height="22px"
-    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"></path>
-    <path
-      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
-      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
-       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
-    </path>
-  </svg></h2>
+    <svg class="linkHeadingSVG" height="22px"
+      viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+        5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+         1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+      </path>
+    </svg>
+  </h2>
 </a>
 
 
@@ -172,15 +173,16 @@ private static extern IntPtr CreateRoundRectRgn
 
 <a href="#step-2-rounding"  id="step-2-rounding" class="no-underline black link" style="padding-top: 80px;">
   <h2 id="" class="">Step 2 - Rounding
-  <svg class="linkHeadingSVG" height="22px"
-    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"></path>
-    <path
-      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
-      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
-       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
-    </path>
-  </svg></h2>
+    <svg class="linkHeadingSVG" height="22px"
+      viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+        5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+         1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+      </path>
+    </svg>
+  </h2>
 </a>
 
 
@@ -192,15 +194,16 @@ Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
 <a href="#done-"  id="done-" class="no-underline black link" style="padding-top: 80px;">
   <h2 id="" class="">Done!
-  <svg class="linkHeadingSVG" height="22px"
-    viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"></path>
-    <path
-      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
-      5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
-       1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
-    </path>
-  </svg></h2>
+    <svg class="linkHeadingSVG" height="22px"
+      viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5
+        5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1
+         1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z">
+      </path>
+    </svg>
+  </h2>
 </a>
 
 

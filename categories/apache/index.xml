@@ -17,8 +17,8 @@
       <pubDate>Thu, 18 Jul 2019 00:52:52 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/change-subdomains-documentroot/</guid>
-      <description>Step 1 - Create SubdomainIf you don&amp;rsquo;t have a subdomain on your apache server, you can follow this tutorial first and then come back.
-Change Document RootIn &amp;lsquo;httpd-vhosts.conf&amp;rsquo; change the &amp;lsquo;Document Root&amp;rsquo; for the correct subdomain.
+      <description>Step 1 - Create SubdomainIf you don&amp;rsquo;t have a subdomain on your apache server, you can follow this tutorial first and then come back.
+Change Document RootIn &amp;lsquo;httpd-vhosts.conf&amp;rsquo; change the &amp;lsquo;Document Root&amp;rsquo; for the correct subdomain.
 Mine, after editing, looks like this:
 &amp;lt;VirtualHost *:80&amp;gt; ServerName cd.</description>
     </item>
@@ -29,7 +29,7 @@ Mine, after editing, looks like this:
       <pubDate>Fri, 10 May 2019 23:14:03 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/webdev/make-subdomains-on-apache/</guid>
-      <description>What?When I say &amp;lsquo;subdomain&amp;rsquo; I am talking about the part that comes before the actual domain.
+      <description>What?When I say &amp;lsquo;subdomain&amp;rsquo; I am talking about the part that comes before the actual domain.
 So the subdomain in this URL log.sbond.ml is the part that says log.
 You can use subdomains to redirect to a different server which can show different content, but in this post, you will learn how to make a subdomain redirect to a directory in your site.</description>
     </item>

@@ -17,7 +17,7 @@
       <pubDate>Sat, 27 Apr 2019 10:03:37 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/python/simple-calculator/</guid>
-      <description>What?This simple calculator program will allow the user to enter two ( or more if you wish ) numbers and then choose a method to use (+, -, /, *). We will use if statements.
+      <description>What?This simple calculator program will allow the user to enter two ( or more if you wish ) numbers and then choose a method to use (+, -, /, *). We will use if statements.
 How? Well, first we need to add 3 ( or more ) variables. The first two will be holding the user&amp;rsquo;s numbers and the third will be the method they want to use ( Both variables will be asking for the user&amp;rsquo;s input as well ).</description>
     </item>
     
