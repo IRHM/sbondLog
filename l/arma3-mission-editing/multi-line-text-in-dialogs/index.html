@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -140,7 +139,7 @@
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#what-"  id="what-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What?
+  <h2 id="">What?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -157,7 +156,7 @@
 <p>If you are creating a dialog and need to have a long line of text and it doesn&rsquo;t fit in your dialog frame, you are going to be happy to know that there is a style you can use to make your text go into multiple lines.</p>
 
 <a href="#how-"  id="how-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">How?
+  <h2 id="">How?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -173,16 +172,14 @@
 
 <p>In your dialog just add the following lines of code:</p>
 
-<pre>
-style = 16;
-lineSpacing = 1;
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="n">style</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
+<span class="n">lineSpacing</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span></code></pre></div>
 
 <p>Style 16 is for multiple lines. You can change the value 1 at the end of the lineSpacing, but if you have a small dialog then going over 2 will most likely break it and not show most of the text.</p>
 
 <p>If you decide you don&rsquo;t like the box that appears around your text you can add this line of code and make it disappear:</p>
 
-<pre>style = 16 + 512; //Style 512 here removes the box.</pre>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="n">style</span> <span class="o">=</span> <span class="mi">16</span> <span class="o">+</span> <span class="mi">512</span><span class="p">;</span> <span class="o">//</span><span class="n">Style</span> <span class="mi">512</span> <span class="n">here</span> <span class="n">removes</span> <span class="n">the</span> <span class="n">box</span><span class="p">.</span></code></pre></div>
 
     </article>
   </section>
@@ -246,5 +243,7 @@ lineSpacing = 1;
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

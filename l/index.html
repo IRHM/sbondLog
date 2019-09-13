@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -152,7 +151,7 @@
           <br />
           <span class="f6 db dib-ns">
             What are Events in MySQL?Events in MySQL are something that can happen every x amount of time. If you have something that you want to reoccur ever now and then, you should consider using events.
-Example CREATE EVENT IF NOT EXISTS `remove_login_attempts` # Create & Name Event ON SCHEDULE EVERY 1 MINUTE # When to redo task ON COMPLETION PRESERVE ENABLE DO DELETE FROM login_attempts WHERE time What Is The Code Doing Create event and name it.
+ExampleCREATE EVENT IF NOT EXISTS `remove_login_attempts` # Create &amp; Name Event ON SCHEDULE EVERY 1 MINUTE # When to redo task ON COMPLETION PRESERVE ENABLE DO DELETE FROM login_attempts WHERE time &lt; (NOW() - INTERVAL 15 MINUTE); # The code to run What Is The Code Doing Create event and name it.
           </span>
         </li>
         <hr />
@@ -291,7 +290,7 @@ Step 2 - Add InfoClick on the control you want to display info about, and 
           </span>
           <br />
           <span class="f6 db dib-ns">
-            Step 1 - The Importing using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - RoundingI would put this in the initialisation of your form.
+            Step 1 - The Importingusing System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class: [DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner  int nTopRect, // y-coordinate of upper-left corner  int nRightRect, // x-coordinate of lower-right corner  int nBottomRect, // y-coordinate of lower-right corner  int nWidthEllipse, // height of ellipse  int nHeightEllipse // width of ellipse );
           </span>
         </li>
         <hr />
@@ -316,7 +315,7 @@ Step 2 - Add InfoClick on the control you want to display info about, and 
           </span>
           <br />
           <span class="f6 db dib-ns">
-            The CodeSELECT * FROM info WHERE Name LIKE &lsquo;Keyword&rsquo;; This way, you would get a &lsquo;sort of search&rsquo;, because you would have to type the name of the item 100% correctly, otherwise no results would show up. I guess this is sort of a &lsquo;strict&rsquo; search, if something is slightly wrong, nothing would be returned.
+            The CodeSELECT * FROM info WHERE Name LIKE &#39;Keyword&#39;; This way, you would get a &lsquo;sort of search&rsquo;, because you would have to type the name of the item 100% correctly, otherwise no results would show up. I guess this is sort of a &lsquo;strict&rsquo; search, if something is slightly wrong, nothing would be returned.
           </span>
         </li>
         <hr />
@@ -342,8 +341,8 @@ Step 2 - Add InfoClick on the control you want to display info about, and 
           <br />
           <span class="f6 db dib-ns">
             Step 1 - Adding EventGo into the events of either the whole form or on a control/panel and add the MouseDown event. 
-Step 2 - Variables &amp; Importing NamespaceImport the namespace: using System.Runtime.InteropServices;
-Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2; [DllImportAttribute(&ldquo;user32.
+Step 2 - Variables &amp; Importing NamespaceImport the namespace: using System.Runtime.InteropServices; 
+Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2; [DllImportAttribute(&#34;user32.
           </span>
         </li>
         <hr />

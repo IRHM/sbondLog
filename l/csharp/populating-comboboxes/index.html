@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -140,7 +139,7 @@ Step 2 - Adding ItemsI put all of the things I wanted into a string array 
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#step-1-creating-it"  id="step-1-creating-it" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 1 - Creating It
+  <h2 id="">Step 1 - Creating It
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -157,7 +156,7 @@ Step 2 - Adding ItemsI put all of the things I wanted into a string array 
 <p>Of course the first step if to <strong><em>Create your combo box</em></strong> and assign it an appropriate <strong><em>Name</em></strong>.</p>
 
 <a href="#step-2-adding-items"  id="step-2-adding-items" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 2 - Adding Items
+  <h2 id="">Step 2 - Adding Items
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -173,19 +172,18 @@ Step 2 - Adding ItemsI put all of the things I wanted into a string array 
 
 <p>I put all of the things I wanted into a string array for easy accessibility and readability. My code is set out like this:</p>
 
-<pre>
-Categories = new string[9];
-Categories[0] = "Action";
-Categories[1] = "Adventure";
-Categories[2] = "Comedy";
-Categories[3] = "Crime";
-Categories[4] = "Drama";
-Categories[5] = "Horror";
-Categories[6] = "Science fiction";
-Categories[7] = "Thriller";
-Categories[8] = "Western";
-CategoryDropdown.Items.AddRange(Categories);
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="n">Categories</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[</span><span class="m">9</span><span class="p">];</span>
+<span class="n">Categories</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Action&#34;</span><span class="p">;</span>
+<span class="n">Categories</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Adventure&#34;</span><span class="p">;</span>
+<span class="n">Categories</span><span class="p">[</span><span class="m">2</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Comedy&#34;</span><span class="p">;</span>
+<span class="n">Categories</span><span class="p">[</span><span class="m">3</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Crime&#34;</span><span class="p">;</span>
+<span class="n">Categories</span><span class="p">[</span><span class="m">4</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Drama&#34;</span><span class="p">;</span>
+<span class="n">Categories</span><span class="p">[</span><span class="m">5</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Horror&#34;</span><span class="p">;</span>
+<span class="n">Categories</span><span class="p">[</span><span class="m">6</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Science fiction&#34;</span><span class="p">;</span>
+<span class="n">Categories</span><span class="p">[</span><span class="m">7</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Thriller&#34;</span><span class="p">;</span>
+<span class="n">Categories</span><span class="p">[</span><span class="m">8</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Western&#34;</span><span class="p">;</span>
+<span class="n">CategoryDropdown</span><span class="p">.</span><span class="n">Items</span><span class="p">.</span><span class="n">AddRange</span><span class="p">(</span><span class="n">Categories</span><span class="p">);</span>
+</code></pre></div>
 
 <p>The <strong><em>first</em></strong> line <strong><em>Categories = new string[9];</em></strong> is initialising the string array and declaring how many different variables or &lsquo;things&rsquo; are going to be in it.</p>
 
@@ -255,5 +253,7 @@ CategoryDropdown.Items.AddRange(Categories);
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

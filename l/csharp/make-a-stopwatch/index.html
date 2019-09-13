@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -98,10 +97,10 @@
 />
 <meta
   name="twitter:description"
-  content="Step 1Import System.Diagnostics:  using System.Diagnostics; 
-Step 2Initialise the timer &amp; start it:  Stopwatch timer = new Stopwatch(); timer.Start(); 
-Step 3Stop the timer:  timer.Stop(); 
-Step 4Display stopwatch results:  Console.|"
+  content="Step 1Import System.Diagnostics: using System.Diagnostics; 
+Step 2Initialise the timer &amp; start it: Stopwatch timer = new Stopwatch(); timer.Start(); 
+Step 3Stop the timer: timer.Stop(); 
+Step 4Display stopwatch results: Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() &#43; &#34;s&#34;);|"
 />
 <meta name="twitter:image:src" content="" />
 <meta name="twitter:domain" content="https://log.sbond.ml/l/csharp/make-a-stopwatch/" />
@@ -142,7 +141,7 @@ Step 4Display stopwatch results:  Console.|"
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#step-1"  id="step-1" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 1
+  <h2 id="">Step 1
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -157,12 +156,11 @@ Step 4Display stopwatch results:  Console.|"
 
 
 <p>Import <strong><em>System.Diagnostics:</em></strong>
-<pre>
-using System.Diagnostics;
-</pre></p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="k">using</span> <span class="nn">System.Diagnostics</span><span class="p">;</span>
+</code></pre></div></p>
 
 <a href="#step-2"  id="step-2" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 2
+  <h2 id="">Step 2
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -177,13 +175,12 @@ using System.Diagnostics;
 
 
 <p>Initialise the timer &amp; start it:
-<pre>
-Stopwatch timer = new Stopwatch();
-timer.Start();
-</pre></p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="n">Stopwatch</span> <span class="n">timer</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Stopwatch</span><span class="p">();</span>
+<span class="n">timer</span><span class="p">.</span><span class="n">Start</span><span class="p">();</span>
+</code></pre></div></p>
 
 <a href="#step-3"  id="step-3" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 3
+  <h2 id="">Step 3
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -198,12 +195,11 @@ timer.Start();
 
 
 <p>Stop the timer:
-<pre>
-timer.Stop();
-</pre></p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="n">timer</span><span class="p">.</span><span class="n">Stop</span><span class="p">();</span>
+</code></pre></div></p>
 
 <a href="#step-4"  id="step-4" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 4
+  <h2 id="">Step 4
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -218,10 +214,10 @@ timer.Stop();
 
 
 <p>Display stopwatch results:
-<pre>
-Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() + &ldquo;s&rdquo;);
-</pre>
-You can use a multiple amount of different timings such as:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">overallTimer</span><span class="p">.</span><span class="n">Elapsed</span><span class="p">.</span><span class="n">Seconds</span><span class="p">.</span><span class="n">ToString</span><span class="p">()</span> <span class="p">+</span> <span class="s">&#34;s&#34;</span><span class="p">);</span>
+</code></pre></div></p>
+
+<p>You can use a multiple amount of different timings such as:</p>
 
 <ul>
 <li>Milliseconds</li>
@@ -233,9 +229,8 @@ You can use a multiple amount of different timings such as:</p>
 <p>You can put &lsquo;Total&rsquo; before the unit of timing to give the exact amount of time
 taken:</p>
 
-<pre>
-Console.WriteLine(overallTimer.Elapsed.TotalSeconds.ToString() + "s");
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">overallTimer</span><span class="p">.</span><span class="n">Elapsed</span><span class="p">.</span><span class="n">TotalSeconds</span><span class="p">.</span><span class="n">ToString</span><span class="p">()</span> <span class="p">+</span> <span class="s">&#34;s&#34;</span><span class="p">);</span>
+</code></pre></div>
 
     </article>
   </section>
@@ -299,5 +294,7 @@ Console.WriteLine(overallTimer.Elapsed.TotalSeconds.ToString() + "s");
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

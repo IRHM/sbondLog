@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -140,7 +139,7 @@ First, we will have to place a marker down in the spot we want the players to be
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#teleporting-to-markers"  id="teleporting-to-markers" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Teleporting To Markers
+  <h2 id="">Teleporting To Markers
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -162,16 +161,16 @@ First, we will have to place a marker down in the spot we want the players to be
 
 <p>Once we have done everything above we can simply use the code below to teleport the player to the marker:</p>
 
-<pre>player setPos (getMarkerPos "Marker_Name");</pre>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="n">player</span> <span class="nf">setPos</span> <span class="p">(</span><span class="n">getMarkerPos</span> <span class="s">&#34;Marker_Name&#34;</span><span class="p">);</span></code></pre></div>
 
 <p>Just change &lsquo;Marker_Name&rsquo; and you are good to go, you have a line of code which will teleport the player to a specific marker! You can of course change &lsquo;player&rsquo; to whatever you want as long as it is defined as something.</p>
 
 <p>As an example, if we have the Variable Name of a player set to &ldquo;player_1&rdquo; we can alter the code a little to teleport just that player:</p>
 
-<pre>player_1 setPos (getMarkerPos "Marker_Name");</pre>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="n">player_1</span> <span class="nf">setPos</span> <span class="p">(</span><span class="n">getMarkerPos</span> <span class="s">&#34;Marker_Name&#34;</span><span class="p">);</span></code></pre></div>
 
 <a href="#teleporting-to-coordinates"  id="teleporting-to-coordinates" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Teleporting To Coordinates
+  <h2 id="">Teleporting To Coordinates
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -198,7 +197,7 @@ First, we will have to place a marker down in the spot we want the players to be
 
 <p>The code we use is altered a little since now we aren&rsquo;t teleporting to a marker we don&rsquo;t need gerMarkerPos. We will only be using setPos.</p>
 
-<pre>player setPos [x,y,z];</pre>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="n">player</span> <span class="n">setPos</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">];</span></code></pre></div>
 
 <p>Of course, you can still change &lsquo;player&rsquo; to whatever you want.</p>
 
@@ -264,5 +263,7 @@ First, we will have to place a marker down in the spot we want the players to be
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

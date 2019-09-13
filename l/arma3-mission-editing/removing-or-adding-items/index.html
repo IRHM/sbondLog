@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -140,7 +139,7 @@
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#adding-items"  id="adding-items" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Adding Items
+  <h2 id="">Adding Items
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -158,16 +157,14 @@
 
 <p>Inside of the Speech Marks, you will put <a href="https://community.bistudio.com/wiki/Arma_3_CfgWeapons_Weapons" target="_blank" class="b bb bw pb1 no-underline black dim">classnames</a> for the items you want to be added to the player.</p>
 
-<pre>
-player addHeadgear "classname goes here";
-player addUniform "classname goes here";
-player addVest "classname goes here";
-player addBackpack "classname goes here";
-player addGoggles "classname goes here"; //You use this command for facewear as well
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="n">player</span> <span class="n">addHeadgear</span> <span class="s">&#34;classname goes here&#34;</span><span class="p">;</span>
+<span class="n">player</span> <span class="n">addUniform</span> <span class="s">&#34;classname goes here&#34;</span><span class="p">;</span>
+<span class="n">player</span> <span class="n">addVest</span> <span class="s">&#34;classname goes here&#34;</span><span class="p">;</span>
+<span class="n">player</span> <span class="n">addBackpack</span> <span class="s">&#34;classname goes here&#34;</span><span class="p">;</span>
+<span class="n">player</span> <span class="n">addGoggles</span> <span class="s">&#34;classname goes here&#34;</span><span class="p">;</span> <span class="o">//</span><span class="n">You</span> <span class="n">use</span> <span class="n">this</span> <span class="n">command</span> <span class="k">for</span> <span class="n">face</span> <span class="n">wear</span> <span class="n">as</span> <span class="n">well</span></code></pre></div>
 
 <a href="#removing-items"  id="removing-items" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Removing Items
+  <h2 id="">Removing Items
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -183,16 +180,14 @@ player addGoggles "classname goes here"; //You use this command for facewear as 
 
 <p>Removing items from players is very similar, you can simply use one of the commands below to remove specific items. You can still change &lsquo;player&rsquo; to whatever you want, as long as it is defined!</p>
 
-<pre>
-removeAllWeapons player;
-removeAllItems player;
-removeAllAssignedItems player;
-removeUniform player;
-removeVest player;
-removeBackpack player;
-removeHeadgear player;
-removeGoggles player;
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="n">removeAllWeapons</span> <span class="n">player</span><span class="p">;</span>
+<span class="n">removeAllItems</span> <span class="n">player</span><span class="p">;</span>
+<span class="n">removeAllAssignedItems</span> <span class="n">player</span><span class="p">;</span>
+<span class="n">removeUniform</span> <span class="n">player</span><span class="p">;</span>
+<span class="n">removeVest</span> <span class="n">player</span><span class="p">;</span>
+<span class="n">removeBackpack</span> <span class="n">player</span><span class="p">;</span>
+<span class="n">removeHeadgear</span> <span class="n">player</span><span class="p">;</span>
+<span class="n">removeGoggles</span> <span class="n">player</span><span class="p">;</span></code></pre></div>
 
     </article>
   </section>
@@ -256,5 +251,7 @@ removeGoggles player;
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

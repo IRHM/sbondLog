@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -141,7 +140,7 @@ Note: The Application Scope is not editable during runtime and will always stay 
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#step-1-create-settings"  id="step-1-create-settings" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 1 - Create Settings
+  <h2 id="">Step 1 - Create Settings
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -165,7 +164,7 @@ you want to add.</p>
 always stay the default value you set right now.</p>
 
 <a href="#-setting-values-to-settings-value"  id="-setting-values-to-settings-value" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">- Setting Values To Settings Value
+  <h2 id="">- Setting Values To Settings Value
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -182,12 +181,11 @@ always stay the default value you set right now.</p>
 <p>If you want to set, for example, the value of a variable to the same as a settings
 value, you can do the following:</p>
 
-<pre>
-string Name = Properties.Settings.Default.SettingName
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="kt">string</span> <span class="n">Name</span> <span class="p">=</span> <span class="n">Properties</span><span class="p">.</span><span class="n">Settings</span><span class="p">.</span><span class="n">Default</span><span class="p">.</span><span class="n">SettingName</span>
+</code></pre></div>
 
 <a href="#-changing-settings-value"  id="-changing-settings-value" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">- Changing Settings Value
+  <h2 id="">- Changing Settings Value
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -204,10 +202,9 @@ string Name = Properties.Settings.Default.SettingName
 <p>You can change settings values in runtime (If you set the scope to user).
 This can be achieved easily, by doing something simmilar to this:</p>
 
-<pre>
-Properties.Settings.Default.SettingName = "Some Value";
-Properties.Settings.Default.Save(); // Save all edited settings
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="n">Properties</span><span class="p">.</span><span class="n">Settings</span><span class="p">.</span><span class="n">Default</span><span class="p">.</span><span class="n">SettingName</span> <span class="p">=</span> <span class="s">&#34;Some Value&#34;</span><span class="p">;</span>
+<span class="n">Properties</span><span class="p">.</span><span class="n">Settings</span><span class="p">.</span><span class="n">Default</span><span class="p">.</span><span class="n">Save</span><span class="p">();</span> <span class="c1">// Save all edited settings
+</span></code></pre></div>
 
 <p>If you don&rsquo;t include the last line in the example above, then the values edited
 won&rsquo;t be saved!</p>
@@ -274,5 +271,7 @@ won&rsquo;t be saved!</p>
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

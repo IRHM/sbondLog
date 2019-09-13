@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -140,7 +139,7 @@
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#what-are-events-in-mysql-"  id="what-are-events-in-mysql-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What are Events in MySQL?
+  <h2 id="">What are Events in MySQL?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -159,7 +158,7 @@ If you have something that you want to reoccur ever now and then,
 you should consider using events.</p>
 
 <a href="#example"  id="example" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Example
+  <h2 id="">Example
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -173,18 +172,16 @@ you should consider using events.</p>
 </a>
 
 
-<pre>
-CREATE EVENT IF NOT EXISTS `remove_login_attempts` # Create & Name Event
-ON SCHEDULE EVERY 1 MINUTE # When to redo task
-ON COMPLETION PRESERVE
-ENABLE
-DO
+<div class="highlight"><pre class="chroma"><code class="language-SQL" data-lang="SQL"><span class="k">CREATE</span> <span class="n">EVENT</span> <span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXISTS</span> <span class="o">`</span><span class="n">remove_login_attempts</span><span class="o">`</span> <span class="o">#</span> <span class="k">Create</span> <span class="o">&amp;</span> <span class="n">Name</span> <span class="n">Event</span>
+<span class="k">ON</span> <span class="n">SCHEDULE</span> <span class="k">EVERY</span> <span class="mi">1</span> <span class="k">MINUTE</span> <span class="o">#</span> <span class="k">When</span> <span class="k">to</span> <span class="n">redo</span> <span class="n">task</span>
+<span class="k">ON</span> <span class="k">COMPLETION</span> <span class="k">PRESERVE</span>
+<span class="n">ENABLE</span>
+<span class="k">DO</span>
 
-DELETE FROM login_attempts WHERE time < (NOW() - INTERVAL 15 MINUTE); # The code to run
-</pre>
+<span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">login_attempts</span> <span class="k">WHERE</span> <span class="n">time</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="nb">INTERVAL</span> <span class="mi">15</span> <span class="k">MINUTE</span><span class="p">);</span> <span class="o">#</span> <span class="n">The</span> <span class="n">code</span> <span class="k">to</span> <span class="n">run</span></code></pre></div>
 
 <a href="#what-is-the-code-doing"  id="what-is-the-code-doing" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What Is The Code Doing
+  <h2 id="">What Is The Code Doing
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -200,34 +197,22 @@ DELETE FROM login_attempts WHERE time < (NOW() - INTERVAL 15 MINUTE); # The code
 
 <ol>
 <li><p>Create event and name it. <br>
-<pre>
-CREATE EVENT IF NOT EXISTS <code>remove_login_attempts</code>
-</pre></p></li>
+<div class="highlight"><pre class="chroma"><code class="language-SQL" data-lang="SQL"><span class="k">CREATE</span> <span class="n">EVENT</span> <span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXISTS</span> <span class="o">`</span><span class="n">remove_login_attempts</span><span class="o">`</span></code></pre></div></p></li>
 
 <li><p>How long it should wait until it runs the code again <br>
-<pre>
-ON SCHEDULE EVERY 1 MINUTE
-</pre></p></li>
+<div class="highlight"><pre class="chroma"><code class="language-SQL" data-lang="SQL"><span class="k">ON</span> <span class="n">SCHEDULE</span> <span class="k">EVERY</span> <span class="mi">1</span> <span class="k">MINUTE</span></code></pre></div></p></li>
 
 <li><p>Keep the event after it has ran  <br>
-<pre>
-ON COMPLETION PRESERVE
-</pre></p></li>
+<div class="highlight"><pre class="chroma"><code class="language-SQL" data-lang="SQL"><span class="k">ON</span> <span class="k">COMPLETION</span> <span class="k">PRESERVE</span></code></pre></div></p></li>
 
 <li><p>Enable the event <br>
-<pre>
-ENABLE
-</pre></p></li>
+<div class="highlight"><pre class="chroma"><code class="language-SQL" data-lang="SQL"><span class="n">ENABLE</span></code></pre></div></p></li>
 
 <li><p>What code to run (This code should be after &lsquo;DO&rsquo;)  <br>
-<pre>
-DO
-</pre></p></li>
+<div class="highlight"><pre class="chroma"><code class="language-SQL" data-lang="SQL"><span class="k">DO</span></code></pre></div></p></li>
 
 <li><p>The command/code to run (this is an example, you can tell it to do anything)  <br>
-<pre>
-DELETE FROM login_attempts WHERE time &lt; (NOW() - INTERVAL 15 MINUTE);
-</pre></p></li>
+<div class="highlight"><pre class="chroma"><code class="language-SQL" data-lang="SQL"><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">login_attempts</span> <span class="k">WHERE</span> <span class="n">time</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="nb">INTERVAL</span> <span class="mi">15</span> <span class="k">MINUTE</span><span class="p">);</span></code></pre></div></p></li>
 </ol>
 
     </article>
@@ -292,5 +277,7 @@ DELETE FROM login_attempts WHERE time &lt; (NOW() - INTERVAL 15 MINUTE);
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

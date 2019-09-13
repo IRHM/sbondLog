@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -141,7 +140,7 @@ You can use subdomains to redirect to a different server which can show differen
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#what-"  id="what-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What?
+  <h2 id="">What?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -162,7 +161,7 @@ You can use subdomains to redirect to a different server which can show differen
 <p>You can use subdomains to redirect to a different server which can show different content, but in this post, you will learn how to make a subdomain redirect to a directory in your site. This method will also make the subdomain stay in the address bar.</p>
 
 <p><a href="#what-do-i-do-"  id="what-do-i-do-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What Do I Do?
+  <h2 id="">What Do I Do?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -177,7 +176,7 @@ You can use subdomains to redirect to a different server which can show differen
 
 <br>
 <a href="#dns-records"  id="dns-records" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">DNS Records
+  <h2 id="">DNS Records
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -198,7 +197,7 @@ You can use subdomains to redirect to a different server which can show differen
 <p>Name it what you want your subdomain to be named &amp; change the value to your domain (without subdomain in it). If you have the option keep <strong><em>TTL</em></strong> set to <strong><em>Automatic</em></strong></p>
 
 <a href="#hosts-file"  id="hosts-file" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Hosts File
+  <h2 id="">Hosts File
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -214,20 +213,20 @@ You can use subdomains to redirect to a different server which can show differen
 
 <p>Find your <strong><em>hosts file.</em></strong> This should be located here:</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">C:\Windows\System32\drivers\etc</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Windows</span><span class="err">\</span><span class="n">System32</span><span class="err">\</span><span class="n">drivers</span><span class="err">\</span><span class="n">etc</span></code></pre></div>
 
 <p>Open the <strong><em>hosts</em></strong> file and at the bottom <strong><em>locate</em></strong> this:</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">127.0.0.1 localhost</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="mf">127.0.0.1</span> <span class="n">localhost</span></code></pre></div>
 
 <p>Copy that line and paste it below. Now change <strong><em>locahost</em></strong> to:</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">127.0.0.1 subdomainName.domain.com</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="mf">127.0.0.1</span> <span class="n">subdomainName</span><span class="p">.</span><span class="n">domain</span><span class="p">.</span><span class="n">com</span></code></pre></div>
 
 <p>With that done, you can save the file and exit it. <strong><em>(If you are unable to save the file, copy it to your desktop, edit it again and save it there. Now move it back and replace the old file with the new one.)</em></strong></p>
 
 <a href="#httpd-vhosts-conf"  id="httpd-vhosts-conf" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">httpd-vhosts.conf
+  <h2 id="">httpd-vhosts.conf
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -243,17 +242,17 @@ You can use subdomains to redirect to a different server which can show differen
 
 <p>Go to where you installed Apache/XAMPP &amp; find the httpd-vhosts.conf.
 <strong><em>It will be in conf\extra and will look like this on XAMPP:</em></strong>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">C:\xampp\apache\conf\extra</code></pre></div></p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">xampp</span><span class="err">\</span><span class="n">apache</span><span class="err">\</span><span class="n">conf</span><span class="err">\</span><span class="n">extra</span></code></pre></div></p>
 
 <p>Open it up and Copy the code below and paste it at the bottom of the config file.</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;VirtualHost *:80&gt;
-    ServerAdmin webmaster@domain.com
-    DocumentRoot &#34;C:/xampp7/htdocs/&#34;
-    ServerName domain.com
-    ErrorLog &#34;logs/domain.com-error.log&#34;
-    CustomLog &#34;logs/domain.com-access.log&#34; common
-&lt;/VirtualHost&gt;</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+    <span class="nb">ServerAdmin</span> webmaster@domain.com
+    <span class="nb">DocumentRoot</span> <span class="s2">&#34;C:/xampp7/htdocs/&#34;</span>
+    <span class="nb">ServerName</span> domain.com
+    <span class="nb">ErrorLog</span> <span class="s2">&#34;logs/domain.com-error.log&#34;</span>
+    <span class="nb">CustomLog</span> <span class="s2">&#34;logs/domain.com-access.log&#34;</span> common
+<span class="nt">&lt;/VirtualHost&gt;</span></code></pre></div>
 
 <p>With the code above pasted at the bottom of the config, you can start editing it.</p>
 
@@ -267,24 +266,24 @@ You can use subdomains to redirect to a different server which can show differen
 
 <p>Your config file should look something like this when you are done:</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;VirtualHost *:80&gt;
-    ServerAdmin webmaster@sbond.ml
-    DocumentRoot &#34;C:/xampp7/htdocs/&#34;
-    ServerName sbond.ml
-    ErrorLog &#34;logs/sbond.ml-error.log&#34;
-    CustomLog &#34;logs/sbond.ml-access.log&#34; common
-&lt;/VirtualHost&gt;
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+    <span class="nb">ServerAdmin</span> webmaster@sbond.ml
+    <span class="nb">DocumentRoot</span> <span class="s2">&#34;C:/xampp7/htdocs/&#34;</span>
+    <span class="nb">ServerName</span> sbond.ml
+    <span class="nb">ErrorLog</span> <span class="s2">&#34;logs/sbond.ml-error.log&#34;</span>
+    <span class="nb">CustomLog</span> <span class="s2">&#34;logs/sbond.ml-access.log&#34;</span> common
+<span class="nt">&lt;/VirtualHost&gt;</span>
 
-&lt;VirtualHost *:80&gt;
-    ServerAdmin webmaster@log.sbond.ml
-    DocumentRoot &#34;C:/xampp7/htdocs/log&#34;
-    ServerName log.sbond.ml
-    ErrorLog &#34;logs/log.sbond.ml-error.log&#34;
-    CustomLog &#34;logs/log.sbond.ml-access.log&#34; common
-&lt;/VirtualHost&gt;</code></pre></div>
+<span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+    <span class="nb">ServerAdmin</span> webmaster@log.sbond.ml
+    <span class="nb">DocumentRoot</span> <span class="s2">&#34;C:/xampp7/htdocs/log&#34;</span>
+    <span class="nb">ServerName</span> log.sbond.ml
+    <span class="nb">ErrorLog</span> <span class="s2">&#34;logs/log.sbond.ml-error.log&#34;</span>
+    <span class="nb">CustomLog</span> <span class="s2">&#34;logs/log.sbond.ml-access.log&#34;</span> common
+<span class="nt">&lt;/VirtualHost&gt;</span></code></pre></div>
 
 <a href="#done-"  id="done-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Done!
+  <h2 id="">Done!
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -367,5 +366,7 @@ You can use subdomains to redirect to a different server which can show differen
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -140,7 +139,7 @@
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#what-"  id="what-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What?
+  <h2 id="">What?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -157,7 +156,7 @@
 <p>If you are using a hosting provider that doesn&rsquo;t tell you exactly where the directory of your files are you are going to have to use other methods of finding this out. One of the methods which I think is the simplest is using a small PHP script which will tell you exactly where you file is.</p>
 
 <a href="#how-"  id="how-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">How?
+  <h2 id="">How?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -173,18 +172,19 @@
 
 <p>So first you are going to have to create a .php file, which you can name anything. After you have created the .php file, you will need to open it up in your text editor. Once it is open you can simply add the following lines of code:</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;?php $dir = dirname(__FILE__);
-echo &#34;
-Full path to this dir: &#34; . $dir . &#34;
-&#34;; ?&gt;</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-PHP" data-lang="PHP"><span class="cp">&lt;?php</span> <span class="nv">$dir</span> <span class="o">=</span> <span class="nx">dirname</span><span class="p">(</span><span class="no">__FILE__</span><span class="p">);</span>
+<span class="k">echo</span> <span class="s2">&#34;
+</span><span class="s2">Full path to this dir: &#34;</span> <span class="o">.</span> <span class="nv">$dir</span> <span class="o">.</span> <span class="s2">&#34;
+</span><span class="s2">&#34;</span><span class="p">;</span> <span class="cp">?&gt;</span>
+</code></pre></div>
 
 <p>Once you have your .php file created and have them 2 lines of code in it, save it and upload it to your site. Now you can go to your site at the directory of the .php file like such:</p>
 
-<pre>www.example.com/filename.php</pre>
+<div class="highlight"><pre class="chroma"><code class="language-PHP" data-lang="PHP">www.example.com/filename.php</code></pre></div>
 
 <p>When you have visited the file on your website you should be greeted with something like this ( Of course the directory will be different for you ) :</p>
 
-<pre>Full path to this dir: C:\xampp7\htdocs\i</pre>
+<div class="highlight"><pre class="chroma"><code class="language-PHP" data-lang="PHP">Full path to this dir: C:\xampp7\htdocs\i</code></pre></div>
 
     </article>
   </section>
@@ -253,5 +253,7 @@ Full path to this dir: &#34; . $dir . &#34;
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -141,7 +140,7 @@
       
 
 <a href="#what-will-you-be-using-"  id="what-will-you-be-using-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What Will You Be Using?
+  <h2 id="">What Will You Be Using?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -164,7 +163,7 @@
 <p><strong>There is also A way to only password protect one file, so if that is what you are looking go <a href="http://localhost:1313/log/webdev/password-protect-one-file-on-site/" class="b bb bw pb1 no-underline black dim">here.</a></strong></p>
 
 <a href="#how-"  id="how-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">How?
+  <h2 id="">How?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -181,16 +180,14 @@
 <p>So, first you will need to create both files you will be needing. Make sure you place these files in the directory you want password protected. The files cant be text files, they don&rsquo;t have a file type. Read past this to know how to make them without a file type.</p>
 
 <p>Make both of the following files ( Make sure you keep the period [.] before ht ) :
-<pre>
-.htaccess
-.htpass
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache">.<span class="nb">htaccess</span>
+.htpass</code></pre></div>
 A little note, since your .htpass file is defined or located in the .htaccess file you can name it whatever you want as long as you change the filename in .htaccess. So I can have my .htpass file named .htNerds if I really wanted to.</p>
 
 <p>Error logs are always your friend, if you find an error just look in your logs and you will find out more information about what it causing it.</p>
 
 <a href="#making-files-without-a-file-type"  id="making-files-without-a-file-type" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Making Files Without A File Type
+  <h2 id="">Making Files Without A File Type
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -218,16 +215,16 @@ A little note, since your .htpass file is defined or located in the .htaccess fi
 
 <p>Once you are in CMD you are going to want to cd to the directory you want your .ht file to be made in. Like the following.</p>
 
-<pre> cd C:/xampp/htdocs/i </pre>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"> <span class="nb">cd</span> C:/xampp/htdocs/i </code></pre></div>
 
 <p>When you have told it where to look you can now tell it what file to make for you like such:</p>
 
-<pre>type nul > .htFileName</pre>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="nb">type</span> nul &gt; .htFileName</code></pre></div>
 
 <p>Of course you should change .htFileName to whatever you .ht file you are making.</p>
 
 <a href="#back-to-it"  id="back-to-it" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Back To It
+  <h2 id="">Back To It
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -245,15 +242,15 @@ A little note, since your .htpass file is defined or located in the .htaccess fi
 
 <p>Now that you have your <strong>.htaccess</strong> file, you are going to want to open it up. Once it is opened you can type the following into it:</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">AuthType Basic
-AuthName &#34;Please Enter A Password To Proceed&#34;
-AuthUserFile C:/xampp/htdocs/i/.htpass
-Require valid-user</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="nb">AuthType</span> Basic
+<span class="nb">AuthName</span> <span class="s2">&#34;Please Enter A Password To Proceed&#34;</span>
+<span class="nb">AuthUserFile</span> C:/xampp/htdocs/i/.htpass
+<span class="nb">Require</span> valid-user</code></pre></div>
 
 <p>After AuthUserFile you are going to want to change the directory to wherever you have placed your .htpass file.</p>
 
 <a href="#setting-passwords"  id="setting-passwords" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Setting Passwords
+  <h2 id="">Setting Passwords
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -272,10 +269,10 @@ Require valid-user</code></pre></div>
 <p>Just open up your .htpass file and you can type in some logins that you want working. It is good to know that you can have multiple usernames and password working at the same time, just make sure to only have one username and password on a line.</p>
 
 <p>Usernames and passwords should be entered on each line like this ( The username is before the colon [:] and the password is after ) :
-<pre>test2:$apr1$9zh58uHn$OaS9h.KS3ru3gpVz.NHVw.</pre></p>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="err">test2:$apr1$9zh58uHn$OaS9h</span>.<span class="err">KS3ru3gpVz</span>.<span class="err">NHVw</span>.</code></pre></div></p>
 
 <a href="#password-encryption"  id="password-encryption" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Password Encryption
+  <h2 id="">Password Encryption
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -358,5 +355,7 @@ Require valid-user</code></pre></div>
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

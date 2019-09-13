@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -141,7 +140,7 @@ Step 2 - Add InfoClick on the control you want to display info about, and 
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#step-1-add-the-control"  id="step-1-add-the-control" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 1 - Add The Control
+  <h2 id="">Step 1 - Add The Control
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -162,7 +161,7 @@ bottom in a little box.</p>
 <p>You can click on it and edit it&rsquo;s properties.</p>
 
 <a href="#step-2-add-info"  id="step-2-add-info" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 2 - Add Info
+  <h2 id="">Step 2 - Add Info
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -181,7 +180,7 @@ bottom in a little box.</p>
 information you want to display when someone hovers over it.</p>
 
 <a href="#change-colours-optional-"  id="change-colours-optional-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Change Colours (Optional)
+  <h2 id="">Change Colours (Optional)
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -200,11 +199,10 @@ information you want to display when someone hovers over it.</p>
 <li>Set <strong>OwnerDraw</strong>, in the same menu, to <strong>True</strong>.</li>
 <li>On the <strong>ToolTip</strong> go to events and make the <strong>Draw</strong> event.</li>
 <li><strong>Paste</strong> the following into the event you just made:
-<pre>
-e.DrawBackground();
-e.DrawBorder(); // &lt;&ndash; can remove this line to remove border
-e.DrawText();
-</pre></li>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"> <span class="n">e</span><span class="p">.</span><span class="n">DrawBackground</span><span class="p">();</span>
+ <span class="n">e</span><span class="p">.</span><span class="n">DrawBorder</span><span class="p">();</span> <span class="c1">// &lt;-- can remove this line to remove border
+</span><span class="c1"></span> <span class="n">e</span><span class="p">.</span><span class="n">DrawText</span><span class="p">();</span>
+</code></pre></div></li>
 </ol>
 
     </article>
@@ -269,5 +267,7 @@ e.DrawText();
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

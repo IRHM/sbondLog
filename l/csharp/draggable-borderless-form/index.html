@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -99,8 +98,8 @@
 <meta
   name="twitter:description"
   content="Step 1 - Adding EventGo into the events of either the whole form or on a control/panel and add the MouseDown event. 
-Step 2 - Variables &amp; Importing NamespaceImport the namespace: using System.Runtime.InteropServices;
-Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2; [DllImportAttribute(&ldquo;user32.|"
+Step 2 - Variables &amp; Importing NamespaceImport the namespace: using System.Runtime.InteropServices; 
+Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int HT_CAPTION = 0x2; [DllImportAttribute(&#34;user32.|"
 />
 <meta name="twitter:image:src" content="" />
 <meta name="twitter:domain" content="https://log.sbond.ml/l/csharp/draggable-borderless-form/" />
@@ -141,7 +140,7 @@ Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#step-1-adding-event"  id="step-1-adding-event" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 1 - Adding Event
+  <h2 id="">Step 1 - Adding Event
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -159,7 +158,7 @@ Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int
 <center><img src="https://ul.sbond.ml/i/log/win/mousedownevent.png" alt="MouseDown Event" title="MouseDown Event" /></center></p>
 
 <a href="#step-2-variables-importing-namespace"  id="step-2-variables-importing-namespace" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 2 - Variables &amp; Importing Namespace
+  <h2 id="">Step 2 - Variables &amp; Importing Namespace
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -174,18 +173,20 @@ Define the following: public const int WM_NCLBUTTONDOWN = 0xA1; public const int
 
 
 <p>Import the namespace:
-<pre>using System.Runtime.InteropServices;</pre></p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="k">using</span> <span class="nn">System.Runtime.InteropServices</span><span class="p">;</span>
+</code></pre></div></p>
 
 <p>Define the following:
-<pre>public const int WM_NCLBUTTONDOWN = 0xA1;
-public const int HT_CAPTION = 0x2;
-[DllImportAttribute(&ldquo;user32.dll&rdquo;)]
-public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-[DllImportAttribute(&ldquo;user32.dll&rdquo;)]
-public static extern bool ReleaseCapture();</pre></p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="k">public</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">WM_NCLBUTTONDOWN</span> <span class="p">=</span> <span class="m">0</span><span class="n">xA1</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">HT_CAPTION</span> <span class="p">=</span> <span class="m">0</span><span class="n">x2</span><span class="p">;</span>
+<span class="na">[DllImportAttribute(&#34;user32.dll&#34;)]</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="n">SendMessage</span><span class="p">(</span><span class="n">IntPtr</span> <span class="n">hWnd</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Msg</span><span class="p">,</span> <span class="kt">int</span> <span class="n">wParam</span><span class="p">,</span> <span class="kt">int</span> <span class="n">lParam</span><span class="p">);</span>
+<span class="na">[DllImportAttribute(&#34;user32.dll&#34;)]</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">bool</span> <span class="n">ReleaseCapture</span><span class="p">();</span>
+</code></pre></div></p>
 
 <a href="#step-3-make-event"  id="step-3-make-event" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 3 - Make Event
+  <h2 id="">Step 3 - Make Event
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -201,14 +202,15 @@ public static extern bool ReleaseCapture();</pre></p>
 
 <p>Put the following lines of code inside of your event (<strong>Change TopPanel_MouseDown to what you called your event above</strong>):</p>
 
-<pre>private void TopPanel_MouseDown(object sender, MouseEventArgs e)
-{
-    ReleaseCapture();
-    SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-}</pre>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="k">private</span> <span class="k">void</span> <span class="n">TopPanel_MouseDown</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">MouseEventArgs</span> <span class="n">e</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">ReleaseCapture</span><span class="p">();</span>
+    <span class="n">SendMessage</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Handle</span><span class="p">,</span> <span class="n">WM_NCLBUTTONDOWN</span><span class="p">,</span> <span class="n">HT_CAPTION</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <a href="#done-"  id="done-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Done! 🎉
+  <h2 id="">Done! 🎉
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -286,5 +288,7 @@ public static extern bool ReleaseCapture();</pre></p>
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

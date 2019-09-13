@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -98,7 +97,7 @@
 />
 <meta
   name="twitter:description"
-  content="Step 1 - The Importing using System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class:  [DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner int nTopRect, // y-coordinate of upper-left corner int nRightRect, // x-coordinate of lower-right corner int nBottomRect, // y-coordinate of lower-right corner int nWidthEllipse, // height of ellipse int nHeightEllipse // width of ellipse );  Step 2 - RoundingI would put this in the initialisation of your form.|"
+  content="Step 1 - The Importingusing System.Runtime.InteropServices; using System.Drawing;  Put this one inside of your class: [DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)] private static extern IntPtr CreateRoundRectRgn ( int nLeftRect, // x-coordinate of upper-left corner  int nTopRect, // y-coordinate of upper-left corner  int nRightRect, // x-coordinate of lower-right corner  int nBottomRect, // y-coordinate of lower-right corner  int nWidthEllipse, // height of ellipse  int nHeightEllipse // width of ellipse );|"
 />
 <meta name="twitter:image:src" content="" />
 <meta name="twitter:domain" content="https://log.sbond.ml/l/csharp/rounded-form/" />
@@ -139,7 +138,7 @@
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#step-1-the-importing"  id="step-1-the-importing" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 1 - The Importing
+  <h2 id="">Step 1 - The Importing
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -153,26 +152,24 @@
 </a>
 
 
-<pre>
-using System.Runtime.InteropServices;
-using System.Drawing;
-</pre>
+<p><div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="k">using</span> <span class="nn">System.Runtime.InteropServices</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Drawing</span><span class="p">;</span>
+</code></pre></div>
 Put this one inside of your class:
-<pre>
-[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-private static extern IntPtr CreateRoundRectRgn
-(
-    int nLeftRect,     // x-coordinate of upper-left corner
-    int nTopRect,      // y-coordinate of upper-left corner
-    int nRightRect,    // x-coordinate of lower-right corner
-    int nBottomRect,   // y-coordinate of lower-right corner
-    int nWidthEllipse, // height of ellipse
-    int nHeightEllipse // width of ellipse
-);
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="na">[DllImport(&#34;Gdi32.dll&#34;, EntryPoint = &#34;CreateRoundRectRgn&#34;)]</span>
+<span class="k">private</span> <span class="k">static</span> <span class="k">extern</span> <span class="n">IntPtr</span> <span class="n">CreateRoundRectRgn</span>
+<span class="p">(</span>
+    <span class="kt">int</span> <span class="n">nLeftRect</span><span class="p">,</span>     <span class="c1">// x-coordinate of upper-left corner
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">nTopRect</span><span class="p">,</span>      <span class="c1">// y-coordinate of upper-left corner
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">nRightRect</span><span class="p">,</span>    <span class="c1">// x-coordinate of lower-right corner
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">nBottomRect</span><span class="p">,</span>   <span class="c1">// y-coordinate of lower-right corner
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">nWidthEllipse</span><span class="p">,</span> <span class="c1">// height of ellipse
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">nHeightEllipse</span> <span class="c1">// width of ellipse
+</span><span class="c1"></span><span class="p">);</span>
+</code></pre></div></p>
 
 <a href="#step-2-rounding"  id="step-2-rounding" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 2 - Rounding
+  <h2 id="">Step 2 - Rounding
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -187,13 +184,12 @@ private static extern IntPtr CreateRoundRectRgn
 
 
 <p>I would put this in the initialisation of your form.
-<pre>
-this.FormBorderStyle = FormBorderStyle.None; //&lt;– if it isn’t already!
-Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-</pre></p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="k">this</span><span class="p">.</span><span class="n">FormBorderStyle</span> <span class="p">=</span> <span class="n">FormBorderStyle</span><span class="p">.</span><span class="n">None</span><span class="p">;</span> <span class="c1">//&lt;– if it isn’t already!
+</span><span class="c1"></span><span class="n">Region</span> <span class="p">=</span> <span class="n">Region</span><span class="p">.</span><span class="n">FromHrgn</span><span class="p">(</span><span class="n">CreateRoundRectRgn</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">Width</span><span class="p">,</span> <span class="n">Height</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">20</span><span class="p">));</span>
+</code></pre></div></p>
 
 <a href="#done-"  id="done-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Done!
+  <h2 id="">Done!
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -208,10 +204,9 @@ Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
 
 <p>On this specific line:
-<pre>
-this.FormBorderStyle = FormBorderStyle.None; //&lt;&ndash; if it isn&rsquo;t already!
-Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="k">this</span><span class="p">.</span><span class="n">FormBorderStyle</span> <span class="p">=</span> <span class="n">FormBorderStyle</span><span class="p">.</span><span class="n">None</span><span class="p">;</span> <span class="c1">//&lt;-- if it isn&#39;t already!
+</span><span class="c1"></span><span class="n">Region</span> <span class="p">=</span> <span class="n">Region</span><span class="p">.</span><span class="n">FromHrgn</span><span class="p">(</span><span class="n">CreateRoundRectRgn</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">Width</span><span class="p">,</span> <span class="n">Height</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">20</span><span class="p">));</span>
+</code></pre></div>
 You can change the last two numbers (20, 20) to change how smooth/hard the curve is.</p>
 
     </article>
@@ -276,5 +271,7 @@ You can change the last two numbers (20, 20) to change how smooth/hard the curve
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

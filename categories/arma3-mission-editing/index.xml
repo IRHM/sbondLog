@@ -56,7 +56,7 @@ Inside of the Speech Marks, you will put classnames for the items you want to be
       <pubDate>Wed, 17 Oct 2018 07:47:54 +0100</pubDate>
       
       <guid>https://log.sbond.ml/l/arma3-mission-editing/placing-trees-in-eden-editor/</guid>
-      <description>How Would I Do This?To add a tree you first have to place down a game logic wherever you please and copy the code below into it: _tree = createSimpleObject [&amp;ldquo;TREE NAME&amp;rdquo;, [X,Y,Z]];
+      <description>How Would I Do This?To add a tree you first have to place down a game logic wherever you please and copy the code below into it: _tree = createSimpleObject [&amp;#34;TREE NAME&amp;#34;, [X,Y,Z]];
 Once you have the code in there you are going to have to edit some things before your tree will be placed:</description>
     </item>
     
@@ -114,7 +114,7 @@ How?In your dialog just add the following lines of code:</description>
       <guid>https://log.sbond.ml/l/arma3-mission-editing/execvm/</guid>
       <description>What Is execVM?execVM is an essential command for ArmA 3 scripting. It allows you to call a script at any point.
 ExampleexecVM is really easy to use and is used like such:
-execVM &#34;nameOfScript.filetype&#34;; </description>
+execVM &amp;#34;nameOfScript.filetype&amp;#34;; </description>
     </item>
     
   </channel>

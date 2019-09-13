@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -141,7 +140,7 @@ How?1.|"
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#what-"  id="what-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What?
+  <h2 id="">What?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -160,7 +159,7 @@ How?1.|"
 <p>You will recognise one because it will have text before the actual domain, something like the <strong>www.</strong> you see before most sites. Luckily we have the .htaccess file because this all becomes a lot easier once you get into it.</p>
 
 <a href="#how-"  id="how-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">How?
+  <h2 id="">How?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -176,9 +175,9 @@ How?1.|"
 
 <p>1.Make sure you have made your .htaccess file. You can learn how to make it here (Only make the .htaccess file).
 2.Type the following lines of code into your .htaccess file:
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">RewriteEngine on
-RewriteCond %{HTTP_HOST} ^subdomain.example.com
-RewriteRule ^(.*)$ https://example.com/directory/To/Point/To/$1 [L,NC,QSA]</code></pre></div></p>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="nb">RewriteEngine</span> <span class="k">on</span>
+<span class="nb">RewriteCond</span> %{HTTP_HOST} ^subdomain.example.com
+<span class="nb">RewriteRule</span> ^(.*)$ https://example.com/directory/To/Point/To/$1 [L,NC,QSA]</code></pre></div></p>
 
 <p>If it doesn&rsquo;t work set up an A Record in your DNS configuration. Make the name * and point it towards your public IP address!</p>
 
@@ -246,5 +245,7 @@ RewriteRule ^(.*)$ https://example.com/directory/To/Point/To/$1 [L,NC,QSA]</code
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

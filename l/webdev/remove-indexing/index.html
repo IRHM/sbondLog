@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -139,7 +138,7 @@
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#what-"  id="what-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What?
+  <h2 id="">What?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -156,7 +155,7 @@
 <p>If you go to your site and put a folder in the address bar instead of a file you will be greeted with folder indexing, which allows people to look at whatever is in that folder/directory. When allowed anyone can type in a &lsquo;normal&rsquo; folder into the address bar on your site and then be greeted with an easy way of seeing every folder and every file on your site. There are many reasons you may not want people to be able to access the indexing of you site and lucky for you it is really simple to disable it.</p>
 
 <a href="#how-"  id="how-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">How?
+  <h2 id="">How?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -173,7 +172,7 @@
 <p>All you need is a <a href="https://log.sbond.ml/log/webdev/making-.htaccess-and.htpassword/" class="b bb bw pb1 no-underline black dim">.htaccess<a> file. You can read here on how to make your own (Don&rsquo;t need .htpassword to remove indexing).</p>
 
 <p>Once you have your .htaccess file, just right click on it and edit with your text editor and add this one line of code:
-<pre>Options -Indexes</pre></p>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="nb">Options</span> -Indexes</code></pre></div></p>
 
     </article>
   </section>
@@ -237,5 +236,7 @@
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

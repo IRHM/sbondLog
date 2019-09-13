@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -142,7 +141,7 @@ Mine, after editing, looks like this:
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#step-1-create-subdomain"  id="step-1-create-subdomain" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 1 - Create Subdomain
+  <h2 id="">Step 1 - Create Subdomain
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -162,7 +161,7 @@ target="_blank" class="b bb bw pb1 no-underline black dim">
 this tutorial</a> first and then come back.</p>
 
 <a href="#change-document-root"  id="change-document-root" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Change Document Root
+  <h2 id="">Change Document Root
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -181,17 +180,17 @@ subdomain.</p>
 
 <p>Mine, after editing, looks like this:</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;VirtualHost *:80&gt;
-  ServerName cd.sbond.ml
-  DocumentRoot &#34;C:\Path\To\Custom\Dir&#34;
-    &lt;Directory /&gt;
-    	Options FollowSymLinks
-    	AllowOverride All
-    &lt;/Directory&gt;
-&lt;/VirtualHost&gt;&lt;/pre&gt;</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+  <span class="nb">ServerName</span> cd.sbond.ml
+  <span class="nb">DocumentRoot</span> <span class="s2">&#34;C:\Path\To\Custom\Dir&#34;</span>
+    <span class="nt">&lt;Directory</span> <span class="s">/</span><span class="nt">&gt;</span>
+    	<span class="nb">Options</span> FollowSymLinks
+    	<span class="nb">AllowOverride</span> <span class="k">All</span>
+    <span class="nt">&lt;/Directory&gt;</span>
+<span class="nt">&lt;/VirtualHost&gt;&lt;/pre&gt;</span></code></pre></div>
 
 <a href="#step-3-allow-access-to-dir-make-alias"  id="step-3-allow-access-to-dir-make-alias" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 3 - Allow Access To Dir &amp; Make Alias
+  <h2 id="">Step 3 - Allow Access To Dir &amp; Make Alias
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -206,18 +205,20 @@ subdomain.</p>
 
 
 <p>Go to your <strong>&lsquo;httpd.conf&rsquo;</strong> &amp; find:
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;Directory /&gt;
-    AllowOverride none
-    Require all denied
-&lt;/Directory&gt;</code></pre></div>
-Under it <strong>paste</strong> &amp; <strong>edit:</strong>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;Directory &#34;C:\Path\To\Custom\Dir&#34;&gt;
-   Require all granted
-&lt;/Directory&gt;
-Alias /Dir &#34;C:\Path\To\Custom\Dir&#34; // So you can access this dir easily</code></pre></div></p>
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="nt">&lt;Directory</span> <span class="s">/</span><span class="nt">&gt;</span>
+    <span class="nb">AllowOverride</span> <span class="k">none</span>
+    <span class="nb">Require</span> <span class="k">all</span> denied
+<span class="nt">&lt;/Directory&gt;</span></code></pre></div></p>
+
+<p>Under it <strong>paste</strong> &amp; <strong>edit:</strong></p>
+
+<div class="highlight"><pre class="chroma"><code class="language-Apache" data-lang="Apache"><span class="nt">&lt;Directory</span> <span class="s">&#34;C:\Path\To\Custom\Dir&#34;</span><span class="nt">&gt;</span>
+   <span class="nb">Require</span> <span class="k">all</span> granted
+<span class="nt">&lt;/Directory&gt;</span>
+<span class="nb">Alias</span> <span class="sx">/Dir</span> <span class="s2">&#34;C:\Path\To\Custom\Dir&#34;</span> // So you can access this dir easily</code></pre></div>
 
 <a href="#step-4-test-it"  id="step-4-test-it" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Step 4 - Test It
+  <h2 id="">Step 4 - Test It
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -301,5 +302,7 @@ type your subdomain into the address bar on your browser.</p>
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -140,7 +139,7 @@
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#what-do-you-mean-"  id="what-do-you-mean-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What Do You Mean?
+  <h2 id="">What Do You Mean?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -157,7 +156,7 @@
 <p>What I mean by &lsquo;Scale On Hover&rsquo; is that when you hover over an element on your page it will scale up. I like to use this when you have something that is clickable and you want to add some &lsquo;smoothness&rsquo; to it. It makes the whole page flow nicer if you use it correctly and you don&rsquo;t go over the top with it.</p>
 
 <a href="#how-"  id="how-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">How?
+  <h2 id="">How?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -173,13 +172,13 @@
 
 <p>This is with CSS so go to your styles sheet and do the following:</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">img{
-  transition: all .2s ease-in-out;
-}
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">img</span><span class="p">{</span>
+  <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">.2</span><span class="kt">s</span> <span class="kc">ease</span><span class="o">-</span><span class="n">in-out</span><span class="p">;</span>
+<span class="p">}</span>
 
-img:hover{
-  transform: scale(1.1);
-}</code></pre></div>
+<span class="nt">img</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">1.1</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
 
 <p>I use the <strong>img</strong> tag because I want every image on my page to scale up when it is hovered on. If you only want certain things to scale when hovered on you can use their class instead.</p>
 
@@ -250,5 +249,7 @@ img:hover{
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -142,7 +141,7 @@
       
 
 <a href="#intro"  id="intro" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Intro
+  <h2 id="">Intro
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -159,7 +158,7 @@
 <p>Keyframes in CSS are very diverse, you can use them for many things&hellip; just get creative!</p>
 
 <a href="#the-basics"  id="the-basics" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">The Basics
+  <h2 id="">The Basics
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -178,30 +177,26 @@ keyframes, but this is just an example which you should build on, on your own.</
 
 <p>First you can &lsquo;include&rsquo; the animations name in the class of your choosing as such:</p>
 
-<pre>
-.randomClass{
-  animation-name: exampleAnim;
-  animation-duration: 5s;
-}
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">randomClass</span><span class="p">{</span>
+  <span class="k">animation-name</span><span class="p">:</span> <span class="n">exampleAnim</span><span class="p">;</span>
+  <span class="k">animation-duration</span><span class="p">:</span> <span class="mi">5</span><span class="kt">s</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
 
 <p><strong>Note:</strong> Some browsers may need you to use <strong>-webkit-</strong> before <strong>animation</strong>,
  like: <strong>-webkit-animation-name: sumAnim</strong></p>
 
 <p>Secondly, we will be setting up the actual <strong>keyframe</strong> part:</p>
 
-<pre>
-@keyframes exampleAnim{
-  from  {color: red;}
-  to  {color: blue;}
-}
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">keyframes</span> <span class="nt">exampleAnim</span><span class="p">{</span>
+  <span class="nt">from</span>  <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+  <span class="nt">to</span>  <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;}</span>
+<span class="p">}</span></code></pre></div>
 
 <p>The best part is, you can use any CSS property inside of keyframes,
 so you can in theory, animate everything.</p>
 
 <a href="#animate-in-increments"  id="animate-in-increments" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Animate In Increments
+  <h2 id="">Animate In Increments
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -216,18 +211,16 @@ so you can in theory, animate everything.</p>
 
 
 <p>You can combine this method with the one shown above, if you really wanted to.
-<pre>
-@keyframes exampleAnim{
-  0%    {color: red;}
-  25%   {color: red;}
-  50%   {color: red;}
-  75%   {color: red;}
-  100%  {color: red;}
-}
-</pre></p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">keyframes</span> <span class="nt">exampleAnim</span><span class="p">{</span>
+  <span class="nt">0</span><span class="o">%</span>    <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+  <span class="nt">25</span><span class="o">%</span>   <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+  <span class="nt">50</span><span class="o">%</span>   <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+  <span class="nt">75</span><span class="o">%</span>   <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+  <span class="nt">100</span><span class="o">%</span>  <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+<span class="p">}</span></code></pre></div></p>
 
 <a href="#misc-"  id="misc-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Misc.
+  <h2 id="">Misc.
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -245,9 +238,7 @@ so you can in theory, animate everything.</p>
 
 <p>Sometimes it may be easier for you if you just call animations like this:</p>
 
-<pre>
-animation: repeatit 2s linear 0s infinite alternate;
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">animation</span><span class="o">:</span> <span class="nt">repeatit</span> <span class="nt">2s</span> <span class="nt">linear</span> <span class="nt">0s</span> <span class="nt">infinite</span> <span class="nt">alternate</span><span class="o">;</span></code></pre></div>
 
 <p>This is the much easier to write, but arguably harder to read version of
 typing out each property one by one.</p>
@@ -256,18 +247,16 @@ typing out each property one by one.</p>
 
 <p>You can search up the following, if you want to expand your knowledge.</p>
 
-<pre>
-animation-name
-animation-duration
-animation-delay
-animation-iteration-count
-animation-direction
-animation-timing-function
-animation-fill-mode
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">animation-name</span>
+<span class="nt">animation-duration</span>
+<span class="nt">animation-delay</span>
+<span class="nt">animation-iteration-count</span>
+<span class="nt">animation-direction</span>
+<span class="nt">animation-timing-function</span>
+<span class="nt">animation-fill-mode</span></code></pre></div>
 
 <a href="#real-example"  id="real-example" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Real Example
+  <h2 id="">Real Example
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -303,28 +292,27 @@ animation-fill-mode
 
 <h3 id="code">Code:</h3>
 
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">&lt;div class=&#34;helloDiv&#34;&gt;hello&lt;/div&gt;
+<p><div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&#34;helloDiv&#34;</span><span class="o">&gt;</span><span class="nt">hello</span><span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
 
-&lt;style&gt;
-  .helloDiv{
-    font-size: 18px;
-    text-align: center;
-    width: 50px;
-    border: 1px solid black;
-    border-radius: 6px;
+<span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
+  <span class="p">.</span><span class="nc">helloDiv</span><span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">6</span><span class="kt">px</span><span class="p">;</span>
 
-    position: relative; // &lt;-- important
-    animation: helloDivAnim 15s infinite;
-  }
+    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span> <span class="err">//</span> <span class="err">&lt;--</span> <span class="err">important</span>
+    <span class="k">animation</span><span class="p">:</span> <span class="n">helloDivAnim</span> <span class="mi">15</span><span class="kt">s</span> <span class="kc">infinite</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  @keyframes helloDivAnim{
-    0%    {left: 0; background-color: red;}
-    50%   {left: 100%; background-color: lightblue;}
-    100%  {left: 0; background-color: red;}
-  }
-&lt;/style&gt;</code></pre></div>
-
-<p><strong>Note:</strong> If you don&rsquo;t set a property for your animation, then it will just
+  <span class="p">@</span><span class="k">keyframes</span> <span class="nt">helloDivAnim</span><span class="p">{</span>
+    <span class="nt">0</span><span class="o">%</span>    <span class="p">{</span><span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="k">background-color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+    <span class="nt">50</span><span class="o">%</span>   <span class="p">{</span><span class="k">left</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="k">background-color</span><span class="p">:</span> <span class="kc">lightblue</span><span class="p">;}</span>
+    <span class="nt">100</span><span class="o">%</span>  <span class="p">{</span><span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="k">background-color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+  <span class="p">}</span>
+<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span></code></pre></div>
+<strong>Note:</strong> If you don&rsquo;t set a property for your animation, then it will just
 be set to it&rsquo;s default. So if you need to make a change, make sure you have
 done so.</p>
 
@@ -395,5 +383,7 @@ done so.</p>
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

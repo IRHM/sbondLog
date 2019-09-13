@@ -58,7 +58,6 @@
   lang="en-us"
   prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
 >
-
   <head>
     <meta charset="utf-8" />
 
@@ -140,7 +139,7 @@
 
     <article itemprop="articleBody" id="content" class="w-100 lh-copy">
       <a href="#what-is-this-"  id="what-is-this-" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">What Is This?
+  <h2 id="">What Is This?
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -157,7 +156,7 @@
 <p><a href="https://github.com/kayler-renslow/arma-dialog-creator/releases" target="_blank" class="b bb bw pb1 no-underline black dim">ArmA Dialog Creator</a> is an amazing tool created by Kayler Renslow. It is the easy way of creating functional dialogs in ArmA 3. You can simply download it from his Github and install it. Once you have done that you are ready to start creating dialogs the easy way!</p>
 
 <a href="#how-to-start"  id="how-to-start" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">How To Start
+  <h2 id="">How To Start
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -178,7 +177,7 @@
 <p>You can now start editing your new control by double-clicking and changing what you want to be changed.</p>
 
 <a href="#exporting"  id="exporting" class="no-underline black link" style="padding-top: 80px;">
-  <h2 id="" class="">Exporting
+  <h2 id="">Exporting
     <svg class="linkHeadingSVG" height="22px"
       viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none"></path>
@@ -198,35 +197,31 @@
 
 <p>My .hpp File <strong>before</strong> copy and paste:</p>
 
-<pre>
-class DialogName{
-  idd = 1000
-  class controls{
-  };
-};
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="n">class</span> <span class="n">DialogName</span><span class="p">{</span>
+  <span class="n">idd</span> <span class="o">=</span> <span class="mi">1000</span>
+  <span class="n">class</span> <span class="n">controls</span><span class="p">{</span>
+  <span class="p">};</span>
+<span class="p">};</span></code></pre></div>
 
 <p>My .hpp File <strong>after</strong> copy and paste:</p>
 
-<pre>
-class DialogName{
-  idd = 1000
-    class controls{
-      class rsc_frame{
-      Stuff = Stuff
-      Stuff = Stuff
-      Stuff = Stuff
-      Stuff = Stuff
-    };
-    class rsc_frame_2{
-      Stuff = Stuff
-      Stuff = Stuff
-      Stuff = Stuff
-      Stuff = Stuff
-    };
-  };
-};
-</pre>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="n">class</span> <span class="n">DialogName</span><span class="p">{</span>
+  <span class="n">idd</span> <span class="o">=</span> <span class="mi">1000</span>
+    <span class="n">class</span> <span class="n">controls</span><span class="p">{</span>
+      <span class="n">class</span> <span class="n">rsc_frame</span><span class="p">{</span>
+      <span class="n">Stuff</span> <span class="o">=</span> <span class="n">Stuff</span>
+      <span class="n">Stuff</span> <span class="o">=</span> <span class="n">Stuff</span>
+      <span class="n">Stuff</span> <span class="o">=</span> <span class="n">Stuff</span>
+      <span class="n">Stuff</span> <span class="o">=</span> <span class="n">Stuff</span>
+    <span class="p">};</span>
+    <span class="n">class</span> <span class="n">rsc_frame_2</span><span class="p">{</span>
+      <span class="n">Stuff</span> <span class="o">=</span> <span class="n">Stuff</span>
+      <span class="n">Stuff</span> <span class="o">=</span> <span class="n">Stuff</span>
+      <span class="n">Stuff</span> <span class="o">=</span> <span class="n">Stuff</span>
+      <span class="n">Stuff</span> <span class="o">=</span> <span class="n">Stuff</span>
+    <span class="p">};</span>
+  <span class="p">};</span>
+<span class="p">};</span></code></pre></div>
 
     </article>
   </section>
@@ -290,5 +285,7 @@ class DialogName{
   </center>
 </footer>
 
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
