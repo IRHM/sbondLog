@@ -1,0 +1,51 @@
+{{ partial "nav.html" . }}
+{{ partial "header.html" . }}
+<body
+  lang="{{ .Site.LanguageCode }}"
+  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  {{ $baseurl := .Site.BaseURL }}
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">{{ .Title }}</h1>
+
+    <h4 itemprop="name" id="title" style="font-size:13px;">
+      By
+      <a href="/a/{{ .Params.authorspaceless  }}"
+      class="b bb bw1 pb1 no-underline black">
+          {{ .Params.author }}
+      </a>
+      on {{ .Date.Format "2 January, 2006" }}
+    </h4>
+
+    <article itemprop="articleBody" id="content" class="w-100 lh-copy">
+      {{ .Content }}
+    </article>
+  </section>
+
+<br />
+
+  <h3 style="font-size:13px;color:white;" class="">
+
+    <img src="{{ .Site.Params.catIcon }}"
+    alt="Categories" width="20px" class="grow fl" /> &nbsp;
+
+    {{ range $i := (slice "categories" "tags") }}
+    {{ with ($.Param $i) }}
+    {{ range $k := . }}
+
+      <a href="{{ relURL (print "/" $i "/" $k | urlize) }}"
+      class="dim bb bw1 pb1 no-underline black">{{$k}}</a>
+
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+  </h3><br />
+  {{ partial "footer.html" . }}
+  <script src="/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{{ partial "nav.html" . }}
+{{ partial "header.html" . }}
+<body
+  lang="{{ .Site.LanguageCode }}"
+  class="sans-serif w-80 w-60-ns center center-ns mv2 mv5-ns">
+<section id="main" class="mt5">
+
+    <div>
+      <ul id="list" class="pl0">
+        {{ range .Paginator.Pages }}
+        {{ range .Data.Pages.ByDate.Reverse }}
+        {{ end }}
+        <li class="list pl0 lh-copy">
+          <a class="f3 b dib black no-underline" href="{{ .Permalink}}">
+            {{ .Title }}</a>
+          <br />
+        </li>
+        <!-- prettier-ignore -->
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+
+  {{ partial "paginator.html" . }}
+  {{ partial "footer.html" . }}
+</body>

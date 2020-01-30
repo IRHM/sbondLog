@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="" lang="{{ .Site.LanguageCode }}"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+  <head>
+    <title>{{ .Site.Title }}</title>
+    <meta charset="utf-8" />
+    {{ partial "meta.html" . }}
+    {{ partial "head_includes.html" . }}
+  </head>
+
+  <body
+    lang="{{ .Site.LanguageCode }}"
+    class="w-90 w-60-ns center center-ns mv2 mv5-ns"
+  >
+
+  <a class="link black b f1 f-headline-ns tc db mb3 mb4-ns"
+  href="{{ .Permalink }}" title="Home" style="margin-bottom:0;">
+  {{ .Site.Title }}</a>
+
+  <div class="tc pb3">
+    <section id="main">
+      <div>
+        <ul class="list pl0 sans-serif">
+          {{ range .Site.Params.menu }}
+            <a class="b pa1 black link dim gray f6 f5-ns dib mr3"
+            href="{{ .url }}" style="font-size:1rem">{{ .name }}</a>
+          {{ end }}
+          {{ range .Site.Params.projMenu }}
+            <a class="b pa1 black link dim gray f6 f5-ns dib mr3"
+              href="/{{ .url }}">{{ .name }}</a>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <center>
+    <div>
+      <form action="/s/search.php" method="get">
+      <input type="text" name="q" placeholder="Search sbondLog..."
+      autocomplete="off" class="homeSearch">
+      </form>
+    </div>
+  </center>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

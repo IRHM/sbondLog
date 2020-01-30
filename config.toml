@@ -1,0 +1,31 @@
+baseURL = "https://log.sbond.co/"
+languageCode = "en-gb"
+title = "sbondLog"
+metaDataFormat = "toml"
+pygmentsUseClasses = true
+summaryLength = "55"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[params]
+  catIcon = "https://ul.sbond.co/i/icons/tag-black-line.png"
+
+[Permalinks]
+  post = "post/:slug"
+
+[[params.menu]]
+  name = "Log"
+  url = "l/"
+
+[[params.menu]]
+  name = "Categories"
+  url = "categories/"
+
+[privacy]
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
