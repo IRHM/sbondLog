@@ -10,13 +10,5 @@ Access live site at: [log.sbond.ml](https://log.sbond.ml)
 [Tutorial for Hugo.](https://www.youtube.com/watch?v=qtIqKaDlqXo)
 
 # Tachyons
-> Tachyons is a free CSS Toolkit.. Not much to say there. If you stick to only using Tachyons then you will never be spending time in any CSS doc and everything should be smooth and responsive.
+> Tachyons is a free CSS Toolkit.
 **[Tachyons.io](http://tachyons.io/)**
-
-# Learnt
-- How to use Hugo
-- About CSS Media Queries
-- CSS Animations/Keyframes
-- New ways to organise HTML/CSS code
-- Accessing a MySQL Database and retrieving data from it with PHP
-- Some other stuff (Writing this a while after stopping work on it)
