@@ -53,13 +53,13 @@
 	    //mysqli_stmt_bind_param($stmt, "", );
 	    mysqli_stmt_execute($stmt);
 	    $result = mysqli_stmt_get_result($stmt);
-
+	    
 	    while($row = mysqli_fetch_array($result)){
-
+	  	
 	    }
 	  }
     ?>
-
+	
 	<div class="flex justify-center pt4">
 	  <div class="stat">
 	    <?php
@@ -68,7 +68,7 @@
 	    ?>
 	    <h2>Posts</h2>
 	  </div>
-
+	  
 	  <div class="stat">
 	    <?php
 	      $query = "SELECT date, link FROM pages ORDER BY id DESC LIMIT 1";
@@ -81,18 +81,18 @@
 	        //mysqli_stmt_bind_param($stmt, "", );
 	        mysqli_stmt_execute($stmt);
 	        $result = mysqli_stmt_get_result($stmt);
-
+	        
 	        while($row = mysqli_fetch_array($result)){
 	      	  $date = $row['date'];
 	  		  $link  = $row['link'];
-
+	  		  
 	  		  echo "<a href='$link'>$date</a>";
 	        }
 	      }
 	    ?>
 	    <h2>Latest</h2>
 	  </div>
-	</div>
+	</div>  
 
   </body>
 </html>
