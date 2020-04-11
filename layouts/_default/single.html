@@ -1,11 +1,15 @@
-{{ partial "nav.html" . }}
-{{ partial "header.html" . }}
+<head>
+  {{ partial "header.html" . }}
+</head>
 <body
   lang="{{ .Site.LanguageCode }}"
   class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
   itemscope
   itemtype="http://schema.org/Article"
 >
+
+  {{ partial "nav.html" . }}
+
   {{ $baseurl := .Site.BaseURL }}
 
   <section id="main" class="mt5">

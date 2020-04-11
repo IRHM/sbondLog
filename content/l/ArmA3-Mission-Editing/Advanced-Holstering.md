@@ -22,5 +22,5 @@ Remember this is just the code to activate the animation, you can do much more w
 
 {{< link-heading "How It Looks" >}}
 <center>
-<img class="br3" src="https://ul.sbond.co/img/arma3/advancedholstering.png" alt="Advanced Holstering in Action" />
+<img class="br3" src="https://ul.sbond.co/i/log/arma3/advancedholstering.png" alt="Advanced Holstering in Action" />
 </center>
