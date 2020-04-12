@@ -1,0 +1,53 @@
+﻿.postsContainer {
+    ul {
+        list-style: none;
+        border-top: 2px dashed black;
+
+        li {
+            display: flex;
+            flex-flow: column;
+            padding-top: .7rem;
+            padding-bottom: .7rem;
+            border-bottom: 2px dashed black;
+
+            .title {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .meta {
+                font-size: 0.875rem;
+
+                .date {
+                    padding-right: .5rem;
+                }
+
+                .cat {
+                    display: inline-block;
+                    position: relative;
+                    top: -1.5px;
+                    padding: .2rem .3rem;
+                    margin: .2rem .2rem .2rem 0;
+                    color: white;
+                    background-color: black;
+                    border: 1px solid black;
+                    border-radius: .3rem;
+                    font-size: .7rem;
+                    text-align: center;
+                    transition: top ease 0.25s;
+
+                    &:hover {
+                        box-shadow: 2px 2px black;
+                        top: -2px;
+                        right: 2px;
+                        border-color: white;
+                    }
+                }
+            }
+
+            .summary {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}

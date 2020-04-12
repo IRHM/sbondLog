@@ -1,0 +1,32 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+section#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 100px 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (max-width: 1000px) {
+        width: 90%;
+    }
+}

@@ -348,31 +348,6 @@ html {
 
 body { margin:0;}
 
-.cat {
-  background-color: black;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  display: inline-block;
-  padding: .4em .5em;
-  margin: 2px 2px 2px 0;
-  font-size: 11px;
-  line-height: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  text-align: center;
-  transition: top ease 0.25s;
-  position: relative;
-  top: -1.5px;
-}
-
-.cat:hover {
-  box-shadow: 2px 2px black;
-  top: -2px;
-  right: 2px;
-  border-color: white;
-}
-
 .stat {
   float: left;
   padding-right: 50px;

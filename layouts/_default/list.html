@@ -1,46 +1,44 @@
 <head>
-  {{ partial "header.html" . }}
+    {{ partial "header.html" . }}
 </head>
-<body
-  lang="{{ .Site.LanguageCode }}"
-  class="sans-serif w-80 w-60-ns center center-ns mv2 mv5-ns">
+<body>
 
-  {{ partial "nav.html" . }}
+    {{ partial "nav.html" . }}
 
-<section id="main" class="mt5">
-    <div>
-      <ul id="list" class="pl0"> <hr />
-        {{ range .Paginator.Pages }}
-        {{ range .Data.Pages.ByDate.Reverse }}
-        {{ end }}
-        <li class="list pl0 lh-copy">
-          <a class="f3 b dib black no-underline" href="{{ .Permalink}}">
-            {{ .Title }}</a>
-            <br />
-          <span class="f6 gray dib-ns">
-            {{ .Date.Format "2 January, 2006" }}
-          </span>
-          <span style="font-size:13px;color:white;" class="">
-            &nbsp;
-            {{ with .Params.categories }}
-            	{{ range . }}
-            			<a href="{{ "categories/" | absURL}}{{ . | urlize }}"
-                  rel="tag" class="cat no-underline white">{{ . }}</a>
-            	{{ end }}
-            {{ end }}
-          </span>
-          <br />
-          <span class="f6 db dib-ns">
-            {{ .Summary }}
-          </span>
-        </li>
+    <section id="main">
+        <div class="postsContainer">
+            <ul>
+                {{ range .Paginator.Pages }}
+                {{ range .Data.Pages.ByDate.Reverse }}
+                {{ end }}
+                <li>
+                    <a class="title" href="{{ .Permalink}}">
+                        {{ .Title }}
+                    </a>
 
-        <hr />
-        {{ end }}
-      </ul>
-    </div>
-  </section>
+                    <div class="meta">
+                        <span class="date">
+                            {{ .Date.Format "2 January, 2006" }}
+                        </span>
 
-  {{ partial "paginator.html" . }}
-  {{ partial "footer.html" . }}
+                        <span class="cats">
+                            {{ with .Params.categories }}
+                            {{ range . }}
+                            <a class="cat" href="{{ "categories/" | absURL}}{{ . | urlize }}">{{ . }}</a>
+                            {{ end }}
+                            {{ end }}
+                        </span>
+                    </div>
+
+                    <span class="summary">
+                        {{ .Summary }}
+                    </span>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </section>
+
+    {{ partial "paginator.html" . }}
+    {{ partial "footer.html" . }}
 </body>
