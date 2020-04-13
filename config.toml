@@ -10,9 +10,6 @@ summaryLength = "55"
     series = "series"
     tag = "tags"
 
-[params]
-    catIcon = "https://ul.sbond.co/i/icons/tag-black-line.png"
-
 [Permalinks]
     post = "post/:slug"
 
