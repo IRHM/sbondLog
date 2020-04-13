@@ -1,55 +1,48 @@
 <head>
-  {{ partial "header.html" . }}
+    {{ partial "header.html" . }}
 </head>
-<body
-  lang="{{ .Site.LanguageCode }}"
-  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
-  itemscope
-  itemtype="http://schema.org/Article"
->
+<body>
 
-  {{ partial "nav.html" . }}
+    {{ partial "nav.html" . }}
 
-  {{ $baseurl := .Site.BaseURL }}
+    {{ $baseurl := .Site.BaseURL }}
 
-  <section id="main" class="mt5">
-    <h1 itemprop="name" id="title">{{ .Title }}</h1>
+    <section id="main">
+        <div class="postContainer">
+            <h2 class="title">{{ .Title }}</h2>
 
-    <h4 itemprop="name" id="title" style="font-size:13px;">
-      By
-      <a href="/a/{{ .Params.authorspaceless  }}"
-      class="b bb bw1 pb1 no-underline black">
-          {{ .Params.author }}
-      </a>
-      on {{ .Date.Format "2 January, 2006" }}
-    </h4>
+            <span class="meta">
+                By
+                <a class="underline" href="/a/{{ .Params.authorspaceless }}">
+                    {{ .Params.author }}
+                </a>
+                on {{ .Date.Format "2 January, 2006" }}
+            </span>
 
-    <article itemprop="articleBody" id="content" class="w-100 lh-copy">
-      {{ .Content }}
-    </article>
-  </section>
+            <article>
+                {{ .Content }}
+            </article>
 
-<br />
+            <div class="cats">
 
-  <h3 style="font-size:13px;color:white;" class="">
+                <img class="grow" src="{{ .Site.Params.catIcon }}" alt="Categories" width="20" height="20" />
 
-    <img src="{{ .Site.Params.catIcon }}"
-    alt="Categories" width="20px" class="grow fl" /> &nbsp;
+                {{ range $i := (slice "categories" "tags") }}
+                {{ with ($.Param $i) }}
+                {{ range $k := . }}
 
-    {{ range $i := (slice "categories" "tags") }}
-    {{ with ($.Param $i) }}
-    {{ range $k := . }}
+                <a class="underline dim" href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a>
 
-      <a href="{{ relURL (print "/" $i "/" $k | urlize) }}"
-      class="dim bb bw1 pb1 no-underline black">{{$k}}</a>
+                {{ end }}
+                {{ end }}
+                {{ end }}
 
-    {{ end }}
-    {{ end }}
-    {{ end }}
+            </div>
+        </div>
+    </section>
 
-  </h3><br />
-  {{ partial "footer.html" . }}
-  <script src="/js/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  </body>
-</html>
+    {{ partial "footer.html" . }}
+
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>

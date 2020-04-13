@@ -6,6 +6,7 @@
 
 html {
     font-size: 16px;
+    line-height: 1.15;
 }
 
 body {
@@ -17,10 +18,27 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5 {
+    margin: 1.4rem 0;
+}
+
+ol {
+    padding-left: 40px;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+p, span {
+    line-height: 1.5;
+}
+
 section#main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column;
     width: 60%;
     margin: 100px 30px;
     margin-right: auto;
@@ -28,5 +46,27 @@ section#main {
 
     @media (max-width: 1000px) {
         width: 90%;
+    }
+}
+
+.underline {
+    padding-bottom: .25rem;
+    border-bottom: .15rem solid black;
+}
+
+.dim {
+    opacity: 1;
+    transition: opacity 150ms ease-in;
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.grow {
+    transition: transform 150ms ease;
+
+    &:hover {
+        transform: scale(1.2);
     }
 }
