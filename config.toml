@@ -6,26 +6,29 @@ pygmentsUseClasses = true
 summaryLength = "55"
 
 [taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
+    category = "categories"
+    series = "series"
+    tag = "tags"
 
 [params]
-  catIcon = "https://ul.sbond.co/i/icons/tag-black-line.png"
+    catIcon = "https://ul.sbond.co/i/icons/tag-black-line.png"
 
 [Permalinks]
-  post = "post/:slug"
+    post = "post/:slug"
 
 [[params.menu]]
-  name = "Log"
-  url = "l/"
+    name = "Log"
+    url = "l/"
 
 [[params.menu]]
-  name = "Categories"
-  url = "categories/"
+    name = "Categories"
+    url = "categories/"
 
 [privacy]
-  [privacy.twitter]
-    enableDNT = true
-  [privacy.youtube]
-    privacyEnhanced = true
+    [privacy.twitter]
+        enableDNT = true
+    [privacy.youtube]
+        privacyEnhanced = true
+
+[markup.goldmark.renderer]
+    unsafe = true
