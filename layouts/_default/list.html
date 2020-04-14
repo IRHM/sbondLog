@@ -1,10 +1,4 @@
-<head>
-    {{ partial "header.html" . }}
-</head>
-<body>
-
-    {{ partial "nav.html" . }}
-
+{{ define "main" }}
     <section id="main">
         <div class="postsContainer">
             <ul>
@@ -40,5 +34,4 @@
     </section>
 
     {{ partial "paginator.html" . }}
-    {{ partial "footer.html" . }}
-</body>
+{{ end }}
