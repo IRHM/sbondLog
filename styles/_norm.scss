@@ -71,6 +71,22 @@ p, span {
     }
 }
 
+.hoverBlue:hover {
+    color: #357edd;
+}
+
+.hoverDarkBlue:hover {
+    color: #00449e;
+}
+
+.hoverFillDarkBlue:hover {
+    fill: #00449e;
+}
+
+.hoverRed:hover {
+    color: #e7040f;
+}
+
 @mixin keyframes($name) {
     @-webkit-keyframes #{$name} {
         @content;
