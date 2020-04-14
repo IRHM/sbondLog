@@ -7,10 +7,20 @@
 html {
     font-size: 16px;
     line-height: 1.15;
+    scroll-behavior: smooth;
+    scrollbar-color: #4D4D4D #181818;
 }
 
 body {
     font-family: sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: .8rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.9);
 }
 
 a {
@@ -32,6 +42,31 @@ p {
 
 p, span {
     line-height: 1.5;
+}
+
+.paginator {
+    display: flex;
+    padding: 1.2rem;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+
+    a {
+        color: black;
+        border-radius: .3rem;
+        padding: .5rem 1rem;
+        text-decoration: none;
+        transition: background-color .25s;
+
+        &.active {
+            background-color: #333;
+            color: white;
+        }
+
+        &:hover:not(.active) {
+            background-color: #ddd;
+        }
+    }
 }
 
 .content {
