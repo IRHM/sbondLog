@@ -49,6 +49,8 @@ p, span {
     }
 }
 
+// Effects
+
 .underline {
     padding-bottom: .25rem;
     border-bottom: .15rem solid black;
@@ -86,6 +88,8 @@ p, span {
 .hoverRed:hover {
     color: #e7040f;
 }
+
+// Mixins
 
 @mixin keyframes($name) {
     @-webkit-keyframes #{$name} {
