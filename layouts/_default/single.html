@@ -35,9 +35,7 @@
                 {{ range $i := (slice "categories" "tags") }}
                     {{ with ($.Param $i) }}
                         {{ range $k := . }}
-
                             <a class="underline dim" href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a>
-
                         {{ end }}
                     {{ end }}
                 {{ end }}

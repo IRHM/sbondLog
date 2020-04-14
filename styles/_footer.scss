@@ -1,0 +1,64 @@
+﻿/// <reference path="main.scss" />
+
+footer {
+    width: 100%;
+    margin-top: 4.5rem;
+    background-image: url('https://ul.sbond.co/i/ash-footer.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+        padding: 4rem 1rem;
+        background-color: rgba(0,0,0,.5);
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: row;
+            padding: 1.5rem;
+            color: hsla(0, 0%, 100%, .6);
+            animation-name: svgMove;
+            animation-duration: 1.1s;
+            animation-fill-mode: forwards;
+
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            span {
+                font-size: 1rem;
+                font-weight: bold;
+                padding-left: .5rem;
+            }
+
+            @include keyframes(svgMove) {
+                from {
+                    transform: translatex(-1000px)
+                }
+
+                to {
+                    transform: translateX()
+                }
+            }
+        }
+
+        .twitter:hover {
+            color: #357edd;
+        }
+
+        .youtube:hover {
+            color: #e7040f;
+        }
+
+        .steam:hover {
+            color: #00449e;
+        }
+    }
+}
