@@ -1,48 +1,45 @@
 {{ define "main" }}
-
     {{ $baseurl := .Site.BaseURL }}
 
-    <section id="main">
-        <div class="postContainer">
-            <h2 class="title">{{ .Title }}</h2>
+    <div class="postContainer">
+        <h2 class="title">{{ .Title }}</h2>
 
-            <span class="meta">
-                By
-                <a class="underline" href="/a/{{ .Params.authorspaceless }}">
-                    {{ .Params.author }}
-                </a>
-                on {{ .Date.Format "2 January, 2006" }}
-            </span>
+        <span class="meta">
+            By
+            <a class="underline" href="/a/{{ .Params.authorspaceless }}">
+                {{ .Params.author }}
+            </a>
+            on {{ .Date.Format "2 January, 2006" }}
+        </span>
 
-            <article>
-                {{ .Content }}
-            </article>
+        <article>
+            {{ .Content }}
+        </article>
 
-            <div class="cats">
+        <div class="cats">
 
-                <svg class="grow" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)" fill="#000">
-                        <path d="M18.72 1.277h-7.369a1.76 1.76 0 00-1.244.516l-9.592 9.59a1.76 1.76 0 000 2.49l7.37 7.368a1.76 1.76 0 002.488 0l9.592-9.59c.33-.33.515-.779.515-1.246V3.037a1.76 1.76 0 00-1.76-1.76zm-3.08 6.16a1.32 1.32 0 11.001-2.64 1.32 1.32 0 010 2.64z" />
-                        <path d="M22.24 3.037v8.192c0 .405-.162.795-.45 1.082l-9.746 9.747.15.15a1.76 1.76 0 002.488 0l8.801-8.8c.331-.33.517-.778.517-1.245V4.797a1.76 1.76 0 00-1.76-1.76z" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0">
-                            <path fill="#fff" d="M0 0h24v24H0z" />
-                        </clipPath>
-                    </defs>
-                </svg>
+            <svg class="grow" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)" fill="#000">
+                    <path d="M18.72 1.277h-7.369a1.76 1.76 0 00-1.244.516l-9.592 9.59a1.76 1.76 0 000 2.49l7.37 7.368a1.76 1.76 0 002.488 0l9.592-9.59c.33-.33.515-.779.515-1.246V3.037a1.76 1.76 0 00-1.76-1.76zm-3.08 6.16a1.32 1.32 0 11.001-2.64 1.32 1.32 0 010 2.64z" />
+                    <path d="M22.24 3.037v8.192c0 .405-.162.795-.45 1.082l-9.746 9.747.15.15a1.76 1.76 0 002.488 0l8.801-8.8c.331-.33.517-.778.517-1.245V4.797a1.76 1.76 0 00-1.76-1.76z" />
+                </g>
+                <defs>
+                    <clipPath id="clip0">
+                        <path fill="#fff" d="M0 0h24v24H0z" />
+                    </clipPath>
+                </defs>
+            </svg>
 
-                {{ range $i := (slice "categories" "tags") }}
-                    {{ with ($.Param $i) }}
-                        {{ range $k := . }}
-                            <a class="underline dim" href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a>
-                        {{ end }}
+            {{ range $i := (slice "categories" "tags") }}
+                {{ with ($.Param $i) }}
+                    {{ range $k := . }}
+                        <a class="underline dim" href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a>
                     {{ end }}
                 {{ end }}
+            {{ end }}
 
-            </div>
         </div>
-    </section>
+    </div>
 
     <script src="/js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>

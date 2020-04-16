@@ -1,37 +1,35 @@
 {{ define "main" }}
-    <section id="main">
-        <div class="postsContainer">
-            <ul>
-                {{ range .Paginator.Pages }}
-                {{ range .Data.Pages.ByDate.Reverse }}
-                {{ end }}
-                <li>
-                    <a class="title" href="{{ .Permalink}}">
-                        {{ .Title }}
-                    </a>
+    <div class="postsContainer">
+        <ul>
+            {{ range .Paginator.Pages }}
+            {{ range .Data.Pages.ByDate.Reverse }}
+            {{ end }}
+            <li>
+                <a class="title" href="{{ .Permalink}}">
+                    {{ .Title }}
+                </a>
 
-                    <div class="meta">
-                        <span class="date">
-                            {{ .Date.Format "2 January, 2006" }}
-                        </span>
-
-                        <span class="cats">
-                            {{ with .Params.categories }}
-                            {{ range . }}
-                            <a class="cat" href="{{ "categories/" | absURL}}{{ . | urlize }}">{{ . }}</a>
-                            {{ end }}
-                            {{ end }}
-                        </span>
-                    </div>
-
-                    <span class="summary">
-                        {{ .Summary }}
+                <div class="meta">
+                    <span class="date">
+                        {{ .Date.Format "2 January, 2006" }}
                     </span>
-                </li>
-                {{ end }}
-            </ul>
-        </div>
-    </section>
+
+                    <span class="cats">
+                        {{ with .Params.categories }}
+                        {{ range . }}
+                        <a class="cat" href="{{ "categories/" | absURL}}{{ . | urlize }}">{{ . }}</a>
+                        {{ end }}
+                        {{ end }}
+                    </span>
+                </div>
+
+                <span class="summary">
+                    {{ .Summary }}
+                </span>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
 
     {{ partial "paginator.html" . }}
 {{ end }}

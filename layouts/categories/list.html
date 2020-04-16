@@ -1,16 +1,13 @@
 {{ define "main" }}
-    <section id="main" class="mt5">
-        <div>
-            <ul id="list" class="pl0">
-                {{ range .Pages.ByTitle }}
-                    <a href="{{.Page.Permalink}}">
-                        <li class="catList f3 b dib black no-underline">
-                            <span>{{ .Page.Title }}</span>
-                        </li>
-                    </a>
-                    <br />
-                {{ end }}
-            </ul>
-        </div>
-    </section>
+    <div class="categoriesList">
+        <ul>
+            {{ range .Pages.ByTitle }}
+                <a href="{{.Page.Permalink}}">
+                    <li>
+                        <span>{{ .Page.Title }}</span>
+                    </li>
+                </a>
+            {{ end }}
+        </ul>
+    </div>
 {{ end }}

@@ -1,26 +1,23 @@
 {{ define "main" }}
-    <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">
+        {{ .Title }}
+        <img src="{{ .Params.photo }}" alt="" width="40px"
+                style="border-radius:50%;" />
+    </h1>
 
-        <h1 itemprop="name" id="title">
-            {{ .Title }}
-            <img src="{{ .Params.photo }}" alt="" width="40px"
-                 style="border-radius:50%;" />
-        </h1>
+    <h4 itemprop="name" id="title" style="font-size:13px;">
+        Joined {{ .Date.Format "2 January, 2006" }}
+        &nbsp;
+        <a href="https://twitter.com/{{ .Params.twitter }}"
+            class="black" target="_blank">
+            <h4 itemprop="name" id="title"
+                class="cat no-underline white">
+                Twitter
+            </h4>
+        </a>
+    </h4>
 
-        <h4 itemprop="name" id="title" style="font-size:13px;">
-            Joined {{ .Date.Format "2 January, 2006" }}
-            &nbsp;
-            <a href="https://twitter.com/{{ .Params.twitter }}"
-               class="black" target="_blank">
-                <h4 itemprop="name" id="title"
-                    class="cat no-underline white">
-                    Twitter
-                </h4>
-            </a>
-        </h4>
-
-        <article itemprop="articleBody" id="content" class="w-90 lh-copy">
-            {{ .Content }}
-        </article>
-    </section>
+    <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        {{ .Content }}
+    </article>
 {{ end }}

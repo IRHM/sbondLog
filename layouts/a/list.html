@@ -1,21 +1,18 @@
 {{ define "main" }}
-    <section id="main" class="mt5">
-
-        <div>
-            <ul id="list" class="pl0">
-                {{ range .Paginator.Pages }}
-                {{ range .Data.Pages.ByDate.Reverse }}
-                {{ end }}
-                    <li class="list pl0 lh-copy">
-                        <a class="f3 b dib black no-underline" href="{{ .Permalink}}">
-                            {{ .Title }}
-                        </a>
-                        <br />
-                    </li>
-                {{ end }}
-            </ul>
-        </div>
-    </section>
+    <div>
+        <ul id="list" class="pl0">
+            {{ range .Paginator.Pages }}
+            {{ range .Data.Pages.ByDate.Reverse }}
+            {{ end }}
+                <li class="list pl0 lh-copy">
+                    <a class="f3 b dib black no-underline" href="{{ .Permalink}}">
+                        {{ .Title }}
+                    </a>
+                    <br />
+                </li>
+            {{ end }}
+        </ul>
+    </div>
 
     {{ partial "paginator.html" . }}
 {{ end }}
