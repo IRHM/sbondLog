@@ -1,10 +1,10 @@
-﻿// Vars
-@import "_vars";
+﻿@import "_norm";
 
-@import "_norm";
-
+// Partials
 @import "_footer";
 
+// Pages
+@import "_home";
 @import "_posts";
 @import "_post";
 @import "_categories";
