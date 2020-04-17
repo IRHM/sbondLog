@@ -3,11 +3,44 @@
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    font-weight: bold;
 
-    .title {
+    .portal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
         font-family: 'Times New Roman', sans-serif;
         font-size: 6rem;
+        font-weight: bold;
+        overflow: hidden;
+
+        .title {
+            position: relative;
+            width: 100%;
+            outline: none;
+            border: none;
+            text-align: center;
+            color: transparent;
+
+            &::selection {
+                color: lightskyblue;
+                background-color: lightskyblue;
+            }
+        }
+
+        a {
+            position: absolute;
+            text-align: center;
+
+
+            label {
+                pointer-events: none;
+            }
+
+            &.npe {
+                pointer-events: none;
+            }
+        }
     }
 
     ul {
@@ -18,6 +51,7 @@
 
         li {
             padding: 1rem .5rem;
+            font-weight: bold;
         }
     }
 

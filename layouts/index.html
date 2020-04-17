@@ -4,9 +4,12 @@
 </head>
 <body>
     <div class="content homeContainer">
-        <a class="title" href="{{ .Permalink }}">
-            {{ .Site.Title }}
-        </a>
+        <div class="portal">
+            <input id="portalInput" class="title" type="text" value="{{ .Site.Title }}"/>
+            <a id="portalLink" class="npe" href="#">
+                <label id="portalLabel">{{ .Site.Title }}</label>
+            </a>
+        </div>
 
         <ul class="list pl0 sans-serif">
             {{ range .Site.Params.menu }}
@@ -22,5 +25,7 @@
 
         {{ partial "footer.html" . }}
     </div>
+
+    <script type="text/javascript" src="{{ .Site.BaseURL }}/js/home.js"></script>
 </body>
 </html>
