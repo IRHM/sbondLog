@@ -31,4 +31,4 @@ summaryLength = "55"
     unsafe = true
 
 [outputs]
-    home = ["JSON"]
+    home = ["HTML", "JSON"]

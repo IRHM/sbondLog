@@ -1,0 +1,10 @@
+[
+  {
+    "outputFileName": "static\\js\\main.js",
+    "inputFiles": [
+      "js\\search.js",
+      "js\\home.js",
+      "js\\nav.js"
+    ]
+  }
+]

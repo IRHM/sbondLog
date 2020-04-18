@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
     {{ partial "header.html" . }}
+</head>
 <body>
     {{ partial "nav.html" . }}
 
@@ -10,5 +12,7 @@
 
         {{ partial "footer.html" . }}
     </div>
+
+    <script src="{{ .Site.BaseURL }}/js/main.min.js"></script>
 </body>
 </html>
