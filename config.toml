@@ -29,3 +29,6 @@ summaryLength = "55"
 
 [markup.goldmark.renderer]
     unsafe = true
+
+[outputs]
+    home = ["JSON"]
