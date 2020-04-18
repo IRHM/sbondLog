@@ -8,6 +8,16 @@ html {
     line-height: 1.15;
     scroll-behavior: smooth;
     scrollbar-color: #4D4D4D #181818;
+    animation: h 400ms forwards;
+
+    @include keyframes(h) {
+        from {
+            transform: translatey(-70px);
+        }
+        to {
+            transform: translateX();
+        }
+    }
 }
 
 body {
@@ -74,7 +84,7 @@ p, span {
     justify-content: center;
     flex-flow: column;
     width: 60%;
-    margin: 100px 30px;
+    margin: 50px 30px;
     margin-right: auto;
     margin-left: auto;
 
@@ -125,24 +135,4 @@ p, span {
 
 .hidden {
     display: none !important;
-}
-
-// Mixins
-
-@mixin keyframes($name) {
-    @-webkit-keyframes #{$name} {
-        @content;
-    }
-
-    @-moz-keyframes #{$name} {
-        @content;
-    }
-
-    @-o-keyframes #{$name} {
-        @content;
-    }
-
-    @keyframes #{$name} {
-        @content;
-    }
 }
