@@ -1,55 +1,45 @@
-<script src="/js/nav.js?v=1"></script>
+<nav>
+    <div class="normal">
+        <menu>
+            <a class="dim" href="/index.html">
+                Home
+            </a>
+            {{ range .Site.Params.menu }}
+            <a class="dim" href="/{{ .url }}">
+                /{{ .name }}
+            </a>
+            {{ end }}
+        </menu>
 
-<center>
-  <nav class="f6 fw6 ttu tracked bg-black-90 pv4-ns ph4-m ph5-l opnav"
-    style="top: -10px;">
-
-    <div class="menu">
-      <a class="link dim blue dib mr3" href="/index.html" title="Home">
-        Home
-      </a>
-        {{ range .Site.Params.menu }}
-      <a class="link dim white dib mr3" href="/{{ .url }}">
-        /{{ .name }}
-      </a>
-        {{ end }}
+        <svg id="searchBtn" class="searchBtn dim" width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1
+            0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49
+            19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01
+            14 9.5 11.99 14 9.5 14z" />
+        </svg>
     </div>
 
-    <svg focusable="false" class="dim link white dib mr3 searchSVG" width="25px"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"
-    style="" onclick="searchToggle(this)"
-    preserveAspectRatio="xMinYMin meet" >
-     <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1
-      0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49
-      19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01
-      14 9.5 11.99 14 9.5 14z"></path></svg>
+    <div class="small">
+        <a href="#" class="logo dim">sbondLog</a>
+        <i id="chickenburger" class="chickenburger grow"></i><!--onclick="chickenburgerToggle(this)"-->
+
+        <menu id="chickenburgerMenu" class="hidden">
+            {{ range .Site.Params.menu }}
+            <a class="dim" href="/{{ .url }}">
+                /{{ .name }}
+            </a>
+            {{ end }}
+            {{ range .Site.Params.projMenu }}
+            <a class="dim" href="/{{ .url }}">
+                /{{ .name }}
+            </a>
+            {{ end }}
+        </menu>
+    </div>
 
     <form action="/s/search.php" method="get">
-    <input type="text" name="q" placeholder="Search sbondLog..." id="searchTog"
-    autocomplete="off" class="search fw6 tracked bg-black-80 hidden">
+        <input id="search" class="hidden" type="text" name="q" placeholder="Search sbondLog..." autocomplete="off">
     </form>
+</nav>
 
-    <div>
-      <i class="hamburger grow" onclick="hamburgerToggle(this)"></i>
-      <a href="/index.html" class="link dim logo logo-hidden"
-      >sbondLog</a>
-    </div>
-
-    <div id="hamburger-drop" class="fw6 tracked bg-black-80 hamburger-drop hidden">
-      {{ range .Site.Params.menu }}<br />
-      <a class="link dim white" href="/{{ .url }}">
-        /{{ .name }}
-      </a>
-      <br />
-      {{ end }}
-      {{ range .Site.Params.projMenu }}
-        <a class="link dim white dib mr3 nav-hide nav-proj-t"
-          style="margin-left: 25px;" href="/{{ .url }}">
-          /{{ .name }}
-        </a>
-      {{ end }}
-    </div>
-
-  </nav>
-</center>
-<br />
+<script src="{{ .Site.BaseURL }}/js/nav.js"></script>

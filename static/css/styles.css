@@ -1,4 +1,4 @@
-.Image {
+/*.Image {
   overflow: hidden;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -21,34 +21,6 @@
   margin: 0.75em 0.5em 0.5em 1em;
 }
 
-.nav-proj {
-  cursor: pointer;
-}
-
-nav .menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.opnav {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 30px;
-  animation-name: navmove;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-@media only screen and (max-width: 480px) {
-  .opnav {
-    height: 64px;
-  }
-}
-
 .hamburger {
   position: absolute;
   display: none;
@@ -69,18 +41,6 @@ nav .menu {
   left: 0px;
   width: 100%;
   border-top: 0.2em solid #fff;
-}
-
-.logo {
-  position: absolute;
-  background: white;
-  color: black;
-  top: 30px;
-  right: 47%;
-}
-
-.logo-hidden {
-  display: none;
 }
 
 .saturate { filter: saturate(3); }
@@ -305,7 +265,7 @@ body { margin:0;}
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-}
+}*/
 
 .hljs {
   display: block;

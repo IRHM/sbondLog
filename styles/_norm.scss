@@ -123,6 +123,10 @@ p, span {
     color: #e7040f;
 }
 
+.hidden {
+    display: none !important;
+}
+
 // Mixins
 
 @mixin keyframes($name) {

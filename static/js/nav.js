@@ -1,10 +1,14 @@
-/* toggling classes */
-function searchToggle(e) {
-  document.getElementById("searchTog").classList.toggle('hidden');
-  document.getElementById('searchTog').focus();
-}
+let search = document.getElementById("searchBtn");
+let searchbar = document.getElementById("search");
+let chickenburger = document.getElementById("chickenburger");
+let chickenburgerMenu = document.getElementById("chickenburgerMenu");
 
-function hamburgerToggle(e) {
-  document.getElementById("hamburger-drop").classList.toggle('hidden');
-  document.getElementById("searchTog").classList.toggle('hidden');
-}
+search.addEventListener("click", function() {
+    searchbar.classList.toggle('hidden');
+    searchbar.focus();
+});
+
+chickenburger.addEventListener("click", function() {
+    chickenburgerMenu.classList.toggle('hidden');
+    searchbar.classList.toggle('hidden');
+});
