@@ -5,9 +5,9 @@
                 Home
             </a>
             {{ range .Site.Params.menu }}
-            <a class="dim" href="/{{ .url }}">
-                /{{ .name }}
-            </a>
+                <a class="dim" href="/{{ .url }}">
+                    /{{ .name }}
+                </a>
             {{ end }}
         </menu>
 
@@ -21,18 +21,16 @@
 
     <div class="small">
         <a href="#" class="logo dim">sbondLog</a>
-        <i id="chickenburger" class="chickenburger grow"></i><!--onclick="chickenburgerToggle(this)"-->
+        <i id="chickenburger" class="chickenburger grow"></i>
 
         <menu id="chickenburgerMenu" class="hidden">
+            <a class="dim" href="/index.html">
+                Home
+            </a>
             {{ range .Site.Params.menu }}
-            <a class="dim" href="/{{ .url }}">
-                /{{ .name }}
-            </a>
-            {{ end }}
-            {{ range .Site.Params.projMenu }}
-            <a class="dim" href="/{{ .url }}">
-                /{{ .name }}
-            </a>
+                <a class="dim" href="/{{ .url }}">
+                    /{{ .name }}
+                </a>
             {{ end }}
         </menu>
     </div>
