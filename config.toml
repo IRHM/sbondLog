@@ -13,6 +13,12 @@ summaryLength = "55"
 [Permalinks]
     post = "post/:slug"
 
+[params]
+    icoIcon = "https://ul.sbond.co/i/hive.ico"
+    pngIcon = "https://ul.sbond.co/i/hiv2.png"
+    description = "sbondo's log"
+    twitter = "sbondoGaming"
+
 [[params.menu]]
     name = "Log"
     url = "l/"
