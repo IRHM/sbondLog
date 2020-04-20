@@ -1,0 +1,21 @@
+﻿nav#search {
+    width: 100%;
+    height: 30px;
+    padding: 40px;
+    animation-name: navAnim;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+
+    a {
+        padding: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    @media(max-width: 1000px) {
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        padding: 30px;
+    }
+}

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    {{ partial "header.html" . }}
+</head>
+<body>
+    <nav id="search">
+        <a class="dim" href="/">Home</a>
+        {{ range .Site.Params.menu }}
+        <a class="dim" href="/{{ .url }}">
+            /{{ .name }}
+        </a>
+        {{ end }}
+    </nav>
+
+    <div class="content">
+        {{ .Content }}
+    </div>
+
+    <script src="{{ .Site.BaseURL }}/js/main.js"></script>
+</body>
+</html>
