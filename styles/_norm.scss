@@ -53,6 +53,21 @@ p, span {
     line-height: 1.5;
 }
 
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 60%;
+    margin: 50px 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (max-width: 1000px) {
+        width: 90%;
+    }
+}
+
 .paginator {
     display: flex;
     padding: 1.2rem;
@@ -78,18 +93,16 @@ p, span {
     }
 }
 
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    width: 60%;
-    margin: 50px 30px;
-    margin-right: auto;
-    margin-left: auto;
+.searchbar {
+    padding: 1rem .5rem;
+    background: none;
+    outline: none;
+    border-right: .15rem solid black;
+    border-bottom: .15rem solid black;
+    font-size: 16px;
 
-    @media (max-width: 1000px) {
-        width: 90%;
+    &:hover {
+        border: .15rem dashed black;
     }
 }
 
