@@ -27,43 +27,48 @@ async function searchFor(query, display) {
         resultsAmountContainer.innerHTML = "";
         resultsContainer.innerHTML = "";
 
-        for (var i = 0; i < results.length; i++) {
-            let title = results[i].title;
-            let date = results[i].date;
-            let summary = results[i].summary;
-            let link = results[i].link;
-            let cats = "";
+        if (results.length > 0) {
+            for (var i = 0; i < results.length; i++) {
+                let title = results[i].title;
+                let date = results[i].date;
+                let summary = results[i].summary;
+                let link = results[i].link;
+                let cats = "";
 
-            // Get all categories and add them as links to cats var
-            results[i].categories.forEach(function (cat) {
-                cats += `<a class='cat' href=''>${cat}</a>`;
-            });
+                // Get all categories and add them as links to cats var
+                results[i].categories.forEach(function (cat) {
+                    cats += `<a class='cat' href=''>${cat}</a>`;
+                });
 
-            // Display amount of results found
-            resultsAmountContainer.innerHTML = `${results.length} result(s) found`;
+                // Display amount of results found
+                resultsAmountContainer.innerHTML = `${results.length} result(s) found`;
 
-            // Display results in resultsContainer
-            resultsContainer.innerHTML += `
-            <li>
-                <a class="title" href="${link}">
-                    ${title}
-                </a>
+                // Display results in resultsContainer
+                resultsContainer.innerHTML += `
+                    <li>
+                        <a class="title" href="${link}">
+                            ${title}
+                        </a>
 
-                <div class="meta">
-                    <span class="date">
-                        ${date}
-                    </span>
+                        <div class="meta">
+                            <span class="date">
+                                ${date}
+                            </span>
 
-                    <span class="cats">
-                        ${cats}
-                    </span>
-                </div>
+                            <span class="cats">
+                                ${cats}
+                            </span>
+                        </div>
 
-                <span class="summary">
-                    ${summary}
-                </span>
-            </li>
-        `;
+                        <span class="summary">
+                            ${summary}
+                        </span>
+                    </li>
+                `;
+            }
+        }
+        else {
+            resultsAmountContainer.innerHTML = `No Results Found`;
         }
     }
 
