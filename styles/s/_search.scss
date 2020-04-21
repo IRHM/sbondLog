@@ -56,5 +56,11 @@ form {
         .value {
             font-size: 18px;
         }
+
+        &:hover {
+            color: white;
+            background-color: rgb(241, 0, 255);
+            border-radius: 4px;
+        }
     }
 }

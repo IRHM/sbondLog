@@ -1,9 +1,6 @@
 ﻿/// <reference path="main.scss" />
 
 nav#main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: sticky;
     top: 0;
     width: 100%;
@@ -15,7 +12,9 @@ nav#main {
 
     .normal {
         display: flex;
+        justify-content: center;
         align-items: center;
+        height: 100%;
 
         menu {
             a {
@@ -35,6 +34,11 @@ nav#main {
     }
 
     .small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
         .logo {
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
