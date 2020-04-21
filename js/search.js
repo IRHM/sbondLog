@@ -31,6 +31,7 @@ async function searchFor(query, display) {
             let title = results[i].title;
             let date = results[i].date;
             let summary = results[i].summary;
+            let link = results[i].link;
             let cats = "";
 
             // Get all categories and add them as links to cats var
@@ -44,7 +45,7 @@ async function searchFor(query, display) {
             // Display results in resultsContainer
             resultsContainer.innerHTML += `
             <li>
-                <a class="title" href="">
+                <a class="title" href="${link}">
                     ${title}
                 </a>
 
