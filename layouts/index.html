@@ -5,7 +5,7 @@
 <body>
     <div class="content homeContainer">
         <div class="portal">
-            <input id="portalInput" class="title" type="text" value="{{ .Site.Title }}"/>
+            <input id="portalInput" class="title" type="text" value="{{ .Site.Title }}" />
             <a id="portalLink" class="npe" href="#">
                 <label id="portalLabel">{{ .Site.Title }}</label>
             </a>
@@ -25,5 +25,7 @@
 
         {{ partial "footer.html" . }}
     </div>
+
+    <script src="{{ .Site.BaseURL }}/js/main.js"></script>
 </body>
 </html>
