@@ -1,4 +1,6 @@
-let query = new URLSearchParams(window.location.search).get("q");
+let url = new URL(window.location.href);
+let urlParams = url.searchParams;
+let queryParam = urlParams.get("q");
 let resultsContainer = document.getElementById("results");
 let resultsAmountContainer = document.getElementById("amount");
 let resultsSearchBar = document.getElementById("resultsSearchBar");
@@ -10,19 +12,19 @@ async function getIndex() {
     return await response.json();
 }
 
-async function searchFor(query, display) {
+async function searchFor(queryParam, display) {
     let json = await getIndex();
 
     var results = [];
 
     // Get results and add to array
     for (var i = 0; i < json.length; i++) {
-        if (JSON.stringify(json[i]).includes(query)) {
+        if (JSON.stringify(json[i]).includes(queryParam)) {
             results.push(json[i]);
         }
     }
 
-    if (display = true) {
+    if (display) {
         // Reset containers html contents
         resultsAmountContainer.innerHTML = "";
         resultsContainer.innerHTML = "";
@@ -76,14 +78,19 @@ async function searchFor(query, display) {
 }
 
 // Search for query if one is present
-if (query != null && resultsContainer != null && resultsAmountContainer != null) {
-    resultsSearchBar.value = query;
+if (queryParam != null && resultsContainer != null && resultsAmountContainer != null) {
+    resultsSearchBar.value = queryParam;
 
-    searchFor(query, true);
+    searchFor(queryParam, true);
 }
 
 document.getElementById("resultsSearchForm").addEventListener('submit', function (e) {
     e.preventDefault();
+
+    // Update url
+    queryParam = resultsSearchBar.value;
+    url.searchParams.set("q", queryParam);
+    history.pushState(null, "", url);
 
     searchFor(resultsSearchBar.value, true);
 });
