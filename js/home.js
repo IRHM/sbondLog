@@ -5,6 +5,7 @@ let portalLabel = document.getElementById("portalLabel");
 let githubLink = "https://github.com/sbondo1234/sbondLog";
 
 if (portalInput != null && portalLabel != null) {
+    portalInput.value = "sbondLog";
     portalLabel.innerHTML = portalInput.value;
 
     portalInput.addEventListener("input", function (e) {
