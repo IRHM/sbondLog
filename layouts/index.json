@@ -1,7 +1,8 @@
 ﻿{{- $.Scratch.Add "index" slice -}}
+{{- $pages := where .Site.RegularPages "Type" "in" (slice "l" "a") -}}
 {{- $date := .Date.Format "2 January, 2006" -}}
 
-{{ range .Site.RegularPages }}
+{{ range $pages }}
     {{- $.Scratch.Add "index" (dict "title" .Title "date" $date "categories" .Params.categories "summary" .Summary "link" .Permalink) -}}
 {{ end }}
 
