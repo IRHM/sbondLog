@@ -1,5 +1,7 @@
-﻿let resultsContainer = document.getElementById("results");
+﻿let query = new URLSearchParams(window.location.search).get("q");
+let resultsContainer = document.getElementById("results");
 let resultsAmountContainer = document.getElementById("amount");
+let resultsSearchBar = document.getElementById("resultsSearchBar");
 
 async function getIndex() {
     // Fetch index.json file
@@ -8,7 +10,7 @@ async function getIndex() {
     return await response.json();
 }
 
-async function searchFor(query) {
+async function searchFor(query, display) {
     let json = await getIndex();
 
     var results = [];
@@ -20,26 +22,23 @@ async function searchFor(query) {
         }
     }
 
-    return results;
-}
+    if (display = true) {
+        for (var i = 0; i < results.length; i++) {
+            let title = results[i].title;
+            let date = results[i].date;
+            let summary = results[i].summary;
+            let cats = "";
 
-searchFor("ap").then(function (results) {
-    for (var i = 0; i < results.length; i++) {
-        let title = results[i].title;
-        let date = results[i].date;
-        let summary = results[i].summary;
-        let cats = "";
+            // Get all categories and add them as links to cats var
+            results[i].categories.forEach(function (cat) {
+                cats += `<a class='cat' href=''>${cat}</a>`;
+            });
 
-        // Get all categories and add them as links to cats var
-        results[i].categories.forEach(function (cat) {
-            cats += `<a class='cat' href=''>${cat}</a>`;
-        });
+            // Display amount of results found
+            resultsAmountContainer.innerHTML = `${results.length} result(s) found`;
 
-        // Display amount of results found
-        resultsAmountContainer.innerHTML = `${results.length} result(s) found`;
-
-        // Display results in resultsContainer
-        resultsContainer.innerHTML += `
+            // Display results in resultsContainer
+            resultsContainer.innerHTML += `
             <li>
                 <a class="title" href="">
                     ${title}
@@ -60,5 +59,12 @@ searchFor("ap").then(function (results) {
                 </span>
             </li>
         `;
+        }
     }
-});
+
+    return results;
+}
+
+if (query != null && resultsContainer != null && resultsAmountContainer != null) {
+    searchFor(query, true);
+}
