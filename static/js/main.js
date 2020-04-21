@@ -23,6 +23,10 @@ async function searchFor(query, display) {
     }
 
     if (display = true) {
+        // Reset containers html contents
+        resultsAmountContainer.innerHTML = "";
+        resultsContainer.innerHTML = "";
+
         for (var i = 0; i < results.length; i++) {
             let title = results[i].title;
             let date = results[i].date;
@@ -65,10 +69,18 @@ async function searchFor(query, display) {
     return results;
 }
 
+// Search for query if one is present
 if (query != null && resultsContainer != null && resultsAmountContainer != null) {
+    resultsSearchBar.value = query;
+
     searchFor(query, true);
 }
 
+document.getElementById("resultsSearchForm").addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    searchFor(resultsSearchBar.value, true);
+});
 // Home
 let portalInput = document.getElementById("portalInput");
 let portalLabel = document.getElementById("portalLabel");
