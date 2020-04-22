@@ -6,7 +6,6 @@ categories:
   - WebDev
   - Apache
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "Step 1 - Create Subdomain" >}}

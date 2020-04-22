@@ -5,7 +5,6 @@ description: "Not Seeing Shared Devices Anymore Win10"
 categories:
   - Configuration
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "What?" >}}

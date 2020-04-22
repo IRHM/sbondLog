@@ -5,7 +5,6 @@ description: "Events in MySQL"
 categories:
   - MySQL
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "What are Events in MySQL?" >}}

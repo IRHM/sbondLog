@@ -5,7 +5,6 @@ description: "On Click Refresh using JavaScript"
 categories:
   - JavaScript
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "What?" >}}

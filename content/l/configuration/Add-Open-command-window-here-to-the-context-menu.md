@@ -5,7 +5,6 @@ description: "Add 'Open Command Window Here' to Context Menu."
 categories:
   - Configuration
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "What?" >}}

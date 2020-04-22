@@ -5,7 +5,6 @@ description: "Get Apache Server Status w/ mod_status"
 categories:
   - Apache
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "Using mod_status" >}}

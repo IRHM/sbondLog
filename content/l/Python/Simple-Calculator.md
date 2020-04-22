@@ -5,7 +5,6 @@ description: ""
 categories:
   - Python
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "What?" >}}

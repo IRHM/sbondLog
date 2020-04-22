@@ -90,16 +90,18 @@ if (queryParam != null && resultsContainer != null && resultsAmountContainer != 
     searchFor(queryParam, true);
 }
 
-document.getElementById("resultsSearchForm").addEventListener('submit', function (e) {
-    e.preventDefault();
+if (document.getElementById("resultsSearchForm") != null) {
+    document.getElementById("resultsSearchForm").addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    // Update url
-    queryParam = resultsSearchBar.value;
-    url.searchParams.set("q", queryParam);
-    history.pushState(null, "", url);
+        // Update url
+        queryParam = resultsSearchBar.value;
+        url.searchParams.set("q", queryParam);
+        history.pushState(null, "", url);
 
-    searchFor(resultsSearchBar.value, true);
-});
+        searchFor(resultsSearchBar.value, true);
+    });
+}
 
 function spinner(on) {
     let spinner = document.getElementById("spinner");

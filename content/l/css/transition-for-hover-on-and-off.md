@@ -6,7 +6,6 @@ categories:
   - CSS
   - WebDev  
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "What I'm Talking About" >}}

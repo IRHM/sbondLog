@@ -5,7 +5,6 @@ description: ""
 categories:
   - ArmA 3
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "How To Use" >}}

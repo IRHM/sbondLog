@@ -5,7 +5,6 @@ description: "Advanced Holstering"
 categories:
   - ArmA3 Mission Editing
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "What Is This?" >}}

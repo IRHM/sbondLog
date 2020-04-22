@@ -5,13 +5,17 @@ description: ""
 categories:
   - CSharp
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
+
 ---
 
 {{< link-heading "Step 1 - Adding Event" >}}
 
 Go into the events of either the whole form or on a control/panel and add the **MouseDown** event.
-<center>![MouseDown Event](https://ul.sbond.co/i/log/win/mousedownevent.png "MouseDown Event")</center>
+<center>
+
+![MouseDown Event](https://ul.sbond.co/i/log/win/mousedownevent.png "MouseDown Event")
+
+</center>
 
 {{< link-heading "Step 2 - Variables & Importing Namespace" >}}
 

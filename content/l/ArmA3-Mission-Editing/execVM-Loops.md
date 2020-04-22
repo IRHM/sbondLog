@@ -5,7 +5,6 @@ description: "Simple loops using execVM."
 categories:
   - ArmA3 Mission Editing
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "Why Do It Like This?" >}}

@@ -6,7 +6,6 @@ categories:
   - Steam
   - Gaming
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "Enabling Library Update" >}}

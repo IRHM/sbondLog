@@ -5,7 +5,6 @@ description: "Placing Trees in Eden Editor"
 categories:
   - ArmA3 Mission Editing
 author: "sbondo1234"
-authorspaceless: "sbondo1234"
 ---
 
 {{< link-heading "How Would I Do This?" >}}
