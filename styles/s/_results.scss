@@ -16,3 +16,13 @@
         }
     }
 }
+
+#resultsSearchForm {
+    position: relative;
+
+    .spinner {
+        position: absolute;
+        top: 7.5px;
+        right: 10px;
+    }
+}

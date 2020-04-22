@@ -25,6 +25,9 @@ async function searchFor(queryParam, display) {
     }
 
     if (display) {
+        resultsSearchBar.style.paddingRight = "38px";
+        spinner(1);
+
         // Reset containers html contents
         resultsAmountContainer.innerHTML = "";
         resultsContainer.innerHTML = "";
@@ -72,6 +75,9 @@ async function searchFor(queryParam, display) {
         else {
             resultsAmountContainer.innerHTML = `No Results Found`;
         }
+
+        spinner(0);
+        resultsSearchBar.style.paddingRight = "8px";
     }
 
     return results;
@@ -94,6 +100,20 @@ document.getElementById("resultsSearchForm").addEventListener('submit', function
 
     searchFor(resultsSearchBar.value, true);
 });
+
+function spinner(on) {
+    let spinner = document.getElementById("spinner");
+
+    if (spinner != null) {
+        if (on) {
+            spinner.classList.remove("hidden");
+        }
+        else {
+            spinner.classList.add("hidden");
+        }
+    }
+}
+
 // Home
 let portalInput = document.getElementById("portalInput");
 let portalLabel = document.getElementById("portalLabel");

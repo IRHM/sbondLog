@@ -1,4 +1,6 @@
-﻿* {
+﻿/// <reference path="main.scss" />
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -148,4 +150,24 @@ p, span {
 
 .hidden {
     display: none !important;
+}
+
+.spinner {
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    border-top: 2px solid #000000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1.5s linear infinite;
+
+    @include keyframes(spin) {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 }
