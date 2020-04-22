@@ -42,7 +42,7 @@ async function searchFor(queryParam, display) {
 
                 // Get all categories and add them as links to cats var
                 results[i].categories.forEach(function (cat) {
-                    cats += `<a class='cat' href=''>${cat}</a>`;
+                    cats += `<a class='cat' href='/categories/${cat.toLowerCase().replace(/ /g, "-")}'>${cat}</a>`;
                 });
 
                 // Display amount of results found
