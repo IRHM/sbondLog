@@ -1,5 +1,5 @@
 ﻿{{- $.Scratch.Add "index" slice -}}
-{{- $pages := where .Site.RegularPages "Type" "in" (slice "l" "a") -}}
+{{- $pages := where .Site.RegularPages "Type" "in" (slice "l") -}}
 {{- $date := .Date.Format "2 January, 2006" -}}
 
 {{ range $pages }}
