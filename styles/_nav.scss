@@ -87,7 +87,10 @@ nav#main {
             animation: bottom2Top 200ms forwards;
 
             a {
-                padding: 15px 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
                 font-weight: bold;
                 text-transform: uppercase;
                 color: white;
