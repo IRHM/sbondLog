@@ -38,6 +38,14 @@ footer {
                 padding-left: .5rem;
             }
 
+            &.githubHover:hover {
+                color: #fff;
+            }
+
+            &.stackHover:hover {
+                color: #f48023;
+            }
+
             @include keyframes(svgMove) {
                 from {
                     transform: translatex(-1000px)
