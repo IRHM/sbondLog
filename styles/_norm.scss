@@ -99,8 +99,10 @@ p, span {
     padding: 1rem .5rem;
     background: none;
     outline: none;
-    border-right: .15rem solid black;
-    border-bottom: .15rem solid black;
+    border-top: .15rem solid #808080;
+    border-left: .15rem solid #808080;
+    border-right: .15rem solid #000;
+    border-bottom: .15rem solid #000;
     font-size: 16px;
 
     &:hover {

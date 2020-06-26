@@ -4,7 +4,6 @@ date: 2019-09-18T02:43:19+01:00
 description: "Steam Library Update Beta Thoughts"
 categories:
   - Steam
-  - Gaming
 author: "sbondo1234"
 ---
 
@@ -14,7 +13,7 @@ To enable the new library update you can just, go to
 Steam > Account > Change (on Beta Participation) > Steam Beta Update:
 
 <center>
-  <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/27766192/0d6a5cfe93a6c0e92dc884200e1d9144d3ccf668.gif" />
+  <img src="https://ul.sbond.co/i/log/steam/lib/enable-beta.gif" />
 </center>
 
 {{< link-heading "How It Feels" >}}

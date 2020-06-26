@@ -41,4 +41,4 @@ author: "sbondo1234"
 
 {{< link-heading "What it looks like" >}}
 
-![](https://i.imgur.com/bvLboht.png)
+![](https://ul.sbond.co/i/log/apache/status.png)

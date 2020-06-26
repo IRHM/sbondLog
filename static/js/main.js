@@ -116,6 +116,9 @@ function spinner(on) {
     }
 }
 
+// Highlight
+hljs.initHighlightingOnLoad();
+
 // Home
 let portalInput = document.getElementById("portalInput");
 let portalLabel = document.getElementById("portalLabel");
