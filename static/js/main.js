@@ -1,3 +1,45 @@
+// Highlight
+hljs.initHighlightingOnLoad();
+
+/**
+ * HOME
+ */
+let portalInput = document.getElementById("portalInput");
+let portalLabel = document.getElementById("portalLabel");
+
+let githubLink = "https://github.com/sbondo1234/sbondLog";
+
+if (portalInput != null && portalLabel != null) {
+    portalInput.value = "sbondLog";
+    portalLabel.innerHTML = portalInput.value;
+
+    portalInput.addEventListener("input", function (e) {
+        let val = this.value;
+        portalLabel.innerHTML = val;
+        val = val.toLowerCase();
+
+        if (val == "github") {
+            makeLink(githubLink);
+        }
+        else {
+            removeLink();
+        }
+    });
+}
+
+function makeLink(link) {
+    portalLink.href = link;
+    portalLink.classList.remove("npe");
+}
+
+function removeLink() {
+    portalLink.href = null;
+    portalLink.classList.add("npe");
+}
+
+/**
+ * SEARCH
+ */
 let url = new URL(window.location.href);
 let urlParams = url.searchParams;
 let queryParam = urlParams.get("q");
@@ -7,7 +49,7 @@ let resultsSearchBar = document.getElementById("resultsSearchBar");
 
 async function getIndex() {
     // Fetch index.json file
-    let response = await fetch('https://log.sbond.co/index.json', { method: "GET" });
+    let response = await fetch('/index.json', { method: "GET" });
 
     return await response.json();
 }
@@ -116,42 +158,9 @@ function spinner(on) {
     }
 }
 
-// Highlight
-hljs.initHighlightingOnLoad();
-
-// Home
-let portalInput = document.getElementById("portalInput");
-let portalLabel = document.getElementById("portalLabel");
-
-let githubLink = "https://github.com/sbondo1234/sbondLog";
-
-if (portalInput != null && portalLabel != null) {
-    portalInput.value = "sbondLog";
-    portalLabel.innerHTML = portalInput.value;
-
-    portalInput.addEventListener("input", function (e) {
-        let val = this.value;
-        portalLabel.innerHTML = val;
-        val = val.toLowerCase();
-
-        if (val == "github") {
-            makeLink(githubLink);
-        }
-        else {
-            removeLink();
-        }
-    });
-}
-
-function makeLink(link) {
-    portalLink.href = link;
-    portalLink.classList.remove("npe");
-}
-
-function removeLink() {
-    portalLink.href = null;
-    portalLink.classList.add("npe");
-}
+/**
+ * NAV
+ */
 let search = document.getElementById("searchBtn");
 let searchbar = document.getElementById("search");
 let chickenburger = document.getElementById("chickenburger");
