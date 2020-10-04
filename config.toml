@@ -6,33 +6,33 @@ pygmentsUseClasses = true
 summaryLength = "55"
 
 [taxonomies]
-    category = "categories"
-    series = "series"
-    tag = "tags"
+  category = "categories"
+  series = "series"
+  tag = "tags"
 
 [Permalinks]
-    post = "post/:slug"
+  post = "post/:slug"
 
 [params]
-    description = "sbondo's log"
-    twitter = "sbondoGaming"
+  description = "sbondo's log"
+  twitter = "sbondoGaming"
 
 [[params.menu]]
-    name = "Log"
-    url = "l/"
+  name = "Log"
+  url = "l/"
 
 [[params.menu]]
-    name = "Categories"
-    url = "categories/"
+  name = "Categories"
+  url = "categories/"
 
 [privacy]
-    [privacy.twitter]
-        enableDNT = true
-    [privacy.youtube]
-        privacyEnhanced = true
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
 
 [markup.goldmark.renderer]
-    unsafe = true
+  unsafe = true
 
 [outputs]
-    home = ["HTML", "JSON"]
+  home = ["HTML", "JSON"]
