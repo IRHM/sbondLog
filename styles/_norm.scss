@@ -1,54 +1,57 @@
-﻿/// <reference path="main.scss" />
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+﻿* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    line-height: 1.15;
-    scroll-behavior: smooth;
-    scrollbar-color: #4D4D4D #181818;
-    animation: h 400ms forwards;
+  line-height: 1.15;
+  scroll-behavior: smooth;
+  scrollbar-color: #4d4d4d #181818;
+  animation: h 400ms forwards;
 
-    @include keyframes(h) {
-        from {
-            transform: translatey(-70px);
-        }
-        to {
-            transform: translateX();
-        }
+  @include keyframes(h) {
+    from {
+      transform: translatey(-70px);
     }
+    to {
+      transform: translateX();
+    }
+  }
 }
 
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 body::-webkit-scrollbar {
-    width: .8rem;
+  width: 0.8rem;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
-h1, h2, h3, h4, h5 {
-    margin: 1.4rem 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 1.4rem 0;
 }
 
 p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
-p, span {
-    line-height: 1.5;
+p,
+span {
+  line-height: 1.5;
 }
 
 code {
@@ -59,108 +62,108 @@ code {
 }
 
 .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    width: 60%;
-    margin: 50px 30px;
-    margin-right: auto;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 60%;
+  margin: 50px 30px;
+  margin-right: auto;
+  margin-left: auto;
 
-    @media (max-width: 1000px) {
-        width: 90%;
-    }
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 }
 
 .paginator {
-    display: flex;
-    padding: 1.2rem;
-    list-style: none;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  padding: 1.2rem;
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
 
-    a {
-        color: black;
-        border-radius: .3rem;
-        padding: .5rem 1rem;
-        text-decoration: none;
-        transition: background-color .25s;
+  a {
+    color: black;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.25s;
 
-        &.active {
-            background-color: #333;
-            color: white;
-        }
-
-        &:hover:not(.active) {
-            background-color: #ddd;
-        }
+    &.active {
+      background-color: #333;
+      color: white;
     }
+
+    &:hover:not(.active) {
+      background-color: #ddd;
+    }
+  }
 }
 
 .searchbar {
-    padding: 1rem .5rem;
-    background: none;
-    outline: none;
-    border-top: .15rem solid #808080;
-    border-left: .15rem solid #808080;
-    border-right: .15rem solid #000;
-    border-bottom: .15rem solid #000;
-    font-size: 16px;
+  padding: 1rem 0.5rem;
+  background: none;
+  outline: none;
+  border-top: 0.15rem solid #808080;
+  border-left: 0.15rem solid #808080;
+  border-right: 0.15rem solid #000;
+  border-bottom: 0.15rem solid #000;
+  font-size: 16px;
 
-    &:hover {
-        border: .15rem dashed black;
-    }
+  &:hover {
+    border: 0.15rem dashed black;
+  }
 }
 
 // Effects
 
 .underline {
-    padding-bottom: .25rem;
-    border-bottom: .15rem solid black;
+  padding-bottom: 0.25rem;
+  border-bottom: 0.15rem solid black;
 }
 
 .dim {
-    opacity: 1;
-    transition: opacity 150ms ease-in;
+  opacity: 1;
+  transition: opacity 150ms ease-in;
 
-    &:hover {
-        opacity: .5;
-    }
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .grow {
-    transition: transform 150ms ease;
+  transition: transform 150ms ease;
 
-    &:hover {
-        transform: scale(1.2);
-    }
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .hoverFillDarkBlue:hover {
-    fill: #00449e;
+  fill: #00449e;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .spinner {
-    margin: 0 auto;
-    border: 2px solid #ffffff;
-    border-top: 2px solid #000000;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    animation: spin 1.5s linear infinite;
+  margin: 0 auto;
+  border: 2px solid #ffffff;
+  border-top: 2px solid #000000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1.5s linear infinite;
 
-    @include keyframes(spin) {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
+  @include keyframes(spin) {
+    0% {
+      transform: rotate(0deg);
     }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }

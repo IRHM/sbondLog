@@ -1,28 +1,25 @@
 ﻿.resultsContainer {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    width: 100%;
-    margin-top: .5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+  margin-top: 0.5rem;
 
-    #amount {
-        text-align: center;
-    }
+  #amount {
+    text-align: center;
+  }
 
-    #results {
-        margin-top: .5rem;
-
-        .result {
-        }
-    }
+  #results {
+    margin-top: 0.5rem;
+  }
 }
 
 #resultsSearchForm {
-    position: relative;
+  position: relative;
 
-    .spinner {
-        position: absolute;
-        top: 7.5px;
-        right: 10px;
-    }
+  .spinner {
+    position: absolute;
+    top: 7.5px;
+    right: 10px;
+  }
 }
