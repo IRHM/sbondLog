@@ -3,7 +3,7 @@ title: Reoccurring Events in MySQL
 date: 2019-09-12T23:12:03+01:00
 description: "Events in MySQL"
 categories:
-  - MySQL
+  - SQL
 author: "sbondo1234"
 ---
 
@@ -18,12 +18,12 @@ you should consider using events.
 
 {{< highlight SQL >}}
 CREATE EVENT IF NOT EXISTS `remove_login_attempts` # Create & Name Event
-ON SCHEDULE EVERY 1 MINUTE # When to redo task
-ON COMPLETION PRESERVE
-ENABLE
+ON
+  SCHEDULE EVERY 1 MINUTE # When to redo task
+  ON COMPLETION PRESERVE
+  ENABLE
 DO
-
-DELETE FROM login_attempts WHERE time < (NOW() - INTERVAL 15 MINUTE); # The code to run
+  DELETE FROM login_attempts WHERE time < (NOW() - INTERVAL 15 MINUTE); # The code to run
 {{< /highlight >}}
 
 {{< link-heading "What Is The Code Doing" >}}
@@ -39,8 +39,14 @@ ON SCHEDULE EVERY 1 MINUTE
 {{< /highlight >}}
 
 3. Keep the event after it has ran  <br>
-{{< highlight SQL >}}
+
+    This option isn't really necessary on an event that never stops running.
+
+    {{< highlight SQL >}}
 ON COMPLETION PRESERVE
+
+# Alternatively you can remove the event once it is done:
+# ON COMPLETION NOT PRESERVE
 {{< /highlight >}}
 
 4. Enable the event <br>

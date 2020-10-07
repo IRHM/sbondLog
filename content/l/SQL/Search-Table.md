@@ -1,9 +1,9 @@
 ---
-title: Search a Table in MySQL
+title: Search a Table in SQL
 date: 2019-06-29T08:51:06+01:00
 description: ""
 categories:
-  - MySQL
+  - SQL
 author: "sbondo1234"
 ---
 
@@ -12,6 +12,7 @@ author: "sbondo1234"
 {{< highlight SQL >}}
 SELECT * FROM info WHERE Name LIKE 'Keyword';
 {{< /highlight >}}
+
 This way, you would get a 'sort of search', because you would have to type the name
 of the item 100% correctly, otherwise no results would show up. I guess this is sort of
 a 'strict' search, if something is slightly wrong, nothing would be returned.
@@ -55,7 +56,7 @@ table.1 thead {
 }
 </style>
 
-### If your table looked like:
+### If your table had this data:
 
 <center>
 <table>
@@ -81,8 +82,6 @@ table.1 thead {
   </tbody>
 </table>
 </center>
-
-----
 
 ### (1.) And your code was:
 {{<highlight SQL>}}
@@ -114,8 +113,6 @@ SELECT * FROM info WHERE Name LIKE 'The%';
   </tbody>
 </table>
 </center>
-
-----
 
 ### (2.) If your code was:
 {{< highlight SQL >}}
@@ -149,8 +146,6 @@ SELECT * FROM info WHERE Name LIKE 'he%';
 </table>
 </center>
 
-----
-
 ### (3.) If your code was:
 {{< highlight SQL >}}
 SELECT * FROM info WHERE Name LIKE '%he%';
@@ -181,8 +176,6 @@ SELECT * FROM info WHERE Name LIKE '%he%';
   </tbody>
 </table>
 </center>
-
-----
 
 {{< link-heading "That's It!" >}}
 
