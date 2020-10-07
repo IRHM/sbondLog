@@ -1,5 +1,5 @@
 {{ $id := .Get 0 | lower | replaceRE "[^0-9a-z]" "-" | replaceRE "-+" "-" -}}
-<a href="#{{ $id }}"  id="{{ $id }}" class="hoverFillDarkBlue" style="padding-top: 80px;">
+<a href="#{{ $id }}" id="{{ $id }}" class="linkHeading hoverFillDarkBlue">
   <h2 id="">{{ .Get 0 }}
     <svg height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" />

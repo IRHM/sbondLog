@@ -61,4 +61,9 @@
       }
     }
   }
+
+  @media (max-width: 500px) {
+    box-shadow: none;
+    background: linear-gradient(90deg, rgba(185, 143, 255, 1) 35%, rgba(28, 234, 253, 1) 100%);
+  }
 }

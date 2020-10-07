@@ -8,8 +8,7 @@
     li {
       display: flex;
       flex-flow: column;
-      padding-top: 0.7rem;
-      padding-bottom: 0.7rem;
+      padding: 0.7rem 0;
       border-bottom: 2px dashed black;
 
       .title {

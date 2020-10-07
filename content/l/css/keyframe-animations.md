@@ -125,6 +125,7 @@ animation-fill-mode
   }
 </style>
 {{< /highlight >}}
+
 **Note:** If you don't set a property for your animation, then it will just
 be set to it's default. So if you need to make a change, make sure you have
 done so.

@@ -8,6 +8,10 @@ html {
   line-height: 1.15;
   scroll-behavior: smooth;
   scrollbar-color: #4d4d4d #181818;
+}
+
+body {
+  font-family: sans-serif;
   animation: h 400ms forwards;
 
   @include keyframes(h) {
@@ -18,10 +22,6 @@ html {
       transform: translateX();
     }
   }
-}
-
-body {
-  font-family: sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -164,6 +164,19 @@ code {
 
     100% {
       transform: rotate(360deg);
+    }
+  }
+}
+
+.linkHeading {
+  padding-top: 70px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    
+    svg {
+      margin: 0 0 0 10px;
     }
   }
 }
