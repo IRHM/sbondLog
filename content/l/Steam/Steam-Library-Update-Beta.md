@@ -7,7 +7,7 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "Enabling Library Update" >}}
+{{<link-heading "Enabling Library Update">}}
 
 To enable the new library update you can just, go to
 Steam > Account > Change (on Beta Participation) > Steam Beta Update:
@@ -16,7 +16,7 @@ Steam > Account > Change (on Beta Participation) > Steam Beta Update:
   <img src="https://ul.sbond.co/i/log/steam/lib/enable-beta.gif" />
 </center>
 
-{{< link-heading "How It Feels" >}}
+{{<link-heading "How It Feels">}}
 
 <center>
   <img src="https://ul.sbond.co/i/log/steam/lib/library.png" />
@@ -26,7 +26,7 @@ I definitley think that this is a step up from the previous UI, which is super
 outdated, but there are a few things missing and I hope that they
 aren't forgotten about when this is fully released.
 
-{{< link-heading "Home Menu" >}}
+{{<link-heading "Home Menu">}}
 
 <center>
   <img src="https://ul.sbond.co/i/log/steam/lib/home.png" />
@@ -55,7 +55,7 @@ They didn't completely disregard customization at least! You can add you own
 custom shelves at the bottom (which can't be moved to the top of the home
 screen).
 
-{{< link-heading "Categorising Games" >}}
+{{<link-heading "Categorising Games">}}
 
 As you can see, on the left. Categories are being shown, even when nothing is
 inside of them. It would be great if they were hidden until games were added
@@ -77,7 +77,7 @@ at the bottom, yeah that is a new animation and it is welcome!
 The sidebar with all your games is not resizable on it's own. Being able to drag
 the edge to make it bigger or smaller would be a great addition.
 
-{{< link-heading "Collections" >}}
+{{<link-heading "Collections">}}
 
 <center>
   <img src="https://ul.sbond.co/i/log/steam/lib/collections.png" />
@@ -97,7 +97,7 @@ to this collection and whenever you buy a new game that also has the same store
 tag or anything else linked to the collection, it will automatically
 add it to itself.
 
-{{< link-heading "Game Menus" >}}
+{{<link-heading "Game Menus">}}
 
 <center>
   <img src="https://ul.sbond.co/i/log/steam/lib/game-menu.png" />
@@ -118,13 +118,13 @@ each screenshot for me reminds me of something that takes me back years when
 me and the lads were having an awesome time. Definitely going to miss this if
 it is gone forever.
 
-{{< link-heading "Free Games" >}}
+{{<link-heading "Free Games">}}
 
 Usually when you have a free game, it will only show in your library when it is
 currently installed on that PC, but I have noticed that F2P games are now just
 in your library, even when they aren't installed.
 
-{{< link-heading "TDLR;" >}}
+{{<link-heading "TDLR;">}}
 
 This update is pretty awesome, and it will only get better when they get around
 to update the rest of the UI. This will probably take a very long time,

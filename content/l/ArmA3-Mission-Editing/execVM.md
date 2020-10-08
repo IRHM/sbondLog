@@ -7,12 +7,12 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "What Is execVM?" >}}
+{{<link-heading "What Is execVM?">}}
 
 execVM is an essential command for ArmA 3 scripting. It allows you to call a script at any point.
 
-{{< link-heading "Example" >}}
+{{<link-heading "Example">}}
 
 execVM is really easy to use and is used like such:
 
-{{< highlight C >}}execVM "nameOfScript.filetype";{{< /highlight >}}
+{{<highlight C>}}execVM "nameOfScript.filetype";{{</highlight>}}

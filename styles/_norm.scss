@@ -116,6 +116,12 @@ code {
   }
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 // Effects
 
 .underline {
@@ -138,10 +144,6 @@ code {
   &:hover {
     transform: scale(1.2);
   }
-}
-
-.hoverFillDarkBlue:hover {
-  fill: #00449e;
 }
 
 .hidden {
@@ -179,4 +181,26 @@ code {
       margin: 0 0 0 10px;
     }
   }
+}
+
+// Colors
+
+.hoverFillDarkBlue:hover {
+  fill: #00449e;
+}
+
+.yellowBackground {
+  background-color: #ffdf00;
+}
+
+.pinkBackground {
+  background-color: #d629d6;
+}
+
+.greenBackground {
+  background-color: #33cc4e;
+}
+
+.cyanBackground {
+  background-color: #2ed1d1;
 }

@@ -7,7 +7,7 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "What Will You Be Using?" >}}
+{{<link-heading "What Will You Be Using?">}}
 
 To properly protect your directories/files on your public web server you will want to use back-end password protection. Front-end protecting with using things like JavaScript will not be very protecting of your files because, someone who goes on your page could simply click F12 and change your code, so they can type in a password they want it to be.
 
@@ -17,7 +17,7 @@ This page will teach you how to protect your page with back-end protection using
 
 **There is also A way to only password protect one file, so if that is what you are looking go <a href="http://localhost:1313/log/webdev/password-protect-one-file-on-site/" class="b bb bw pb1 no-underline black dim">here.</a>**
 
-{{< link-heading "How?" >}}
+{{<link-heading "How?">}}
 
 So, first you will need to create both files you will be needing. Make sure you place these files in the directory you want password protected. The files cant be text files, they don't have a file type. Read past this to know how to make them without a file type.
 
@@ -30,7 +30,7 @@ A little note, since your .htpass file is defined or located in the .htaccess fi
 
 Error logs are always your friend, if you find an error just look in your logs and you will find out more information about what it causing it.
 
-{{< link-heading "Making Files Without A File Type" >}}
+{{<link-heading "Making Files Without A File Type">}}
 
 There are actually two ways of achieving this and I will show you how to go through both of them now. The first one is easier, since it doesn't involve command line.
 
@@ -54,7 +54,7 @@ When you have told it where to look you can now tell it what file to make for yo
 
 Of course you should change .htFileName to whatever you .ht file you are making.
 
-{{< link-heading "Back To It" >}}
+{{<link-heading "Back To It">}}
 
 Once you have made your .ht files you can move onto this part.
 
@@ -69,7 +69,7 @@ Require valid-user
 
 After AuthUserFile you are going to want to change the directory to wherever you have placed your .htpass file.
 
-{{< link-heading "Setting Passwords" >}}
+{{<link-heading "Setting Passwords">}}
 
 Now that you are done with pretty much everything there is one last thing you have to do. Set some passwords!
 
@@ -80,7 +80,7 @@ Usernames and passwords should be entered on each line like this ( The username 
 test2:$apr1$9zh58uHn$OaS9h.KS3ru3gpVz.NHVw.
 {{</highlight>}}
 
-{{< link-heading "Password Encryption" >}}
+{{<link-heading "Password Encryption">}}
 
 You will want to use password encrypting software when putting them into your .htpass file to make sure you are much safer, this will make it much, much harder for anyone to find out what your password it by getting into your .htpass file. You are always safer storing passwords with encryption.
 

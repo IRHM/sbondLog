@@ -8,17 +8,9 @@ categories:
 author: "sbondo1234"
 ---
 
-<style>
-.ctr{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-</style>
+{{<link-heading "geometricPrecision">}}
 
-{{< link-heading "geometricPrecision" >}}
-
-<div class="ctr">
+<div class="center">
   <svg width="279" height="136" viewBox="0 0 279 136" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect y="1" width="100" height="100" fill="black" shape-rendering="geometricPrecision"/>
     <path d="M150 33L208.024 135.75H91.9763L150 33Z" fill="black" shape-rendering="geometricPrecision"/>
@@ -38,9 +30,9 @@ This method takes a little more processing power, but in the end I believe it is
 totally worth it. You will be left with smoother edges becuase it can harness
 the power of anti-aliasing.
 
-{{< link-heading "crispEdges" >}}
+{{<link-heading "crispEdges">}}
 
-<div class="ctr">
+<div class="center">
   <svg width="279" height="136" viewBox="0 0 279 136" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect y="1" width="100" height="100" fill="black" shape-rendering="crispEdges"/>
     <path d="M150 33L208.024 135.75H91.9763L150 33Z" fill="black" shape-rendering="crispEdges"/>
@@ -60,7 +52,7 @@ This method will be best for when you are trying the get the best straight edges
 It can achieve better looking straight lines because it can turn off anti-aliasing
 when it sees them.
 
-{{< link-heading "Other Values" >}}
+{{<link-heading "Other Values">}}
 
 ### Auto
 

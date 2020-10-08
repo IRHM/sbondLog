@@ -7,23 +7,23 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "How" >}}
+{{<link-heading "How">}}
 
 There are two methods for this. The first method will keep adding on the new
 data to the bottom of the text file, whilst the second method will overwrite
 all previous things in the text file whenever new data is written.
 
-{{< link-heading "Method 1 (Don't overwrite Any Data)" >}}
+{{<link-heading "Method 1 (Don't overwrite Any Data)">}}
 
-{{< highlight cs >}}
+{{<highlight cs>}}
 TextWriter saveData = new StreamWriter(@"C:\Path\To\TextFile.txt", true);
 saveData.WriteLine("Yo Bro");
 saveData.Close();
-{{< /highlight >}}
+{{</highlight>}}
 
-{{< link-heading "Method 2 - (Overwrite Data)" >}}
+{{<link-heading "Method 2 - (Overwrite Data)">}}
 
-{{< highlight cs >}}
+{{<highlight cs>}}
 string text = "I went to the dog park.";
 System.IO.File.WriteAllText(@"C:\Path\To\TextFile.txt", text);
-{{< /highlight >}}
+{{</highlight>}}

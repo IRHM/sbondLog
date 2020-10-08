@@ -25,6 +25,17 @@
     }
   }
 
+  .thumbnail {
+    background-color: black;
+    border-radius: 0 0 4px 4px;
+
+    p {
+      color: white;
+      margin: 0;
+      padding: 5px;
+    }
+  }
+
   ol,
   ul {
     padding-left: 40px;
@@ -40,6 +51,15 @@
 
   svg {
     margin: 4px 0;
+  }
+
+  a:not(.linkHeading) {
+    border-bottom: .15rem solid black;
+    transition: opacity 150ms ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 

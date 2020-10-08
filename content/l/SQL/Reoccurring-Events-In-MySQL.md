@@ -7,16 +7,16 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "What are Events in MySQL?" >}}
+{{<link-heading "What are Events in MySQL?">}}
 
 Events in MySQL are something that can happen every x amount of time.
 If you have something that you want to reoccur ever now and then,
 you should consider using events.
 
 
-{{< link-heading "Example" >}}
+{{<link-heading "Example">}}
 
-{{< highlight SQL >}}
+{{<highlight SQL>}}
 CREATE EVENT IF NOT EXISTS `remove_login_attempts` # Create & Name Event
 ON
   SCHEDULE EVERY 1 MINUTE # When to redo task
@@ -24,42 +24,42 @@ ON
   ENABLE
 DO
   DELETE FROM login_attempts WHERE time < (NOW() - INTERVAL 15 MINUTE); # The code to run
-{{< /highlight >}}
+{{</highlight>}}
 
-{{< link-heading "What Is The Code Doing" >}}
+{{<link-heading "What Is The Code Doing">}}
 
 1. Create event and name it. <br>
-{{< highlight SQL >}}
+{{<highlight SQL>}}
 CREATE EVENT IF NOT EXISTS `remove_login_attempts`
-{{< /highlight >}}
+{{</highlight>}}
 
 2. How long it should wait until it runs the code again <br>
-{{< highlight SQL >}}
+{{<highlight SQL>}}
 ON SCHEDULE EVERY 1 MINUTE
-{{< /highlight >}}
+{{</highlight>}}
 
 3. Keep the event after it has ran  <br>
 
     This option isn't really necessary on an event that never stops running.
 
-    {{< highlight SQL >}}
+    {{<highlight SQL>}}
 ON COMPLETION PRESERVE
 
 # Alternatively you can remove the event once it is done:
 # ON COMPLETION NOT PRESERVE
-{{< /highlight >}}
+{{</highlight>}}
 
 4. Enable the event <br>
-{{< highlight SQL >}}
+{{<highlight SQL>}}
 ENABLE
-{{< /highlight >}}
+{{</highlight>}}
 
 5. What code to run (This code should be after 'DO')  <br>
-{{< highlight SQL >}}
+{{<highlight SQL>}}
 DO
-{{< /highlight >}}
+{{</highlight>}}
 
 6. The command/code to run (this is an example, you can tell it to do anything)  <br>
-{{< highlight SQL >}}
+{{<highlight SQL>}}
 DELETE FROM login_attempts WHERE time < (NOW() - INTERVAL 15 MINUTE);
-{{< /highlight >}}
+{{</highlight>}}

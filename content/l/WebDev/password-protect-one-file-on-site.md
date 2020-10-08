@@ -7,13 +7,13 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "What?" >}}
+{{<link-heading "What?">}}
 
 Instead of protecting the whole directory on your site there is a way to protect individual files in that directory.
 
-{{< link-heading "How?" >}}
+{{<link-heading "How?">}}
 
-**Before you start:** <a class="b bb bw pb1 no-underline black dim" href="https://log.sbond.co/log/webdev/making-.htaccess-and.htpassword/" target="_blank">Finish this tutorial here and then come back to complete this one</a>
+**Before you start:** <a href="/l/webdev/making-.htaccess-and.htpassword/" target="_blank">Finish this tutorial here and then come back to complete this one</a>
 
 Ok, once you have finished the other tutorial you can simply add the following code around the code you already have inside of your .htaccess file. Your code inside of your .htaccess file should look something like this (Change dog.html to your filename and type) :
 

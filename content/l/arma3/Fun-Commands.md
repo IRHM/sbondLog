@@ -7,11 +7,11 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "How To Use" >}}
+{{<link-heading "How To Use">}}
 
 First, you will need to be the Admin/Host of the mission you are playing. To execute the commands you will need to click ESC and then type the commands into the Debug Console. You can click Local to execute the code locally (Just For You), Server will execute the code to the server and Global will execute the code globally (to everyone).
 
-{{< link-heading "Command List" >}}
+{{<link-heading "Command List">}}
 
 #### Open Arsenal
 <pre><code class="c">["Open",true] spawn BIS_fnc_arsenal;</code></pre>

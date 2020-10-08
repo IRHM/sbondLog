@@ -7,17 +7,17 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "The Code" >}}
+{{<link-heading "The Code">}}
 
-{{< highlight SQL >}}
+{{<highlight SQL>}}
 SELECT * FROM info WHERE Name LIKE 'Keyword';
-{{< /highlight >}}
+{{</highlight>}}
 
 This way, you would get a 'sort of search', because you would have to type the name
 of the item 100% correctly, otherwise no results would show up. I guess this is sort of
 a 'strict' search, if something is slightly wrong, nothing would be returned.
 
-{{< link-heading "Getting Less Strict" >}}
+{{<link-heading "Getting Less Strict">}}
 
 To get less 'strict' you would have to use the **%** wildcard, which will take the
 input keywords and find each item which has that keyword in it, depending on where you
@@ -27,41 +27,14 @@ If you put the **%** wildcard after the **query**, your results would have to ha
 keyword at the beginning of the item you are trying to find, **this is the opposite** if you
 put the wildcard at the end of the **query**.
 
-{{< link-heading "Examples" >}}
-
-<style>
-table {
-  width: 80%;
-  background-color: #ffffff;
-  border-collapse: collapse;
-  border-width: 2px;
-  border-color: #000000;
-  border-style: solid;
-  color: #000000;
-}
-
-table td, table th {
-  border-width: 2px;
-  border-color: #000000;
-  border-style: solid;
-  padding: 3px;
-}
-
-table thead {
-  background-color: #ffdf00;
-}
-
-table.1 thead {
-  background-color: #ffdf00;
-}
-</style>
+{{<link-heading "Examples">}}
 
 ### If your table had this data:
 
-<center>
+<center class="page_search-table">
 <table>
   <thead>
-    <tr>
+    <tr class="yellowBackground">
       <th>Name</th>
       <th>Type</th>
     </tr>
@@ -89,12 +62,12 @@ SELECT * FROM info WHERE Name LIKE 'The%';
 {{</highlight>}}
 
 ### (1.) Your output would be:
-<center>
+<center class="page_search-table">
 <table>
   <thead>
-    <tr>
-      <th style="background-color: #d629d6;">Name</th>
-      <th style="background-color: #d629d6;">Type</th>
+    <tr class="pinkBackground">
+      <th>Name</th>
+      <th>Type</th>
     </tr>
   </thead>
   <tbody>
@@ -115,18 +88,18 @@ SELECT * FROM info WHERE Name LIKE 'The%';
 </center>
 
 ### (2.) If your code was:
-{{< highlight SQL >}}
+{{<highlight SQL>}}
 SELECT * FROM info WHERE Name LIKE 'he%';
 {{</highlight>}}
 
 ### (2.) Your output would be:
 
-<center>
+<center class="page_search-table">
 <table>
   <thead>
-    <tr>
-      <th style="background-color: #33cc4e;">Name</th>
-      <th style="background-color: #33cc4e;">Type</th>
+    <tr class="greenBackground">
+      <th>Name</th>
+      <th>Type</th>
     </tr>
   </thead>
   <tbody>
@@ -147,17 +120,17 @@ SELECT * FROM info WHERE Name LIKE 'he%';
 </center>
 
 ### (3.) If your code was:
-{{< highlight SQL >}}
+{{<highlight SQL>}}
 SELECT * FROM info WHERE Name LIKE '%he%';
 {{</highlight>}}
 
 ### (3.) Your output would be:
-<center>
+<center class="page_search-table">
 <table>
   <thead>
-    <tr>
-      <th style="background-color: #2ed1d1;">Name</th>
-      <th style="background-color: #2ed1d1;">Type</th>
+    <tr class="cyanBackground">
+      <th>Name</th>
+      <th>Type</th>
     </tr>
   </thead>
   <tbody>
@@ -177,7 +150,7 @@ SELECT * FROM info WHERE Name LIKE '%he%';
 </table>
 </center>
 
-{{< link-heading "That's It!" >}}
+{{<link-heading "That's It!">}}
 
 If you are looking to search through things such as **Descriptions**, this probably isn't
 the way you want to search through them, you will most-likely want to use something like a

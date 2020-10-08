@@ -8,81 +8,37 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "What I'm Talking About" >}}
-
-<style>
-.wbBtn{
-  border: 2px solid black;
-  background-color: black;
-  color: white;
-  font-weight: bold;
-  transition: all .25s ease-in-out;
-}
-
-.wbBtn:hover{
-  background-color: white;
-  color: black;
-  border-radius: 4px;
-  transition: all .25s ease-in-out;
-}
-
-.wbBtnNotSmooth{
-  border: 2px solid black;
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
-
-.wbBtnNotSmooth:hover{
-  background-color: white;
-  color: black;
-  border-radius: 4px;
-  transition: all .25s ease-in-out;
-}
-</style>
-
-<div>
+{{<link-heading "What I'm Talking About">}}
 
 <button class="wbBtnNotSmooth" type="button">
-  <p>Me Button</p>
+  <p>Without Smooth Transition In & Out.</p>
 </button>
 
-- Without Smooth Transition In & Out.
-
-<br><br>
 <button class="wbBtn" type="button">
-  <p>Me Button</p>
+  <p>With Smooth Transition In & Out aka BILL</p>
 </button>
 
-- With Smooth Transition In & Out.
-
-</div>
-
-You see how the bottom one is smooth going in and out? That's what we want and
+You see how the one called Bill is smooth going in and out? That's what we want and
 luckily there is an easy trick.
 
-{{< link-heading "The Code" >}}
+{{<link-heading "The Code">}}
 
 {{<highlight css>}}
-
 <style>
-.wbBtn{
+.wbBtn {
   border: 2px solid black;
   background-color: black;
   color: white;
   font-weight: bold;
-  transition: all .25s ease-in-out; /* Just add this here as well */
+  transition: all 500ms ease-in-out; /* Just put the transition here instead */
 }
 
-.wbBtn:hover{
+.wbBtn:hover {
   background-color: white;
   color: black;
   border-radius: 4px;
-  transition: all .25s ease-in-out;
 }
 </style>
-
-<div>
 
 <button class="wbBtnNotSmooth" type="button">
   <p>Me Button</p>

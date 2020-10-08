@@ -18,7 +18,7 @@ for each of the following mount points:
 
 - `swap`
 
-{{< link-heading "/" >}}
+{{<link-heading "/">}}
 
 `/` is the top-level directory. Everything by default will be placed here 
 unless a different file system is mounted in the path being written to, such as `/home`.
@@ -26,20 +26,20 @@ unless a different file system is mounted in the path being written to, such as 
 For a minimal installation 10-15 GiB will do, but if you want to make sure you have 
 space for all of your packages 40 GiB is the safest option.
 
-{{< link-heading "/boot" >}}
+{{<link-heading "/boot">}}
 
 `/boot` contains all boot related files. In most cases, 1 GiB is enough.
 
 If you have a UEFI capable system, then instead partition for `/boot/efi`.
 
-{{< link-heading "/home" >}}
+{{<link-heading "/home">}}
 
 `/home` is used to store user data, such as videos, images and documents. 
 This partition is useful to have so that your data is separate from OS files, 
 but isn't necessary, especially for machines such as servers that don't have 
 users storing their files.
 
-{{< link-heading "swap" >}}
+{{<link-heading "swap">}}
 
 `swap` is used when there isn't enough RAM available. If you run out of RAM and 
 have no swap the kernel will start terminating processes, which 

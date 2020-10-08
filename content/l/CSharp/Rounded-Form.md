@@ -7,14 +7,16 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "Step 1 - The Importing" >}}
+{{<link-heading "Step 1 - The Importing">}}
 
-{{< highlight cs >}}
+{{<highlight cs>}}
 using System.Runtime.InteropServices;
 using System.Drawing;
-{{< /highlight >}}
+{{</highlight>}}
+
 Put this one inside of your class:
-{{< highlight cs >}}
+
+{{<highlight cs>}}
 [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 private static extern IntPtr CreateRoundRectRgn
 (
@@ -25,21 +27,23 @@ private static extern IntPtr CreateRoundRectRgn
     int nWidthEllipse, // height of ellipse
     int nHeightEllipse // width of ellipse
 );
-{{< /highlight >}}
+{{</highlight>}}
 
-{{< link-heading "Step 2 - Rounding" >}}
+{{<link-heading "Step 2 - Rounding">}}
 
 I would put this in the initialisation of your form.
-{{< highlight cs >}}
+{{<highlight cs>}}
 this.FormBorderStyle = FormBorderStyle.None; //<– if it isn’t already!
 Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-{{< /highlight >}}
+{{</highlight>}}
 
-{{< link-heading "Done!" >}}
+{{<link-heading "Done!">}}
 
 On this specific line:
-{{< highlight cs >}}
+
+{{<highlight cs>}}
 this.FormBorderStyle = FormBorderStyle.None; //<-- if it isn't already!
 Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-{{< /highlight >}}
+{{</highlight>}}
+
 You can change the last two numbers (20, 20) to change how smooth/hard the curve is.

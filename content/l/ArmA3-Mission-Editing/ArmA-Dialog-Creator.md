@@ -7,11 +7,11 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "What Is This?" >}}
+{{<link-heading "What Is This?">}}
 
 <a href="https://github.com/kayler-renslow/arma-dialog-creator/releases" target="_blank" class="b bb bw pb1 no-underline black dim">ArmA Dialog Creator</a> is an amazing tool created by Kayler Renslow. It is the easy way of creating functional dialogs in ArmA 3. You can simply download it from his Github and install it. Once you have done that you are ready to start creating dialogs the easy way!
 
-{{< link-heading "How To Start" >}}
+{{<link-heading "How To Start">}}
 
 Once you have opened the .exe file you are greeted with some options that you need to set before you can start creating dialogs. You first need to choose a workspace and then make/open a project. Most of this program is very self-explanatory since it was made for ease of use.
 
@@ -19,7 +19,7 @@ When you are on the main page you can right click, create and then click new con
 
 You can now start editing your new control by double-clicking and changing what you want to be changed.
 
-{{< link-heading "Exporting" >}}
+{{<link-heading "Exporting">}}
 
 When you are ready to export your newly created dialog you can go to File, Export and then export preview. I normally don't change anything else since I will already have everything set in my .hpp file and only need the controls.
 
@@ -28,16 +28,16 @@ You can change everything then copy and paste the whole file into your dialog, b
 
 My .hpp File **before** copy and paste:
 
-{{< highlight C >}}class DialogName{
+{{<highlight C>}}class DialogName{
   idd = 1000
   class controls{
   };
 };
-{{< /highlight >}}
+{{</highlight>}}
 
 My .hpp File **after** copy and paste:
 
-{{< highlight C >}}
+{{<highlight C>}}
 class DialogName{
   idd = 1000
     class controls{
@@ -55,4 +55,4 @@ class DialogName{
     };
   };
 };
-{{< /highlight >}}
+{{</highlight>}}

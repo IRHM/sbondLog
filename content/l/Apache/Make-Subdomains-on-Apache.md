@@ -1,14 +1,13 @@
 ---
-title: How To Make Subdomains on Apache/Xampp
+title: How To Make Subdomains on Apache
 date: 2019-05-10T23:14:03+01:00
 description: ""
 categories:
-  - WebDev
   - Apache
 author: "sbondo1234"
 ---
 
-{{< link-heading "What?" >}}
+{{<link-heading "What?">}}
 
 When I say 'subdomain' I am talking about the part that comes before the actual domain.
 
@@ -16,57 +15,55 @@ So the subdomain in this URL ***log.sbond.co*** is the part that says ***log***.
 
 You can use subdomains to redirect to a different server which can show different content, but in this post, you will learn how to make a subdomain redirect to a directory in your site. This method will also make the subdomain stay in the address bar.
 
-{{< link-heading "What Do I Do?" >}}
-<br>
-{{< link-heading "DNS Records" >}}
+{{<link-heading "DNS Records">}}
 
 Before we modify any files in your Apache Web Server, we are going to go to your ***DNS Records*** page.
 
 You will want to make a new ***CNAME*** record.
 
-Name it what you want your subdomain to be named & change the value to your domain (without subdomain in it). If you have the option keep ***TTL*** set to ***Automatic***
+Name it what you want your subdomain to be named & change the value to your domain (without subdomain in it).
 
-{{< link-heading "Hosts File" >}}
+{{<link-heading "Hosts File">}}
+
+**Note: This step isn't necessary if you aren't trying to access the site from the server hosting the site.**
 
 Find your ***hosts file.*** This should be located here:
 
-{{<highlight c>}}
+{{<highlight bash>}}
+# Windows
 C:\Windows\System32\drivers\etc
-{{< /highlight >}}
 
-Open the ***hosts*** file and at the bottom ***locate*** this:
+# Linux
+/etc/hosts
+{{</highlight>}}
 
-{{<highlight c>}}
-127.0.0.1 localhost
-{{< /highlight >}}
-
-Copy that line and paste it below. Now change ***locahost*** to:
+At the bottom of the hosts file add this, changing the domain to the one you are adding:
 
 {{<highlight c>}}
-127.0.0.1 subdomainName.domain.com
-{{< /highlight >}}
+127.0.0.1 subdomain.domain.com
+{{</highlight>}}
 
-With that done, you can save the file and exit it. ***(If you are unable to save the file, copy it to your desktop, edit it again and save it there. Now move it back and replace the old file with the new one.)***
+With that done, you can save the file and exit it. ***(If you are unable to save the file, copy it to your desktop, edit it again and save it there. Then move it back and replace the old file with the new one or open your text editor with admin privileges)***
 
-{{< link-heading "httpd-vhosts.conf" >}}
+{{<link-heading "httpd-vhosts.conf">}}
 
 Go to where you installed Apache/XAMPP & find the httpd-vhosts.conf.
 ***It will be in conf\extra and will look like this on XAMPP:***
 {{<highlight c>}}
 C:\xampp\apache\conf\extra
-{{< /highlight >}}
+{{</highlight>}}
 
 Open it up and Copy the code below and paste it at the bottom of the config file.
 
 {{<highlight Apache>}}
 <VirtualHost *:80>
-    ServerAdmin webmaster@domain.com
-    DocumentRoot "C:/xampp7/htdocs/"
-    ServerName domain.com
-    ErrorLog "logs/domain.com-error.log"
-    CustomLog "logs/domain.com-access.log" common
+  ServerAdmin webmaster@domain.com
+  DocumentRoot "C:/xampp7/htdocs/"
+  ServerName domain.com
+  ErrorLog "logs/domain.com-error.log"
+  CustomLog "logs/domain.com-access.log" common
 </VirtualHost>
-{{< /highlight >}}
+{{</highlight>}}
 
 With the code above pasted at the bottom of the config, you can start editing it.
 
@@ -96,8 +93,8 @@ Your config file should look something like this when you are done:
     ErrorLog "logs/log.sbond.co-error.log"
     CustomLog "logs/log.sbond.co-access.log" common
 </VirtualHost>
-{{< /highlight >}}
+{{</highlight>}}
 
-{{< link-heading "Done!" >}}
+{{<link-heading "Done!">}}
 
 With everything above completed correctly, you are ready to go.

@@ -7,13 +7,13 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "What?" >}}
+{{<link-heading "What?">}}
 
 A subdomain looks something like this: **wiki.sbond.co**
 
 You will recognise one because it will have text before the actual domain, something like the **www.** you see before most sites. Luckily we have the .htaccess file because this all becomes a lot easier once you get into it.
 
-{{< link-heading "How?" >}}
+{{<link-heading "How?">}}
 
 1.Make sure you have made your .htaccess file. You can learn how to make it here (Only make the .htaccess file).
 2.Type the following lines of code into your .htaccess file:

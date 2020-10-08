@@ -7,15 +7,15 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "Step 1 - Creating It" >}}
+{{<link-heading "Step 1 - Creating It">}}
 
 Of course the first step if to ***Create your combo box*** and assign it an appropriate ***Name***.
 
-{{< link-heading "Step 2 - Adding Items" >}}
+{{<link-heading "Step 2 - Adding Items">}}
 
 I put all of the things I wanted into a string array for easy accessibility and readability. My code is set out like this:
 
-{{< highlight cs >}}
+{{<highlight cs>}}
 Categories = new string[9];
 Categories[0] = "Action";
 Categories[1] = "Adventure";
@@ -27,7 +27,7 @@ Categories[6] = "Science fiction";
 Categories[7] = "Thriller";
 Categories[8] = "Western";
 CategoryDropdown.Items.AddRange(Categories);
-{{< /highlight >}}
+{{</highlight>}}
 
 The ***first*** line ***Categories = new string[9];*** is initialising the string array and declaring how many different variables or 'things' are going to be in it.
 

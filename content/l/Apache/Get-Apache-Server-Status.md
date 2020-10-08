@@ -7,24 +7,26 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "Using mod_status" >}}
+{{<link-heading "Using mod_status">}}
 
 1. Enable the mod in your config
 
     Find **mod_status** in your apache config file, by default it is commented
     out with a **#**. Just simply remove this.
 
-        LoadModule status_module modules/mod_status.so
+    {{<highlight Apache>}}LoadModule status_module modules/mod_status.so{{</highlight>}}
 
 2. Setup access point
 
     Now you are going to have to setup out access point, for this we will just
     make a <**Location**> in an appropriate config.
 
-        <Location /server-status>
-          SetHandler server-status
-          Require ip 192.168
-        </Location>
+    {{<highlight Apache>}}
+<Location /server-status>
+  SetHandler server-status
+  Require ip 192.168
+</Location>
+{{</highlight>}}
 
 3. Access it
 
@@ -39,6 +41,6 @@ author: "sbondo1234"
     local network where the server is be being run, however it is up to you if
     you want to keep it that way.
 
-{{< link-heading "What it looks like" >}}
+{{<link-heading "What it looks like">}}
 
 ![](https://ul.sbond.co/i/log/apache/status.png)

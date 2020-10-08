@@ -7,22 +7,22 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "While Loops?" >}}
+{{<link-heading "While Loops?">}}
 
 If you ever want to create a loop for whatever reason you can do
 it easily with while loops.
 
-{{< link-heading "How Do I Use Them?" >}}
+{{<link-heading "How Do I Use Them?">}}
 
 If you wanted to create a hint every 15 seconds you could very easily
 execute this script once and have it do the rest of the work for you.
 
-{{< highlight C >}}
+{{<highlight C>}}
 while {true} do {
   hint "I'm A Hint";
   sleep 15;
 };
-{{< /highlight >}}
+{{</highlight>}}
 
 You see a while statement checks if something is true or false and then
 does something depending on which it is. In this particular line of code,

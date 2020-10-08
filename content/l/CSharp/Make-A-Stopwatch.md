@@ -7,34 +7,34 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "Step 1" >}}
+{{<link-heading "Step 1">}}
 
 Import ***System.Diagnostics:***
-{{< highlight cs >}}
+{{<highlight cs>}}
 using System.Diagnostics;
-{{< /highlight >}}
+{{</highlight>}}
 
-{{< link-heading "Step 2" >}}
+{{<link-heading "Step 2">}}
 
 Initialise the timer & start it:
-{{< highlight cs >}}
+{{<highlight cs>}}
 Stopwatch timer = new Stopwatch();
 timer.Start();
-{{< /highlight >}}
+{{</highlight>}}
 
-{{< link-heading "Step 3" >}}
+{{<link-heading "Step 3">}}
 
 Stop the timer:
-{{< highlight cs >}}
+{{<highlight cs>}}
 timer.Stop();
-{{< /highlight >}}
+{{</highlight>}}
 
-{{< link-heading "Step 4" >}}
+{{<link-heading "Step 4">}}
 
 Display stopwatch results:
-{{< highlight cs >}}
+{{<highlight cs>}}
 Console.WriteLine(overallTimer.Elapsed.Seconds.ToString() + "s");
-{{< /highlight >}}
+{{</highlight>}}
 
 You can use a multiple amount of different timings such as:
 
@@ -46,6 +46,6 @@ You can use a multiple amount of different timings such as:
 You can put 'Total' before the unit of timing to give the exact amount of time
 taken:
 
-{{< highlight cs >}}
+{{<highlight cs>}}
 Console.WriteLine(overallTimer.Elapsed.TotalSeconds.ToString() + "s");
-{{< /highlight >}}
+{{</highlight>}}

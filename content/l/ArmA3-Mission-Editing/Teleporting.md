@@ -7,7 +7,7 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "Teleporting To Markers" >}}
+{{<link-heading "Teleporting To Markers">}}
 
 To teleport players to markers we will be making use of both setPos & getMarkerPos.
 
@@ -17,29 +17,26 @@ After we have the marker placed down we will have to double click on it and chan
 
 Once we have done everything above we can simply use the code below to teleport the player to the marker:
 
-{{< highlight C >}}player setPos (getMarkerPos "Marker_Name");{{< /highlight >}}
+{{<highlight C>}}player setPos (getMarkerPos "Marker_Name");{{</highlight>}}
 
 Just change 'Marker_Name' and you are good to go, you have a line of code which will teleport the player to a specific marker! You can of course change 'player' to whatever you want as long as it is defined as something.
 
 As an example, if we have the Variable Name of a player set to "player_1" we can alter the code a little to teleport just that player:
 
-{{< highlight C >}}player_1 setPos (getMarkerPos "Marker_Name");{{< /highlight >}}
+{{<highlight C>}}player_1 setPos (getMarkerPos "Marker_Name");{{</highlight>}}
 
-{{< link-heading "Teleporting To Coordinates" >}}
+{{<link-heading "Teleporting To Coordinates">}}
 
 To teleport a player or anything to a specific coordinate we will have to find the coordinates we want to teleport them to.
 
 To find coordinates in 3DEN Editor we can simply right-click wherever we want, go to Log and click on 'Log Position to Clipboard'. This will give us the position of our click in 3DEN Editor. You can also do this more precisely, by placing a marker down and logging the position of that to the clipboard. Both work!
 
 <center>
-  <div class="Image">
-    <img src="https://ul.sbond.co/i/log/arma3/Logpositiontoclipboard.png"
-    alt="Logging Position">
-  </div>
+  <img src="https://ul.sbond.co/i/log/arma3/logpositiontoclipboard.png" alt="Logging Position">
 </center>
 
 The code we use is altered a little since now we aren't teleporting to a marker we don't need gerMarkerPos. We will only be using setPos.
 
-{{< highlight C >}}player setPos [x,y,z];{{< /highlight >}}
+{{<highlight C>}}player setPos [x,y,z];{{</highlight>}}
 
 Of course, you can still change 'player' to whatever you want.

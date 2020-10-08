@@ -7,8 +7,8 @@ categories:
 author: "sbondo1234"
 ---
 
-{{< link-heading "What's This?" >}}
+{{<link-heading "What's This?">}}
 
-Rockyou.txt is a text document filled with over 14 million cracked passwords. It is filled with easily crackable passwords.
+rockyou.txt is a text document filled with over 14 million cracked passwords. It is filled with easily crackable passwords.
 
-### <a class="b bb bw pb1 no-underline black dim" href="https://github.com/brannondorsey/naive-hashcat/releases" target="_blank">Repo</a>
+### <a href="https://github.com/brannondorsey/naive-hashcat/releases" target="_blank">Repo</a>
