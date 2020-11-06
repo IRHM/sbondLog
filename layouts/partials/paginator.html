@@ -19,41 +19,48 @@
 
     {{ range $paginator.Pagers }}
 
-    {{ $.Scratch.Set "page_number_flag" false }}
+      {{ $.Scratch.Set "page_number_flag" false }}
 
-    {{ if gt $paginator.TotalPages $max_links }}
+      {{ if gt $paginator.TotalPages $max_links }}
 
-    {{ if le $paginator.PageNumber $lower_limit }}
+      {{ if le $paginator.PageNumber $lower_limit }}
 
-    {{ if le .PageNumber $max_links }}
-        {{ $.Scratch.Set "page_number_flag" true }}
-    {{ end }}
+      {{ if le .PageNumber $max_links }}
+          {{ $.Scratch.Set "page_number_flag" true }}
+      {{ end }}
 
-    {{ else if ge $paginator.PageNumber $upper_limit }}
+      {{ else if ge $paginator.PageNumber $upper_limit }}
 
-      {{ if gt .PageNumber (sub $paginator.TotalPages $max_links) }}
+        {{ if gt .PageNumber (sub $paginator.TotalPages $max_links) }}
+          {{ $.Scratch.Set "page_number_flag" true }}
+        {{ end }}
+
+      {{ else }}
+
+      {{ if and ( ge .PageNumber (sub $paginator.PageNumber $adjacent_links) ) ( le .PageNumber (add $paginator.PageNumber $adjacent_links) ) }}
         {{ $.Scratch.Set "page_number_flag" true }}
       {{ end }}
 
-    {{ else }}
+      {{ end }}
 
-    {{ if and ( ge .PageNumber (sub $paginator.PageNumber $adjacent_links) ) ( le .PageNumber (add $paginator.PageNumber $adjacent_links) ) }}
-      {{ $.Scratch.Set "page_number_flag" true }}
-    {{ end }}
+      {{ else }}
 
-    {{ end }}
+        {{ $.Scratch.Set "page_number_flag" true }}
 
-    {{ else }}
+      {{ end }}
 
-      {{ $.Scratch.Set "page_number_flag" true }}
-
-    {{ end }}
-
-    {{ if eq ($.Scratch.Get "page_number_flag") true }}
-      <a href="{{ .URL }}">
-        {{ .PageNumber }}
-      </a>
-    {{ end }}
+      {{ if eq ($.Scratch.Get "page_number_flag") true }}
+        <!-- If paginator page == pageNumber then add active class to it-->
+        {{ if eq $paginator.PageNumber .PageNumber }}
+          <a href="{{ .URL }}" class="active">
+            {{ .PageNumber }}
+          </a>
+        {{ else }}
+          <a href="{{ .URL }}">
+            {{ .PageNumber }}
+          </a>
+        {{ end }}
+      {{ end }}
 
     {{ end }}
 
