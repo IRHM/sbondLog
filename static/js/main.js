@@ -7,7 +7,7 @@ hljs.initHighlightingOnLoad();
 let portalInput = document.getElementById("portalInput");
 let portalLabel = document.getElementById("portalLabel");
 
-let githubLink = "https://github.com/sbondo1234/sbondLog";
+let githubLink = "https://github.com/IRHM/sbondLog";
 
 if (portalInput != null && portalLabel != null) {
   portalInput.value = "sbondLog";
@@ -42,10 +42,13 @@ function removeLink() {
  */
 let url = new URL(window.location.href);
 let urlParams = url.searchParams;
-let queryParam = urlParams.get("q");
 let resultsContainer = document.getElementById("results");
 let resultsAmountContainer = document.getElementById("amount");
 let resultsSearchBar = document.getElementById("resultsSearchBar");
+
+function getQueryParam() {
+  return urlParams.get("q");
+}
 
 async function getIndex() {
   // Fetch index.json file
@@ -126,10 +129,10 @@ async function searchFor(queryParam, display) {
 }
 
 // Search for query if one is present
-if (queryParam != null && resultsContainer != null && resultsAmountContainer != null) {
-  resultsSearchBar.value = queryParam;
+if (getQueryParam() != null && resultsContainer != null && resultsAmountContainer != null) {
+  resultsSearchBar.value = getQueryParam();
 
-  searchFor(queryParam, true);
+  searchFor(getQueryParam(), true);
 }
 
 if (document.getElementById("resultsSearchForm") != null) {
