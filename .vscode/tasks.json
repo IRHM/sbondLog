@@ -3,7 +3,7 @@
   "tasks": [
     {
       "label": "Run and watch",
-      "dependsOn": ["Watch SCSS", "Start hugo server"],
+      "dependsOn": ["scss:watch", "hugo:server"],
       "dependsOrder": "parallel",
       "group": {
         "kind": "build",
@@ -13,13 +13,19 @@
       "isBackground": true
     },
     {
-      "label": "Start hugo server",
+      "label": "hugo:server",
       "command": "hugo server",
       "type": "shell",
       "problemMatcher": "$msCompile"
     },
     {
-      "label": "Watch SCSS",
+      "label": "hugo:build",
+      "command": "hugo",
+      "type": "shell",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "scss:watch",
       "command": "node-sass --include-path scss ./styles -wo static/css --sourceMap true --output-style compressed",
       "type": "shell",
       "problemMatcher": "$msCompile"
