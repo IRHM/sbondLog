@@ -1,18 +1,23 @@
 ﻿{{ partial "meta.html" . }}
 
-<link rel="shortcut icon" href="https://ul.sbond.co/i/log/logo.png">
-<link rel="shortcut icon" href="https://ul.sbond.co/i/log/logo.svg">
+<link rel="shortcut icon" href="https://ul.sbond.co/i/log/logo.png" />
+<link rel="shortcut icon" href="https://ul.sbond.co/i/log/logo.svg" />
 
 <title>{{ .Title }} -- sbondLog</title>
 <link rel="canonical" href="{{ .Permalink }}" />
 
-{{ $title := .Title }}
-{{ with .OutputFormats.Get "RSS" }}
+{{ $title := .Title }} {{ with .OutputFormats.Get "RSS" }}
 <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
 {{ end }}
 
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.min.css?v=2" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css?v=2.1" />
 
 <script src="{{ .Site.BaseURL }}/js/highlight.pack.js?v=2" defer></script>
 <script src="{{ .Site.BaseURL }}/js/main.js?v=2" defer></script>
-<script async defer data-domains="log.sbond.co" data-website-id="5b926e97-05cd-4d85-ada4-162bb1a9c1ef" src="https://anal.sbond.co/umami.js"></script>
+<script
+  async
+  defer
+  data-domains="log.sbond.co"
+  data-website-id="5b926e97-05cd-4d85-ada4-162bb1a9c1ef"
+  src="https://anal.sbond.co/umami.js"
+></script>
