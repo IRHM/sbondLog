@@ -10,7 +10,9 @@
 <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
 {{ end }}
 
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css?v=2.1" />
+{{ $sass := resources.Get "styles/main.scss" }}
+{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
 <script src="{{ .Site.BaseURL }}/js/highlight.pack.js?v=2" defer></script>
 <script src="{{ .Site.BaseURL }}/js/main.js?v=2" defer></script>
