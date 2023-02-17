@@ -56,7 +56,8 @@ h4,
 h5 {
   margin: 1.4rem 0; }
 
-p {
+p,
+li {
   margin: 1rem 0; }
 
 p,
@@ -531,12 +532,12 @@ footer {
     padding-left: 40px; }
   .postContainer ul {
     list-style-type: circle; }
-  .postContainer img {
+  .postContainer img:not(.norm) {
     width: 100%; }
   .postContainer svg {
     margin: 4px 0; }
   .postContainer a:not(.linkHeading) {
-    border-bottom: .15rem solid black;
+    border-bottom: 0.15rem solid black;
     transition: opacity 150ms ease-in-out; }
     .postContainer a:not(.linkHeading):hover {
       opacity: 0.5; }
