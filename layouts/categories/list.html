@@ -1,5 +1,6 @@
 {{ define "main" }}
     <div class="categoriesContainer">
+        <h1>{{ .Page.Title }}</h1>
         <ul>
             {{ range .Pages.ByTitle }}
                 <a href="{{.Page.Permalink}}">

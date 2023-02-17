@@ -1,6 +1,10 @@
 ﻿.categoriesContainer {
   width: 100%;
 
+  h1 {
+    margin-top: 0;
+  }
+
   ul {
     list-style: none;
 
@@ -14,7 +18,8 @@
       font-weight: bold;
       line-height: 1.5;
       transition: all 500ms ease;
-      transition-property: transform, border-radius, background-image, text-shadow, color;
+      transition-property: transform, border-radius, background-image,
+        text-shadow, color;
       cursor: pointer;
 
       &:hover {
@@ -31,7 +36,11 @@
 
         @media (max-width: 1000px) {
           box-shadow: none;
-          background: linear-gradient(90deg, rgba(185, 143, 255, 1) 35%, rgba(28, 234, 253, 1) 100%);
+          background: linear-gradient(
+            90deg,
+            rgba(185, 143, 255, 1) 35%,
+            rgba(28, 234, 253, 1) 100%
+          );
         }
       }
     }
