@@ -45,7 +45,8 @@
     list-style-type: circle;
   }
 
-  img {
+  // .norm being on images that don't want to be modified
+  img:not(.norm) {
     width: 100%;
   }
 
@@ -54,7 +55,7 @@
   }
 
   a:not(.linkHeading) {
-    border-bottom: .15rem solid black;
+    border-bottom: 0.15rem solid black;
     transition: opacity 150ms ease-in-out;
 
     &:hover {
