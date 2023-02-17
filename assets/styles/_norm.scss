@@ -13,6 +13,9 @@ html {
 body {
   font-family: sans-serif;
   animation: h 400ms forwards;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   @include keyframes(h) {
     from {
@@ -67,9 +70,24 @@ code {
   justify-content: center;
   flex-flow: column;
   width: 60%;
+  height: 100%;
   margin: 50px 30px;
   margin-right: auto;
   margin-left: auto;
+  flex: 1;
+
+  .wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+
+    // For divs we want to center vertically too.
+    &.center {
+      justify-content: center;
+    }
+  }
 
   @media (max-width: 1000px) {
     width: 90%;
@@ -176,7 +194,7 @@ code {
   h2 {
     display: flex;
     align-items: center;
-    
+
     svg {
       margin: 0 0 0 10px;
     }
