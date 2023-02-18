@@ -11,7 +11,7 @@ categories:
 1. Select your whole table including headers
 
 <center>
-<img class="norm" src="./1.png" alt="" />
+<img src="./1.png" alt="Selecting table area" />
 </center>
 
 2. With your table selected, go to **Data > Pivot Table > Insert or Edit...**
@@ -19,13 +19,13 @@ categories:
 4. On this page, you can drag the available fields to any box you want (Filters, Column, Row and Data). For what I am doing I will drag my headers into these boxes and click **OK**:
 
 <center>
-<img class="norm" src="./2.png" alt="" />
+<img src="./2.png" alt="Customizing pivot table layout" />
 </center>
 
 This will create a new sheet by default with this:
 
 <center>
-<img class="norm" src="./3.png" alt="" />
+<img src="./3.png" alt="How the pivot table will look" />
 </center>
 
 # Grouping Dates
@@ -36,13 +36,13 @@ This will create a new sheet by default with this:
 2. We can keep everything default, except I am going to make sure **Months** and **Years** is selected under **Intervals** in the **Group by** section and click **OK**:
 
 <center>
-<img class="norm" src="./4.png" alt="" />
+<img src="./4.png" alt="Table grouping menu" />
 </center>
 
 **This is what your pivot table should now look like** (I added more data):
 
 <center>
-<img class="norm" src="./5.png" alt="" />
+<img src="./5.png" alt="Final pivot table result" />
 </center>
 
 # Helpful Notes
