@@ -6,7 +6,7 @@ categories:
   - LibreOffice
 ---
 
-# Creating the Pivot Table
+{{<link-heading "Creating the Pivot Table">}}
 
 1. Select your whole table including headers
 
@@ -28,7 +28,7 @@ This will create a new sheet by default with this:
 <img src="./3.png" alt="How the pivot table will look" />
 </center>
 
-# Grouping Dates
+{{<link-heading "Grouping Dates">}}
 
 **Now we will group the dates by month and year, but feel free to group them however you like.**
 
@@ -45,7 +45,7 @@ This will create a new sheet by default with this:
 <img src="./5.png" alt="Final pivot table result" />
 </center>
 
-# Helpful Notes
+{{<link-heading "Helpful Notes">}}
 
 - If you right click anywhere on your table and go to properties, you can tweak your table.
 
