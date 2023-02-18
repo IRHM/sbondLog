@@ -4,7 +4,6 @@ date: 2020-10-05T19:48:45+01:00
 description: "How to run programs in the background in a cli on linux"
 categories:
   - Linux
-author: "sbondo1234"
 ---
 
 {{<link-heading "Installation">}}

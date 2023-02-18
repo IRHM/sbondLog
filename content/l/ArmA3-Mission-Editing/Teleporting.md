@@ -4,7 +4,6 @@ date: 2018-11-10T08:55:21+01:00
 description: ""
 categories:
   - ArmA3 Mission Editing
-author: "sbondo1234"
 ---
 
 {{<link-heading "Teleporting To Markers">}}

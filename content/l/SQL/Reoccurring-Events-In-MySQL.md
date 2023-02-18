@@ -4,7 +4,6 @@ date: 2019-09-12T23:12:03+01:00
 description: "Events in MySQL"
 categories:
   - SQL
-author: "sbondo1234"
 ---
 
 {{<link-heading "What are Events in MySQL?">}}

@@ -1,10 +1,9 @@
 ---
 title: Password Protect A Directory on Your Site
 date: 2019-04-27T10:19:57+01:00
-description: ""
+description: "Basic password protection on your site"
 categories:
   - WebDev
-author: "sbondo1234"
 ---
 
 {{<link-heading "What Will You Be Using?">}}

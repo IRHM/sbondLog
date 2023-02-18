@@ -4,7 +4,6 @@ date: 2019-05-10T23:14:03+01:00
 description: ""
 categories:
   - Apache
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

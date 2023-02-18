@@ -1,10 +1,9 @@
 ---
 title: Hosting your Hugo Site
 date: 2019-04-27T09:48:05+01:00
-description: "Host Hugo Site"
+description: "How to host your Hugo site with your own server or on GitHub Pages"
 categories:
   - Hugo
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

@@ -1,10 +1,9 @@
 ---
 title: Make User Settings & Edit Them C#
 date: 2019-07-18T01:09:49+01:00
-description: ""
+description: "Making and editing user settings in C#"
 categories:
   - CSharp
-author: "sbondo1234"
 ---
 
 {{<link-heading "Create Settings">}}

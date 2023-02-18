@@ -4,8 +4,7 @@ date: 2019-09-30T22:57:24+01:00
 description: "Different animations for when you go into and out of one"
 categories:
   - CSS
-  - WebDev  
-author: "sbondo1234"
+  - WebDev
 ---
 
 {{<link-heading "What I'm Talking About">}}

@@ -4,7 +4,6 @@ date: 2018-10-12T03:52:05+01:00
 description: "ExecVM"
 categories:
   - ArmA3 Mission Editing
-author: "sbondo1234"
 ---
 
 {{<link-heading "What Is execVM?">}}

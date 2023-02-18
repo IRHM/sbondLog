@@ -4,7 +4,6 @@ date: 2019-04-27T10:11:57+01:00
 description: ""
 categories:
   - WebDev
-author: "sbondo1234"
 ---
 
 {{<link-heading "How?">}}

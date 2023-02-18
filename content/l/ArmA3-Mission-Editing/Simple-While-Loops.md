@@ -4,7 +4,6 @@ date: 2018-11-06T08:53:32+01:00
 description: ""
 categories:
   - ArmA3 Mission Editing
-author: "sbondo1234"
 ---
 
 {{<link-heading "While Loops?">}}

@@ -4,7 +4,6 @@ date: 2019-04-27T10:03:37+01:00
 description: ""
 categories:
   - Python
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

@@ -4,7 +4,6 @@ date: 2020-10-04T22:00:58+01:00
 description: "Recommended partitioning scheme for linux"
 categories:
   - Linux
-author: "sbondo1234"
 ---
 
 In most cases you are going to want to make seperate partitions 

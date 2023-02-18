@@ -1,11 +1,10 @@
 ---
 title: Keyframe Animations
 date: 2019-08-27T11:54:23+01:00
-description: "@Keyframes"
+description: "Using @keyframes in CSS"
 categories:
   - CSS
   - WebDev
-author: "sbondo1234"
 ---
 
 {{<link-heading "Intro">}}

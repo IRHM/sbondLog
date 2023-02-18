@@ -1,10 +1,9 @@
 ---
 title: Making Subdomains Which Redirect to Directory with .htaccess
 date: 2019-04-27T10:15:10+01:00
-description: ""
+description: "Using the .htaccess file to redirect"
 categories:
   - WebDev
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

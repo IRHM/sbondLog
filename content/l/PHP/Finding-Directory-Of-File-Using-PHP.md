@@ -5,7 +5,6 @@ description: "Finding Directory of File Using PHP"
 categories:
   - WebDev
   - PHP
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

@@ -4,7 +4,6 @@ date: 2018-10-13T05:02:44+01:00
 description: "Advanced Holstering"
 categories:
   - ArmA3 Mission Editing
-author: "sbondo1234"
 ---
 
 {{<link-heading "What Is This?">}}

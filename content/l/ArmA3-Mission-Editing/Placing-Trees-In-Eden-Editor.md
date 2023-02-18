@@ -4,7 +4,6 @@ date: 2018-10-17T07:47:54+01:00
 description: "Placing Trees in Eden Editor"
 categories:
   - ArmA3 Mission Editing
-author: "sbondo1234"
 ---
 
 {{<link-heading "How Would I Do This?">}}

@@ -1,11 +1,10 @@
 ---
 title: Remove Indexing on Your Site
 date: 2019-04-27T10:34:17+01:00
-description: ""
+description: "Removing indexing from Apache"
 categories:
   - WebDev
   - Apache
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

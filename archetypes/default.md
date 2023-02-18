@@ -4,5 +4,4 @@ date: {{ .Date }}
 description: ""
 categories:
   - Change this
-author: ""
 ---

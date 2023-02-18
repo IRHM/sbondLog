@@ -1,11 +1,9 @@
 ---
 title: Making A Draggable, Borderless Form C#
 date: 2019-06-27T02:17:12+01:00
-description: ""
+description: "Making a draggable and borderless form in C#"
 categories:
   - CSharp
-author: "sbondo1234"
-
 ---
 
 {{<link-heading "Step 1 - Adding Event">}}

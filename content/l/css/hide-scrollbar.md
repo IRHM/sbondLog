@@ -5,7 +5,6 @@ description: "Hide Scrollbar CSS"
 categories:
   - CSS
   - WebDev
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

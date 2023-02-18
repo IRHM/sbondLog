@@ -4,7 +4,6 @@ date: 2019-04-27T09:30:25+01:00
 description: "Add 'Open Command Window Here' to Context Menu."
 categories:
   - Configuration
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

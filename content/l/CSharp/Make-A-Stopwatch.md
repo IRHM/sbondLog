@@ -1,10 +1,9 @@
 ---
 title: Make a Stopwatch C#
 date: 2019-06-08T10:02:18+01:00
-description: ""
+description: "Making a stopwatch in C# step by step"
 categories:
   - CSharp
-author: "sbondo1234"
 ---
 
 {{<link-heading "Step 1">}}

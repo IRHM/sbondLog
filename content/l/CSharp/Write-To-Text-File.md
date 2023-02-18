@@ -1,10 +1,9 @@
 ---
 title: Write to Text File in C#
 date: 2019-06-08T09:34:38+01:00
-description: ""
+description: "How to write data to a file in C#"
 categories:
   - CSharp
-author: "sbondo1234"
 ---
 
 {{<link-heading "How">}}

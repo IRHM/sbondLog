@@ -4,7 +4,6 @@ date: 2019-06-29T08:51:06+01:00
 description: ""
 categories:
   - SQL
-author: "sbondo1234"
 ---
 
 {{<link-heading "The Code">}}

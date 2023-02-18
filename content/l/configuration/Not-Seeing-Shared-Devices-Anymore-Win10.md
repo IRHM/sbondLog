@@ -4,7 +4,6 @@ date: 2019-04-27T09:43:26+01:00
 description: "Not Seeing Shared Devices Anymore Win10"
 categories:
   - Configuration
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

@@ -4,7 +4,6 @@ date: 2018-10-22T08:24:44+01:00
 description: "Removing or Adding Items"
 categories:
   - ArmA3 Mission Editing
-author: "sbondo1234"
 ---
 
 {{<link-heading "Adding Items">}}

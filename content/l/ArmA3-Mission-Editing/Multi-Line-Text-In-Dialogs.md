@@ -4,7 +4,6 @@ date: 2018-10-15T07:44:19+01:00
 description: "Multi Line Text in Dialogs"
 categories:
   - ArmA3 Mission Editing
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

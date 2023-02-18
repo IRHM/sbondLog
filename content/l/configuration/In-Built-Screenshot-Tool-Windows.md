@@ -5,7 +5,6 @@ description: "In Build Screenshot Tool Windows"
 categories:
   - Configuration
   - Interesting
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

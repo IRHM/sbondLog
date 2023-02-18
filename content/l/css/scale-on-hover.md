@@ -1,11 +1,10 @@
 ---
 title: Scale on Hover CSS
 date: 2019-04-27T09:27:05+01:00
-description: "Scale on Hover CSS"
+description: "Scaling elements on Hover with CSS"
 categories:
   - CSS
   - WebDev
-author: "sbondo1234"
 ---
 
 {{<link-heading "What Do You Mean?">}}

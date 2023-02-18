@@ -4,7 +4,6 @@ date: 2018-10-14T07:29:31+01:00
 description: ""
 categories:
   - ArmA3 Mission Editing
-author: "sbondo1234"
 ---
 
 {{<link-heading "What Is This?">}}

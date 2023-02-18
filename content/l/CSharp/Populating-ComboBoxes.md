@@ -1,10 +1,9 @@
 ---
 title: Populating Combo Boxes in C#
 date: 2019-06-21T02:10:34+01:00
-description: ""
+description: "How to use combo boxes in C#"
 categories:
   - CSharp
-author: "sbondo1234"
 ---
 
 {{<link-heading "Step 1 - Creating It">}}

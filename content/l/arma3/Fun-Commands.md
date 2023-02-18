@@ -4,7 +4,6 @@ date: 2018-11-10T09:01:44+01:00
 description: ""
 categories:
   - ArmA 3
-author: "sbondo1234"
 ---
 
 {{<link-heading "How To Use">}}

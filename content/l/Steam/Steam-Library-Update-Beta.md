@@ -4,7 +4,6 @@ date: 2019-09-18T02:43:19+01:00
 description: "Steam Library Update Beta Thoughts"
 categories:
   - Steam
-author: "sbondo1234"
 ---
 
 {{<link-heading "Enabling Library Update">}}

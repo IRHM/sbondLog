@@ -5,7 +5,6 @@ description: "Shape Rendering Property Used on SVGs"
 categories:
   - SVG
   - WebDev
-author: "sbondo1234"
 ---
 
 {{<link-heading "geometricPrecision">}}

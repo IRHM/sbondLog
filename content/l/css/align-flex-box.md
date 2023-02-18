@@ -5,7 +5,6 @@ description: "Vertically/Horizontally Align With Flexbox"
 categories:
   - CSS
   - WebDev
-author: "sbondo1234"
 ---
 
 {{<link-heading "Example">}}

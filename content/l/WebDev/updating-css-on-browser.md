@@ -1,10 +1,9 @@
 ---
 title: How To Solve CSS Not Updating In Your Browser
 date: 2019-05-15T01:57:36+01:00
-description: ""
+description: "Fix CSS not updating in your browser. 2 Easy methods."
 categories:
   - WebDev
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

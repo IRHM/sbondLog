@@ -4,7 +4,6 @@ date: 2019-04-27T09:41:02+01:00
 description: ""
 categories:
   - Configuration
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

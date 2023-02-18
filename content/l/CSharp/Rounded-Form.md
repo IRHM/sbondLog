@@ -1,10 +1,10 @@
 ---
 title: Rounding The Edges Of Your Form C#
 date: 2019-06-29T10:44:11+01:00
-description: ""
+description: "How to make your form round in C#"
 categories:
   - CSharp
-author: "sbondo1234"
+
 ---
 
 {{<link-heading "Step 1 - The Importing">}}

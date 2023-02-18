@@ -4,7 +4,6 @@ date: 2019-04-27T09:58:24+01:00
 description: "On Click Refresh using JavaScript"
 categories:
   - JavaScript
-author: "sbondo1234"
 ---
 
 {{<link-heading "What?">}}

@@ -4,7 +4,6 @@ date: 2019-07-18T00:52:52+01:00
 description: ""
 categories:
   - Apache
-author: "sbondo1234"
 ---
 
 {{<link-heading "Step 1 - Create Subdomain">}}

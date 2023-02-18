@@ -4,7 +4,6 @@ date: 2019-06-27T00:58:27+01:00
 description: ""
 categories:
   - CSharp
-author: "sbondo1234"
 ---
 
 {{<link-heading "Step 1- Find Characters">}}

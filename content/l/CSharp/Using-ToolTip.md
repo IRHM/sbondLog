@@ -1,10 +1,9 @@
 ---
 title: How To Show Info On Hover With ToolTip C#
 date: 2019-06-29T12:26:11+01:00
-description: ""
+description: "Creating tooltips in C#"
 categories:
   - CSharp
-author: "sbondo1234"
 ---
 
 {{<link-heading "Step 1 - Add The Control">}}
