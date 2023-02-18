@@ -16,6 +16,11 @@
     font-weight: bold;
     overflow: hidden;
 
+    @media (max-width: 500px) {
+      font-size: 4.5rem;
+      height: 100px;
+    }
+
     .title {
       position: relative;
       width: 100%;
@@ -23,7 +28,6 @@
       outline: none;
       border: none;
       font-family: "Times New Roman", sans-serif;
-      font-size: 6.4rem;
       text-align: center;
       color: transparent;
 
@@ -32,7 +36,7 @@
         background-color: lightskyblue;
       }
     }
-
+    
     a {
       position: absolute;
       text-align: center;
