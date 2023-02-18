@@ -532,8 +532,8 @@ footer {
     padding-left: 40px; }
   .postContainer ul {
     list-style-type: circle; }
-  .postContainer img:not(.norm) {
-    width: 100%; }
+  .postContainer img {
+    max-width: 100%; }
   .postContainer svg {
     margin: 4px 0; }
   .postContainer a:not(.linkHeading) {
